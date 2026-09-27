@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avendale University — Founded 1889</title>
+<meta name="description" content="Avendale University is a research university offering undergraduate and graduate programs across the sciences, humanities, and arts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">Applications for Fall 2027 open October 1 — <a href="#admissions">Learn more</a></div>
+<header class="header">
+  <a href="#top" class="logo"><span class="crest">AU</span> Avendale University</a>
+  <nav aria-label="Primary">
+    <a href="#academics">Academics</a>
+    <a href="#campus">Campus Life</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#research">Research</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#academics">Academics</a><a href="#campus">Campus Life</a><a href="#admissions">Admissions</a><a href="#research">Research</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/avendale-hero/1800/1000" alt="Historic Avendale University campus quad in autumn">
+    <div class="hero-copy">
+      <p class="eyebrow">Founded 1889 · Est. Excellence</p>
+      <h1>A legacy of rigorous thought.</h1>
+      <a href="#admissions" class="btn">Apply for Admission</a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>14,200</strong><span>Students</span></div>
+    <div><strong>96</strong><span>Undergraduate majors</span></div>
+    <div><strong>1:9</strong><span>Faculty-to-student ratio</span></div>
+    <div><strong>$2.1B</strong><span>Annual research funding</span></div>
+  </section>
+
+  <section class="academics" id="academics">
+    <h2>Schools &amp; colleges</h2>
+    <div class="school-grid">
+      <article class="school-card">
+        <img src="https://picsum.photos/seed/au-sci/450/300" alt="Science laboratory building">
+        <h3>College of Sciences</h3>
+        <p>Physics, biology, chemistry, and environmental science programs ranked in the national top 20.</p>
+      </article>
+      <article class="school-card">
+        <img src="https://picsum.photos/seed/au-hum/450/300" alt="Library reading room">
+        <h3>College of Humanities</h3>
+        <p>Literature, philosophy, and history departments with renowned faculty and small seminars.</p>
+      </article>
+      <article class="school-card">
+        <img src="https://picsum.photos/seed/au-eng/450/300" alt="Engineering workshop">
+        <h3>School of Engineering</h3>
+        <p>Mechanical, civil, and computer engineering with hands-on lab facilities.</p>
+      </article>
+      <article class="school-card">
+        <img src="https://picsum.photos/seed/au-bus/450/300" alt="Business school lecture hall">
+        <h3>School of Business</h3>
+        <p>Undergraduate and MBA programs with a focus on entrepreneurship and finance.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="research" id="research">
+    <h2>Research highlights</h2>
+    <div class="research-list">
+      <article class="research-item"><span class="r-tag">Medicine</span><h3>Novel gene therapy trial shows 80% remission rate</h3><p>Avendale Medical Center · Published in Nature Medicine</p></article>
+      <article class="research-item"><span class="r-tag">Climate</span><h3>Arctic ice-core study reveals 400-year climate record</h3><p>Department of Environmental Science</p></article>
+      <article class="research-item"><span class="r-tag">AI</span><h3>New algorithm cuts protein-folding compute time by 60%</h3><p>School of Engineering &amp; Computer Science</p></article>
+    </div>
+  </section>
+
+  <section class="campus" id="campus">
+    <h2>Campus life</h2>
+    <div class="campus-grid">
+      <img src="https://picsum.photos/seed/au-c1/500/400" alt="Students studying on the campus lawn">
+      <img src="https://picsum.photos/seed/au-c2/500/400" alt="Avendale University athletics stadium">
+      <img src="https://picsum.photos/seed/au-c3/500/400" alt="Student club fair on campus">
+    </div>
+  </section>
+
+  <section class="admissions" id="admissions">
+    <h2>Request information</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="cprogram"><option>Interested in: Undergraduate</option><option>Interested in: Graduate</option><option>Interested in: Transfer</option></select>
+      <button type="submit" class="btn btn-block">Request Info Packet</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>AVENDALE UNIVERSITY</p>
+  <p>© 2026 · Website 43 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

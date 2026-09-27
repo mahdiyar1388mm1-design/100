@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brightpath School — K-8 Learning Community</title>
+<meta name="description" content="Brightpath School is a K-8 independent school focused on curiosity-driven learning, small classes, and creative arts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">🌤️ Brightpath</a>
+  <nav aria-label="Primary">
+    <a href="#programs">Programs</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#enroll">Enroll</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#programs">Programs</a><a href="#calendar">Calendar</a><a href="#enroll">Enroll</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Where curious minds grow up.</h1>
+      <p>Brightpath is a K-8 school with 12-student classrooms, project-based learning, and a garden on every campus.</p>
+      <a href="#enroll" class="btn">Schedule a Tour</a>
+    </div>
+    <div class="hero-blob">
+      <img src="https://picsum.photos/seed/brightpath-hero/600/600" alt="Children doing a science experiment in classroom">
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-card c1"><span class="ico">🎨</span><h3>Creative Arts</h3><p>Daily studio time in art, music, and drama.</p></div>
+    <div class="highlight-card c2"><span class="ico">🌱</span><h3>Outdoor Learning</h3><p>Garden-based science curriculum, K–8.</p></div>
+    <div class="highlight-card c3"><span class="ico">🧮</span><h3>Small Classes</h3><p>12 students per class, 2 teachers each.</p></div>
+  </section>
+
+  <section class="programs" id="programs">
+    <h2>Programs by grade</h2>
+    <div class="grade-tabs" role="tablist">
+      <button class="grade-tab active" role="tab" aria-selected="true" data-grade="k2">K–2</button>
+      <button class="grade-tab" role="tab" aria-selected="false" data-grade="35">3–5</button>
+      <button class="grade-tab" role="tab" aria-selected="false" data-grade="68">6–8</button>
+    </div>
+    <div class="grade-panel" id="gradePanel">
+      <p>Play-based literacy and math foundations, with daily outdoor exploration and social-emotional learning circles.</p>
+    </div>
+  </section>
+
+  <section class="calendar" id="calendar">
+    <h2>Upcoming events</h2>
+    <ul class="event-list">
+      <li><span class="edate">Oct 3</span> Fall Open House — 9:00 AM</li>
+      <li><span class="edate">Oct 17</span> Family Science Night — 6:00 PM</li>
+      <li><span class="edate">Nov 8</span> Fall Art Showcase — 5:30 PM</li>
+      <li><span class="edate">Dec 12</span> Winter Concert — 6:30 PM</li>
+    </ul>
+  </section>
+
+  <section class="enroll" id="enroll">
+    <h2>Schedule a campus tour</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="pname" placeholder="Parent/Guardian name" required>
+        <input type="email" id="pemail" placeholder="Email" required>
+      </div>
+      <select id="pgrade"><option>Interested grade: K–2</option><option>Interested grade: 3–5</option><option>Interested grade: 6–8</option></select>
+      <button type="submit" class="btn btn-block">Request a Tour</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Brightpath School</p>
+  <p>© 2026 · Website 44 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

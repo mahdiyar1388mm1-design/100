@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codecrest Academy — Become a Software Engineer</title>
+<meta name="description" content="Codecrest Academy is a 16-week coding bootcamp with a 91% job placement rate. Learn full-stack development from working engineers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">codecrest<span>_</span></a>
+  <nav aria-label="Primary">
+    <a href="#curriculum">Curriculum</a>
+    <a href="#outcomes">Outcomes</a>
+    <a href="#tuition">Tuition</a>
+  </nav>
+  <a href="#apply" class="btn btn-small nav-cta">Apply Now</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#curriculum">Curriculum</a><a href="#outcomes">Outcomes</a><a href="#tuition">Tuition</a><a href="#apply">Apply</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">16-Week Immersive · Remote &amp; On-Campus</p>
+      <h1>Ship real code. Get hired.</h1>
+      <p class="hero-desc">Codecrest Academy teaches full-stack engineering through project-based cohorts led by working software engineers — no fluff, no filler.</p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn">Apply for Next Cohort</a>
+        <a href="#curriculum" class="btn btn-ghost">See Curriculum</a>
+      </div>
+    </div>
+    <div class="editor-window" aria-hidden="true">
+      <div class="editor-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="editor-title">app.js</span></div>
+      <pre class="editor-body"><code id="typedCode"></code></pre>
+    </div>
+  </section>
+
+  <section class="curriculum" id="curriculum">
+    <h2>Curriculum tracks</h2>
+    <div class="track-tabs" role="tablist">
+      <button class="track-tab active" role="tab" aria-selected="true" data-track="frontend">Frontend</button>
+      <button class="track-tab" role="tab" aria-selected="false" data-track="backend">Backend</button>
+      <button class="track-tab" role="tab" aria-selected="false" data-track="data">Data Engineering</button>
+    </div>
+    <ol class="week-list" id="weekList">
+      <li><span class="wk">Wk 1–2</span><span>HTML, CSS &amp; JavaScript foundations</span></li>
+      <li><span class="wk">Wk 3–5</span><span>React &amp; component architecture</span></li>
+      <li><span class="wk">Wk 6–8</span><span>State management &amp; testing</span></li>
+      <li><span class="wk">Wk 9–12</span><span>Full-stack capstone project</span></li>
+      <li><span class="wk">Wk 13–16</span><span>Portfolio, interviews &amp; job search</span></li>
+    </ol>
+  </section>
+
+  <section class="outcomes" id="outcomes">
+    <h2>Outcomes that matter</h2>
+    <div class="stat-grid">
+      <div class="stat"><strong class="stat-num" data-target="91">0</strong><span>% hired within 6 months</span></div>
+      <div class="stat"><strong class="stat-num" data-target="98">0</strong><span>k avg. starting salary</span></div>
+      <div class="stat"><strong class="stat-num" data-target="2400">0</strong><span>+ graduates since 2017</span></div>
+      <div class="stat"><strong class="stat-num" data-target="4">0</strong><span>.9/5 graduate rating</span></div>
+    </div>
+    <blockquote class="testimonial">
+      "I had zero coding background. Fourteen weeks later I was debugging production code at a Series B startup." — <cite>Priya N., Cohort 34</cite>
+    </blockquote>
+  </section>
+
+  <section class="tuition" id="tuition">
+    <h2>Tuition options</h2>
+    <div class="tuition-grid">
+      <div class="tuition-card">
+        <h3>Upfront</h3><p class="price">$14,900</p>
+        <p>Pay in full before cohort start, save 8%.</p>
+      </div>
+      <div class="tuition-card featured">
+        <span class="badge">Most Chosen</span>
+        <h3>Income Share</h3><p class="price">$0 upfront</p>
+        <p>Pay 12% of salary for 24 months, only once employed above $50k.</p>
+      </div>
+      <div class="tuition-card">
+        <h3>Employer Sponsored</h3><p class="price">Varies</p>
+        <p>We work directly with your employer's L&amp;D budget.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply" id="apply">
+    <h2>Apply for the next cohort</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="ctrack"><option>Interested track: Frontend</option><option>Interested track: Backend</option><option>Interested track: Data Engineering</option></select>
+      <button type="submit" class="btn btn-block">Submit Application</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>CODECREST ACADEMY</p>
+  <p>© 2026 · Website 41 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

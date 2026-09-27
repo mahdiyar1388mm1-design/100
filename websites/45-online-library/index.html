@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archiva — The Digital Library</title>
+<meta name="description" content="Archiva is a digital library of over 200,000 books, journals, and archives, free for members with a library card.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Archiva</a>
+  <nav aria-label="Primary">
+    <a href="#collections">Collections</a>
+    <a href="#reading">Reading Room</a>
+    <a href="#join">Join</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#collections">Collections</a><a href="#reading">Reading Room</a><a href="#join">Join</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>A library without walls.</h1>
+    <p>Search 200,000+ books, journals, and archival documents — free with a library card.</p>
+    <form class="search-form" id="searchForm" role="search">
+      <input type="search" id="searchInput" placeholder="Search titles, authors, subjects...">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <section class="collections" id="collections">
+    <h2>Featured collections</h2>
+    <div class="collection-grid">
+      <article class="collection-card">
+        <img src="https://picsum.photos/seed/arch-c1/450/300" alt="Stack of historical manuscripts">
+        <h3>City Archives, 1850–1950</h3><p>412 documents</p>
+      </article>
+      <article class="collection-card">
+        <img src="https://picsum.photos/seed/arch-c2/450/300" alt="Shelf of scientific journals">
+        <h3>Natural Sciences Journals</h3><p>8,900 issues</p>
+      </article>
+      <article class="collection-card">
+        <img src="https://picsum.photos/seed/arch-c3/450/300" alt="Vintage photograph collection">
+        <h3>American Photography, 1900s</h3><p>1,240 photographs</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="reading" id="reading">
+    <h2>Recently added</h2>
+    <ul class="book-list" id="bookList">
+      <li><span class="book-cover" style="background:#c9a15a"></span><div><h3>The Long Coastline</h3><p>Marta Segura · Fiction, 2024</p></div><button class="btn-outline">Borrow</button></li>
+      <li><span class="book-cover" style="background:#5a7fa3"></span><div><h3>Principles of Ecology</h3><p>D. R. Whitfield · Science, 2021</p></div><button class="btn-outline">Borrow</button></li>
+      <li><span class="book-cover" style="background:#a35a6f"></span><div><h3>A Short History of Silence</h3><p>Yuki Tanaka · Essays, 2023</p></div><button class="btn-outline">Borrow</button></li>
+      <li><span class="book-cover" style="background:#6f9e6a"></span><div><h3>Field Notes on Migration</h3><p>Sam O. Brenner · Nonfiction, 2020</p></div><button class="btn-outline">Borrow</button></li>
+    </ul>
+  </section>
+
+  <section class="join" id="join">
+    <h2>Get your free library card</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <button type="submit" class="btn btn-block">Create Library Card</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Archiva Digital Library</p>
+  <p>© 2026 · Website 45 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

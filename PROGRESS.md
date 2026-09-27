@@ -45,11 +45,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 38 | Music Artist Website | Echo Vale | Immersive dark, audio player | ✅ |
 | 39 | Record Label | Midnight Press Records | Retro vinyl vintage | ✅ |
 | 40 | Online Education Platform | LearnLoop | Friendly modern course cards | ✅ |
-| 41 | Programming Academy | Codecrest Academy | Dark developer terminal | ⬜ |
-| 42 | Online Course Marketplace | SkillMarket | Marketplace grid + filters | ⬜ |
-| 43 | University Website | Avendale University | Prestigious academic navy/gold | ⬜ |
-| 44 | School Website | Brightpath School | Friendly colorful rounded | ⬜ |
-| 45 | Online Library | Archiva | Editorial classic serif | ⬜ |
+| 41 | Programming Academy | Codecrest Academy | Dark developer terminal | ✅ |
+| 42 | Online Course Marketplace | SkillMarket | Marketplace grid + filters | ✅ |
+| 43 | University Website | Avendale University | Prestigious academic navy/gold | ✅ |
+| 44 | School Website | Brightpath School | Friendly colorful rounded | ✅ |
+| 45 | Online Library | Archiva | Editorial classic serif | ✅ |
 | 46 | News Platform | The Meridian Times | Classic newspaper grid | ⬜ |
 | 47 | Magazine | Verve Magazine | Bold editorial magazine | ⬜ |
 | 48 | Technology Blog | Signal//Noise | Dark tech blog, code blocks | ⬜ |

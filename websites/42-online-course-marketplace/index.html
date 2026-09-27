@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillMarket — Learn From Anyone, Anywhere</title>
+<meta name="description" content="SkillMarket is an online course marketplace with thousands of courses taught by independent instructors. Filter by category, level, and price.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Skill<span>Market</span></a>
+  <div class="search-bar">
+    <input type="search" id="searchInput" placeholder="Search courses, topics, instructors...">
+  </div>
+  <nav aria-label="Primary">
+    <a href="#browse">Browse</a>
+    <a href="#teach">Teach</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#browse">Browse</a><a href="#teach">Teach</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Thousands of courses. One marketplace.</h1>
+    <p>Learn design, code, marketing, and more — from instructors who've actually done the work.</p>
+  </section>
+
+  <section class="browse" id="browse">
+    <aside class="filters" aria-label="Course filters">
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <h3>Category</h3>
+        <label><input type="checkbox" class="f-category" value="Design" checked>Design</label>
+        <label><input type="checkbox" class="f-category" value="Development" checked>Development</label>
+        <label><input type="checkbox" class="f-category" value="Marketing" checked>Marketing</label>
+        <label><input type="checkbox" class="f-category" value="Business" checked>Business</label>
+        <label><input type="checkbox" class="f-category" value="Photography" checked>Photography</label>
+      </div>
+      <div class="filter-group">
+        <h3>Level</h3>
+        <select id="levelFilter">
+          <option value="all">All levels</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <h3>Max price: <span id="priceLabel">$150</span></h3>
+        <input type="range" id="priceFilter" min="0" max="150" value="150">
+      </div>
+    </aside>
+
+    <div class="results">
+      <div class="results-head">
+        <span id="resultCount">8 courses</span>
+        <select id="sortSelect">
+          <option value="popular">Most popular</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="rating">Highest rated</option>
+        </select>
+      </div>
+      <div class="course-grid" id="courseGrid"></div>
+    </div>
+  </section>
+
+  <section class="teach" id="teach">
+    <h2>Teach on SkillMarket</h2>
+    <p>Turn your expertise into income. Instructors keep 70% of every sale.</p>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Your name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn">Apply to Teach</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>SkillMarket</p>
+  <p>© 2026 · Website 42 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
