@@ -25,11 +25,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 18 | Tourism Platform | Explora | Interactive filterable destination grid | ✅ |
 | 19 | Real Estate Agency | Cornerstone Realty | Premium corporate clean | ✅ |
 | 20 | Luxury Real Estate | Pinnacle Estates | Ultra-luxury dark cinematic (advanced) | ✅ |
-| 21 | Architecture Studio | Studio Meridian | Japanese minimal, monochrome grid | ⬜ |
-| 22 | Interior Design Studio | Atelier Lune | Editorial magazine, muted tones | ⬜ |
-| 23 | Construction Company | Ironclad Build | Industrial bold, yellow/black | ⬜ |
-| 24 | SaaS Platform | Flowstack | Modern SaaS clean | ⬜ |
-| 25 | AI Startup | Cognita AI | Futuristic dark 3D glow (advanced) | ⬜ |
+| 21 | Architecture Studio | Studio Meridian | Japanese minimal, monochrome grid | ✅ |
+| 22 | Interior Design Studio | Atelier Lune | Editorial magazine, muted tones | ✅ |
+| 23 | Construction Company | Ironclad Build | Industrial bold, yellow/black | ✅ |
+| 24 | SaaS Platform | Flowstack | Modern SaaS clean | ✅ |
+| 25 | AI Startup | Cognita AI | Futuristic dark 3D glow (advanced) | ✅ |
 | 26 | AI Tools Marketplace | PromptHub | Data-driven marketplace grid | ⬜ |
 | 27 | Cybersecurity Company | Sentinel Shield | Dark cyber grid | ⬜ |
 | 28 | Cloud Computing Company | Skyframe Cloud | Premium corporate network viz | ⬜ |
