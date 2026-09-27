@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silverlens Pictures — Film Production Company</title>
+<meta name="description" content="Silverlens Pictures is an independent film production company behind award-winning features and documentaries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">SILVERLENS</a>
+  <nav aria-label="Primary">
+    <a href="#films">Films</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#films">Films</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero" id="filmCarousel">
+    <div class="letterbox top" aria-hidden="true"></div>
+    <div class="letterbox bottom" aria-hidden="true"></div>
+    <div class="slide active" style="background-image:url('https://picsum.photos/seed/sl-film1/1800/1000')"></div>
+    <div class="slide" style="background-image:url('https://picsum.photos/seed/sl-film2/1800/1000')"></div>
+    <div class="slide" style="background-image:url('https://picsum.photos/seed/sl-film3/1800/1000')"></div>
+    <div class="hero-copy">
+      <p class="eyebrow" id="slideCat">FEATURE FILM</p>
+      <h1 id="slideTitle">The Salt Line</h1>
+      <p id="slideDesc">A fishing family confronts a reckoning that spans three generations.</p>
+    </div>
+    <div class="slide-dots" id="slideDots"></div>
+  </section>
+
+  <section class="films" id="films">
+    <h2>Filmography</h2>
+    <div class="film-list">
+      <article class="film-row"><img src="https://picsum.photos/seed/sl-f1/400/260" alt="Poster for The Salt Line"><div><h3>The Salt Line</h3><span>Feature Film · 2025 · Official Selection, Cannes</span></div></article>
+      <article class="film-row"><img src="https://picsum.photos/seed/sl-f2/400/260" alt="Poster for Concrete Rivers"><div><h3>Concrete Rivers</h3><span>Documentary · 2023 · Sundance Grand Jury Prize</span></div></article>
+      <article class="film-row"><img src="https://picsum.photos/seed/sl-f3/400/260" alt="Poster for Nightfall Harbor"><div><h3>Nightfall Harbor</h3><span>Limited Series · 2022</span></div></article>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Silverlens</h2>
+    <p>Founded in 2011, Silverlens Pictures produces character-driven features and documentaries. Our films have screened at Cannes, Sundance, and TIFF.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Pitch us your project</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <textarea id="cmessage" rows="3" placeholder="Tell us about your project"></textarea>
+      <button type="submit" class="btn btn-block">Submit Pitch</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>SILVERLENS PICTURES</p>
+  <p>© 2026 · Website 64 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

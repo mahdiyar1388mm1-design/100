@@ -65,11 +65,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 58 | Football Club | United FC Athletic | Stadium cinematic crest (advanced) | ✅ |
 | 59 | Gaming Website | Pixel Forge | Neon cyberpunk gaming | ✅ |
 | 60 | Esports Organization | Vortex Esports | Aggressive dark neon (advanced) | ✅ |
-| 61 | Game Studio | Dreamforge Studios | Cinematic immersive 3D (advanced) | ⬜ |
-| 62 | Game Landing Page | Echoes of Ardent | Cinematic trailer parallax (advanced) | ⬜ |
-| 63 | Movie Streaming Platform | Reelio | Dark cinematic streaming grid | ⬜ |
-| 64 | Movie Production Company | Silverlens Pictures | Dark cinematic studio (advanced) | ⬜ |
-| 65 | Medical Clinic | Clarity Health Clinic | Clean calming healthcare | ⬜ |
+| 61 | Game Studio | Dreamforge Studios | Cinematic immersive 3D (advanced) | ✅ |
+| 62 | Game Landing Page | Echoes of Ardent | Cinematic trailer parallax (advanced) | ✅ |
+| 63 | Movie Streaming Platform | Reelio | Dark cinematic streaming grid | ✅ |
+| 64 | Movie Production Company | Silverlens Pictures | Dark cinematic studio (advanced) | ✅ |
+| 65 | Medical Clinic | Clarity Health Clinic | Clean calming healthcare | ✅ |
 | 66 | Dental Clinic | Bright Smile Dental | Fresh friendly mint | ⬜ |
 | 67 | Healthcare Platform | VitalCare | Modern accessible healthtech | ⬜ |
 | 68 | Pharmacy Website | Greenleaf Pharmacy | Clean trustworthy green | ⬜ |

@@ -1,0 +1,73 @@
+/* Clarity Health Clinic | Clean calming healthcare */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#1c2b2a; --bg:#f4f9f8; --surface:#fff; --accent:#2f8f7e; --accent2:#e7a45c; --text-dim:#5c6b69; --line:#dfeae7;
+  --display:'Outfit',sans-serif; --sans:'Inter',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:700}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(244,249,248,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--accent)}
+header nav{display:flex;gap:1.6rem;flex:1;margin-left:1.6rem;font-weight:600;font-size:.92rem}
+header nav a:hover{color:var(--accent)}
+.nav-cta{margin-left:auto}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:1200px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:1.2rem;line-height:1.25}
+.hero-copy p{color:var(--text-dim);max-width:48ch;margin-bottom:1.8rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{background:var(--accent);color:#fff;padding:.9rem 1.7rem;border:none;border-radius:100px;font-weight:700;cursor:pointer;font-family:var(--sans);display:inline-block}
+.btn:hover{background:#25786a}
+.btn-ghost{background:none;border:2px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-small{padding:.55rem 1.1rem;font-size:.85rem;border-radius:8px}
+.btn-block{width:100%}
+.hero img{border-radius:20px}
+
+.trust-strip{display:grid;grid-template-columns:repeat(3,1fr);max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);text-align:center}
+.trust-strip strong{display:block;font-family:var(--display);font-size:1.5rem;color:var(--accent)}
+.trust-strip span{color:var(--text-dim);font-size:.85rem}
+
+.services,.providers,.appointment{max-width:1200px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.services h2,.providers h2,.appointment h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.service-card{background:var(--surface);border-radius:14px;padding:1.6rem;box-shadow:0 8px 24px rgba(28,43,42,.05)}
+.service-card .ico{font-size:1.8rem;display:block;margin-bottom:.7rem}
+.service-card h3{font-size:1.05rem;margin-bottom:.5rem}
+.service-card p{color:var(--text-dim);font-size:.88rem}
+
+.provider-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.provider-card{text-align:center}
+.provider-card img{border-radius:50%;aspect-ratio:1;object-fit:cover;margin-bottom:.8rem}
+.provider-card span{color:var(--text-dim);font-size:.88rem}
+
+.appointment{max-width:600px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.appointment input,.appointment select{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:var(--surface);margin-bottom:1rem;border-radius:10px}
+.form-note{margin-top:1rem;color:var(--accent)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .nav-cta{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .hero img{order:-1}
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+  .provider-grid{grid-template-columns:1fr}
+  .trust-strip{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .service-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reelio — Stream Movies &amp; Shows</title>
+<meta name="description" content="Reelio is a streaming platform with thousands of movies and original series. Start your free trial today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">REELIO</a>
+  <nav aria-label="Primary">
+    <a href="#browse">Browse</a>
+    <a href="#originals">Originals</a>
+  </nav>
+  <a href="#trial" class="btn btn-small nav-cta">Start Free Trial</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#browse">Browse</a><a href="#originals">Originals</a><a href="#trial">Free Trial</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/reelio-hero/1800/1000" alt="Cinematic still from Reelio Original series Nightfall Harbor">
+    <div class="hero-copy">
+      <span class="tag">REELIO ORIGINAL</span>
+      <h1>NIGHTFALL HARBOR</h1>
+      <p>A detective drifts back to his hometown to solve the case that ruined his career.</p>
+      <div class="hero-actions"><button class="btn">▶ Play</button><a href="#trial" class="btn btn-ghost">More Info</a></div>
+    </div>
+  </section>
+
+  <section class="rows" id="browse">
+    <div class="row" data-row="trending"><h2>Trending Now</h2><div class="row-track" id="trendingTrack"></div></div>
+    <div class="row" data-row="drama"><h2>Award-Winning Dramas</h2><div class="row-track" id="dramaTrack"></div></div>
+    <div class="row" data-row="scifi" id="originals"><h2>Reelio Originals</h2><div class="row-track" id="scifiTrack"></div></div>
+  </section>
+
+  <section class="trial" id="trial">
+    <h2>Start streaming today</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Get Started</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>REELIO</p>
+  <p>© 2026 · Website 63 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

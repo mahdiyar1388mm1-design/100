@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dreamforge Studios — Game Development Studio</title>
+<meta name="description" content="Dreamforge Studios crafts immersive story-driven video games. Explore our portfolio and current projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">DREAMFORGE</a>
+  <nav aria-label="Primary">
+    <a href="#games">Games</a>
+    <a href="#studio">Studio</a>
+    <a href="#careers">Careers</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#games">Games</a><a href="#studio">Studio</a><a href="#careers">Careers</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="cube-stage" id="cubeStage">
+      <div class="cube" id="cube">
+        <div class="face front"><img src="https://picsum.photos/seed/df-cube1/400/400" alt="Screenshot from Aetherfall, a fantasy RPG"></div>
+        <div class="face back"><img src="https://picsum.photos/seed/df-cube2/400/400" alt="Screenshot from Ashen Vale, a survival game"></div>
+        <div class="face right"><img src="https://picsum.photos/seed/df-cube3/400/400" alt="Screenshot from Wraithbound, an action game"></div>
+        <div class="face left"><img src="https://picsum.photos/seed/df-cube4/400/400" alt="Concept art of a Dreamforge fantasy world"></div>
+        <div class="face top"><img src="https://picsum.photos/seed/df-cube5/400/400" alt="Character concept art"></div>
+        <div class="face bottom"><img src="https://picsum.photos/seed/df-cube6/400/400" alt="Environment concept art"></div>
+      </div>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Founded 2015 · Montreal</p>
+      <h1>Worlds worth losing yourself in.</h1>
+      <p>Dreamforge Studios builds narrative-driven RPGs and survival games played by 8 million people worldwide.</p>
+      <a href="#games" class="btn">Explore Our Games</a>
+    </div>
+  </section>
+
+  <section class="games" id="games">
+    <h2>Our games</h2>
+    <div class="game-grid">
+      <article class="game-card"><img src="https://picsum.photos/seed/df-g1/500/320" alt="Key art for Aetherfall"><h3>Aetherfall</h3><span>Open-World RPG · 2024</span></article>
+      <article class="game-card"><img src="https://picsum.photos/seed/df-g2/500/320" alt="Key art for Ashen Vale"><h3>Ashen Vale</h3><span>Survival Adventure · 2022</span></article>
+      <article class="game-card"><img src="https://picsum.photos/seed/df-g3/500/320" alt="Key art for Wraithbound"><h3>Wraithbound</h3><span>Action RPG · 2020</span></article>
+    </div>
+  </section>
+
+  <section class="studio" id="studio">
+    <h2>The studio</h2>
+    <div class="studio-grid">
+      <div class="studio-stat"><strong>140</strong><span>Developers</span></div>
+      <div class="studio-stat"><strong>8M+</strong><span>Players worldwide</span></div>
+      <div class="studio-stat"><strong>12</strong><span>Awards won</span></div>
+    </div>
+  </section>
+
+  <section class="careers" id="careers">
+    <h2>Join Dreamforge</h2>
+    <p>We're hiring across engineering, art, and narrative design.</p>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="crole"><option>Role: Gameplay Engineer</option><option>Role: Concept Artist</option><option>Role: Narrative Designer</option></select>
+      <button type="submit" class="btn btn-block">Submit Application</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>DREAMFORGE STUDIOS</p>
+  <p>© 2026 · Website 61 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

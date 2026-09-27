@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Echoes of Ardent — Available Now</title>
+<meta name="description" content="Echoes of Ardent is an open-world fantasy RPG from Dreamforge Studios. Wishlist now and pre-order for exclusive rewards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">ECHOES OF ARDENT</a>
+  <nav aria-label="Primary">
+    <a href="#world">World</a>
+    <a href="#editions">Editions</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#world">World</a><a href="#editions">Editions</a></nav>
+
+<main id="top">
+  <section class="parallax-hero" id="parallaxHero">
+    <div class="p-layer p-sky" style="background-image:url('https://picsum.photos/seed/ardent-sky/1800/1200')"></div>
+    <div class="p-layer p-mountains" style="background-image:url('https://picsum.photos/seed/ardent-mountains/1800/900')"></div>
+    <div class="p-layer p-fore" style="background-image:url('https://picsum.photos/seed/ardent-fore/1800/700')"></div>
+    <div class="hero-title">
+      <h1>ECHOES<br>OF ARDENT</h1>
+      <p>An open-world fantasy RPG — out now on PC and consoles.</p>
+      <a href="#editions" class="btn">Pre-Order Now</a>
+    </div>
+    <div class="scroll-hint">Scroll ↓</div>
+  </section>
+
+  <section class="world" id="world">
+    <h2>Explore the world of Ardent</h2>
+    <div class="feature-grid">
+      <article class="feature-item"><img src="https://picsum.photos/seed/ardent-f1/500/320" alt="Vast open landscape in Echoes of Ardent"><h3>A Living World</h3><p>140 square kilometers of hand-crafted terrain, no loading screens.</p></article>
+      <article class="feature-item"><img src="https://picsum.photos/seed/ardent-f2/500/320" alt="Combat scene from Echoes of Ardent"><h3>Tactical Combat</h3><p>Real-time combat with a deep skill tree and elemental magic system.</p></article>
+      <article class="feature-item"><img src="https://picsum.photos/seed/ardent-f3/500/320" alt="Character customization screen"><h3>Your Story</h3><p>Choices that reshape the world across three branching story arcs.</p></article>
+    </div>
+  </section>
+
+  <section class="editions" id="editions">
+    <h2>Choose your edition</h2>
+    <div class="edition-grid">
+      <div class="edition-card"><h3>Standard</h3><p class="price">$59.99</p><ul><li>Full game</li></ul><button class="btn">Pre-Order</button></div>
+      <div class="edition-card featured"><span class="badge">Best Value</span><h3>Deluxe</h3><p class="price">$79.99</p><ul><li>Full game</li><li>Digital soundtrack</li><li>Exclusive armor set</li></ul><button class="btn">Pre-Order</button></div>
+      <div class="edition-card"><h3>Collector's</h3><p class="price">$129.99</p><ul><li>Everything in Deluxe</li><li>Physical art book</li><li>Statue figurine</li></ul><button class="btn">Pre-Order</button></div>
+    </div>
+    <form id="contactForm" novalidate class="notify-form">
+      <input type="email" id="cemail" placeholder="Email for launch reminders" required>
+      <button type="submit" class="btn btn-outline">Notify Me</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>ECHOES OF ARDENT — A Dreamforge Studios Game</p>
+  <p>© 2026 · Website 62 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

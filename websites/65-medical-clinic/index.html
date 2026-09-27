@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity Health Clinic — Primary &amp; Preventive Care</title>
+<meta name="description" content="Clarity Health Clinic offers primary care, preventive screenings, and same-day appointments in a calm, patient-first environment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">✚ Clarity Health</a>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#providers">Providers</a>
+    <a href="#appointment">Appointments</a>
+  </nav>
+  <a href="tel:1-800-555-0134" class="btn btn-small nav-cta">Call (800) 555-0134</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#providers">Providers</a><a href="#appointment">Appointments</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Healthcare that feels human again.</h1>
+      <p>Same-day appointments, real conversations, and a care team that remembers your name.</p>
+      <div class="hero-actions"><a href="#appointment" class="btn">Book an Appointment</a><a href="#services" class="btn btn-ghost">Our Services</a></div>
+    </div>
+    <img src="https://picsum.photos/seed/clarity-hero/700/560" alt="Doctor talking warmly with a patient in a bright clinic room">
+  </section>
+
+  <section class="trust-strip">
+    <div><strong>Same-day</strong><span>Appointments available</span></div>
+    <div><strong>15+</strong><span>Specialties on-site</span></div>
+    <div><strong>4.9/5</strong><span>Patient satisfaction</span></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-grid">
+      <article class="service-card"><span class="ico">🩺</span><h3>Primary Care</h3><p>Annual checkups, chronic condition management, referrals.</p></article>
+      <article class="service-card"><span class="ico">🧪</span><h3>Preventive Screenings</h3><p>Bloodwork, cancer screenings, and wellness panels.</p></article>
+      <article class="service-card"><span class="ico">💉</span><h3>Vaccinations</h3><p>Flu shots, travel vaccines, and childhood immunizations.</p></article>
+      <article class="service-card"><span class="ico">🧠</span><h3>Behavioral Health</h3><p>On-site counseling and psychiatric referrals.</p></article>
+    </div>
+  </section>
+
+  <section class="providers" id="providers">
+    <h2>Meet our providers</h2>
+    <div class="provider-grid">
+      <article class="provider-card"><img src="https://picsum.photos/seed/ch-p1/300/300" alt="Portrait of Dr. Alina Torres"><h3>Dr. Alina Torres</h3><span>Family Medicine</span></article>
+      <article class="provider-card"><img src="https://picsum.photos/seed/ch-p2/300/300" alt="Portrait of Dr. Samuel Nwosu"><h3>Dr. Samuel Nwosu</h3><span>Internal Medicine</span></article>
+      <article class="provider-card"><img src="https://picsum.photos/seed/ch-p3/300/300" alt="Portrait of Nurse Practitioner Wren Ellis"><h3>Wren Ellis, NP</h3><span>Preventive Care</span></article>
+    </div>
+  </section>
+
+  <section class="appointment" id="appointment">
+    <h2>Book an appointment</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="tel" id="cphone" placeholder="Phone number" required>
+      </div>
+      <select id="creason"><option>Reason: Annual Checkup</option><option>Reason: New Patient Visit</option><option>Reason: Follow-up</option><option>Reason: Urgent Concern</option></select>
+      <button type="submit" class="btn btn-block">Request Appointment</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>CLARITY HEALTH CLINIC</p>
+  <p>© 2026 · Website 65 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
