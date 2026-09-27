@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midnight Press Records</title>
+<meta name="description" content="Midnight Press Records is an independent label releasing soul, funk, and psych-rock since 1998. Discover our artist roster and latest pressings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">MIDNIGHT PRESS</a>
+  <nav aria-label="Primary">
+    <a href="#roster">Roster</a>
+    <a href="#releases">Releases</a>
+    <a href="#contact">Demos</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#roster">Roster</a><a href="#releases">Releases</a><a href="#contact">Demos</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="vinyl" id="vinyl">
+      <img src="https://picsum.photos/seed/mpr-label/300/300" alt="" class="vinyl-label">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Est. 1998 · Detroit</p>
+      <h1>Independent records,<br>pressed with intent.</h1>
+      <p class="hero-desc">Soul, funk, and psych-rock — Midnight Press has released 140 records from artists who refuse to sound like anyone else.</p>
+      <a href="#releases" class="btn">Browse the catalog</a>
+    </div>
+  </section>
+
+  <section class="releases" id="releases">
+    <h2>Latest pressings</h2>
+    <div class="release-grid">
+      <article class="release-card">
+        <img src="https://picsum.photos/seed/mpr-r1/400/400" alt="Album cover for Nightshade Collective — Low Country">
+        <h3>Low Country</h3><p>Nightshade Collective · LP</p>
+      </article>
+      <article class="release-card">
+        <img src="https://picsum.photos/seed/mpr-r2/400/400" alt="Album cover for Ruth Calloway — Firelight">
+        <h3>Firelight</h3><p>Ruth Calloway · LP</p>
+      </article>
+      <article class="release-card">
+        <img src="https://picsum.photos/seed/mpr-r3/400/400" alt="Album cover for The Amber Line — Static Season">
+        <h3>Static Season</h3><p>The Amber Line · 7"</p>
+      </article>
+      <article class="release-card">
+        <img src="https://picsum.photos/seed/mpr-r4/400/400" alt="Album cover for Delta Moss — Wading">
+        <h3>Wading</h3><p>Delta Moss · LP</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="roster" id="roster">
+    <h2>Artist roster</h2>
+    <div class="roster-grid">
+      <div class="roster-card"><img src="https://picsum.photos/seed/mpr-a1/300/300" alt="Portrait of band Nightshade Collective"><span>Nightshade Collective</span></div>
+      <div class="roster-card"><img src="https://picsum.photos/seed/mpr-a2/300/300" alt="Portrait of singer Ruth Calloway"><span>Ruth Calloway</span></div>
+      <div class="roster-card"><img src="https://picsum.photos/seed/mpr-a3/300/300" alt="Portrait of band The Amber Line"><span>The Amber Line</span></div>
+      <div class="roster-card"><img src="https://picsum.photos/seed/mpr-a4/300/300" alt="Portrait of artist Delta Moss"><span>Delta Moss</span></div>
+      <div class="roster-card"><img src="https://picsum.photos/seed/mpr-a5/300/300" alt="Portrait of band Copper Wire"><span>Copper Wire</span></div>
+      <div class="roster-card"><img src="https://picsum.photos/seed/mpr-a6/300/300" alt="Portrait of singer June Ashford"><span>June Ashford</span></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Submit a demo</h2>
+    <p>We listen to everything. Send a link, not an attachment.</p>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Artist / Band Name" required>
+      <input type="url" id="clink" placeholder="Link to your music" required>
+      <button type="submit" class="btn btn-block">Send Demo</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>MIDNIGHT PRESS RECORDS</p>
+  <p>© 2026 · Website 39 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

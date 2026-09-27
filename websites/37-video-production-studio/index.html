@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame &amp; Motion — Film &amp; Commercial Production</title>
+<meta name="description" content="Frame & Motion is a film and commercial production studio based in Los Angeles, working with brands and streaming platforms worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wipe" id="wipe" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">FRAME &amp; MOTION</a>
+  <nav aria-label="Primary">
+    <a href="#reel">Reel</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#reel">Reel</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero" id="reel">
+    <img src="https://picsum.photos/seed/frame-hero/1800/1000" alt="Cinematic still from a Frame and Motion commercial shoot" id="heroImg">
+    <div class="hero-copy">
+      <p class="eyebrow">Los Angeles · Est. 2013</p>
+      <h1>WE SHOOT<br>THE FEELING.</h1>
+      <button class="btn" id="playReel">▶ Watch Showreel</button>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <h2>Selected work</h2>
+    <div class="reel-grid">
+      <article class="reel-card" data-scrub="fm1">
+        <div class="reel-media"><img src="https://picsum.photos/seed/fm1-0/700/440" alt="Still from Voltz Energy commercial"></div>
+        <h3>Voltz Energy — "Ignite"</h3><span>Commercial · 60s</span>
+      </article>
+      <article class="reel-card" data-scrub="fm2">
+        <div class="reel-media"><img src="https://picsum.photos/seed/fm2-0/700/440" alt="Still from a documentary short film"></div>
+        <h3>"Concrete Rivers"</h3><span>Documentary Short</span>
+      </article>
+      <article class="reel-card" data-scrub="fm3">
+        <div class="reel-media"><img src="https://picsum.photos/seed/fm3-0/700/440" alt="Still from a fashion brand film"></div>
+        <h3>Éclat Studio — SS26 Film</h3><span>Brand Film</span>
+      </article>
+      <article class="reel-card" data-scrub="fm4">
+        <div class="reel-media"><img src="https://picsum.photos/seed/fm4-0/700/440" alt="Still from a music video production"></div>
+        <h3>Echo Vale — "Undertow"</h3><span>Music Video</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Start a production</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="ctype"><option>Project type: Commercial</option><option>Project type: Music Video</option><option>Project type: Documentary</option><option>Project type: Brand Film</option></select>
+      <button type="submit" class="btn btn-block">Submit Inquiry</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<div class="modal" id="reelModal" hidden>
+  <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+  <div class="modal-content">
+    <img src="https://picsum.photos/seed/frame-reel/1200/675" alt="Showreel placeholder frame">
+    <p>Showreel playback is a demo placeholder in this portfolio example.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>FRAME &amp; MOTION FILMS</p>
+  <p>© 2026 · Website 37 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

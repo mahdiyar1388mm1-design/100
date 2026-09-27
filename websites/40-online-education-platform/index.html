@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnLoop — Online Courses That Fit Your Life</title>
+<meta name="description" content="LearnLoop offers self-paced online courses in design, data, and business with progress tracking and certificates. Start learning today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Learn<span>Loop</span></a>
+  <nav aria-label="Primary">
+    <a href="#courses">Courses</a>
+    <a href="#paths">Paths</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#pricing" class="btn btn-small nav-cta">Start Free</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#courses">Courses</a><a href="#paths">Paths</a><a href="#pricing">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Learn a little every day, master it for life.</h1>
+      <p>LearnLoop courses are bite-sized, self-paced, and built by working professionals — with progress tracking that keeps you honest.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="btn">Explore Courses</a>
+        <a href="#paths" class="btn btn-ghost">View Learning Paths</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,200+</strong><span>Lessons</span></div>
+        <div><strong>85,000</strong><span>Learners</span></div>
+        <div><strong>4.8/5</strong><span>Avg. rating</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="progress-ring-card">
+        <svg viewBox="0 0 120 120" class="ring" aria-hidden="true">
+          <circle cx="60" cy="60" r="52" class="ring-bg"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fg" id="ringFg"></circle>
+        </svg>
+        <div class="ring-label"><strong>72%</strong><span>UX Design Path</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <h2>Popular courses</h2>
+    <div class="course-grid">
+      <article class="course-card">
+        <img src="https://picsum.photos/seed/ll-c1/500/300" alt="Laptop showing a UX design wireframe">
+        <div class="course-body">
+          <span class="tag">Design</span>
+          <h3>UX Design Fundamentals</h3>
+          <div class="progress-bar"><div class="progress-fill" style="width:60%"></div></div>
+          <div class="course-meta"><span>6 modules</span><span>60% complete</span></div>
+        </div>
+      </article>
+      <article class="course-card">
+        <img src="https://picsum.photos/seed/ll-c2/500/300" alt="Data dashboard on a computer screen">
+        <div class="course-body">
+          <span class="tag">Data</span>
+          <h3>SQL for Analysts</h3>
+          <div class="progress-bar"><div class="progress-fill" style="width:30%"></div></div>
+          <div class="course-meta"><span>8 modules</span><span>30% complete</span></div>
+        </div>
+      </article>
+      <article class="course-card">
+        <img src="https://picsum.photos/seed/ll-c3/500/300" alt="Business meeting with charts on a whiteboard">
+        <div class="course-body">
+          <span class="tag">Business</span>
+          <h3>Startup Finance Basics</h3>
+          <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+          <div class="course-meta"><span>5 modules</span><span>Not started</span></div>
+        </div>
+      </article>
+      <article class="course-card">
+        <img src="https://picsum.photos/seed/ll-c4/500/300" alt="Person coding on a laptop with sticky notes">
+        <div class="course-body">
+          <span class="tag">Development</span>
+          <h3>JavaScript from Scratch</h3>
+          <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+          <div class="course-meta"><span>10 modules</span><span>90% complete</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="paths" id="paths">
+    <h2>Learning paths</h2>
+    <div class="path-tabs" role="tablist">
+      <button class="path-tab active" role="tab" aria-selected="true" data-path="design">Design</button>
+      <button class="path-tab" role="tab" aria-selected="false" data-path="data">Data</button>
+      <button class="path-tab" role="tab" aria-selected="false" data-path="pm">Product</button>
+    </div>
+    <div class="path-panel" id="pathPanel">
+      <ol class="path-steps">
+        <li><strong>UX Design Fundamentals</strong><span>4 weeks</span></li>
+        <li><strong>Visual Design Systems</strong><span>3 weeks</span></li>
+        <li><strong>Prototyping with Figma</strong><span>2 weeks</span></li>
+        <li><strong>Portfolio Capstone</strong><span>3 weeks</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Simple pricing</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free</h3><p class="price">$0</p>
+        <ul><li>3 courses/month</li><li>Community forum</li><li>Basic certificates</li></ul>
+        <button class="btn btn-ghost btn-block">Get Started</button>
+      </div>
+      <div class="price-card featured">
+        <span class="badge">Most Popular</span>
+        <h3>Pro</h3><p class="price">$19<span>/mo</span></p>
+        <ul><li>Unlimited courses</li><li>Downloadable resources</li><li>Verified certificates</li><li>1:1 mentor sessions</li></ul>
+        <button class="btn btn-block">Start Free Trial</button>
+      </div>
+      <div class="price-card">
+        <h3>Teams</h3><p class="price">$49<span>/mo</span></p>
+        <ul><li>Everything in Pro</li><li>Team progress dashboard</li><li>Priority support</li></ul>
+        <button class="btn btn-ghost btn-block">Contact Sales</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>LearnLoop</p>
+  <p>© 2026 · Website 40 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

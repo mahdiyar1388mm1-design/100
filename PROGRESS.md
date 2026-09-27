@@ -40,11 +40,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 33 | Design Studio | Studio Nova | Minimalist single-accent | ✅ |
 | 34 | Freelancer Portfolio | Jordan Reyes | Personal minimal warm portfolio | ✅ |
 | 35 | Developer Portfolio | Alex Kim // Dev | Terminal/code dark portfolio | ✅ |
-| 36 | Photographer Portfolio | Lenscape — Mara Voss | Full-bleed gallery | ⬜ |
-| 37 | Video Production Studio | Frame & Motion | Dark cinematic reel (advanced) | ⬜ |
-| 38 | Music Artist Website | Echo Vale | Immersive dark, audio player | ⬜ |
-| 39 | Record Label | Midnight Press Records | Retro vinyl vintage | ⬜ |
-| 40 | Online Education Platform | LearnLoop | Friendly modern course cards | ⬜ |
+| 36 | Photographer Portfolio | Lenscape — Mara Voss | Full-bleed gallery | ✅ |
+| 37 | Video Production Studio | Frame & Motion | Dark cinematic reel (advanced) | ✅ |
+| 38 | Music Artist Website | Echo Vale | Immersive dark, audio player | ✅ |
+| 39 | Record Label | Midnight Press Records | Retro vinyl vintage | ✅ |
+| 40 | Online Education Platform | LearnLoop | Friendly modern course cards | ✅ |
 | 41 | Programming Academy | Codecrest Academy | Dark developer terminal | ⬜ |
 | 42 | Online Course Marketplace | SkillMarket | Marketplace grid + filters | ⬜ |
 | 43 | University Website | Avendale University | Prestigious academic navy/gold | ⬜ |

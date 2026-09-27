@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Echo Vale — Official Site</title>
+<meta name="description" content="Echo Vale is an electronic-indie artist. Listen to the latest single, browse tour dates, and stream Undertow now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">ECHO VALE</a>
+  <nav aria-label="Primary">
+    <a href="#music">Music</a>
+    <a href="#tour">Tour</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#music">Music</a><a href="#tour">Tour</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/echovale-hero/1800/1100" alt="Echo Vale performing on stage under blue light" class="hero-img">
+    <div class="hero-copy">
+      <p class="eyebrow">New Single — Out Now</p>
+      <h1>UNDERTOW</h1>
+      <button class="play-btn" id="playBtn" aria-pressed="false">
+        <span class="play-icon" id="playIcon">▶</span> Play
+      </button>
+    </div>
+    <div class="wave-bar" id="waveBar" aria-hidden="true"></div>
+  </section>
+
+  <section class="music" id="music">
+    <h2>Discography</h2>
+    <ul class="track-list">
+      <li class="track" data-track="Undertow"><span class="track-num">01</span><span class="track-name">Undertow</span><span class="track-len">3:42</span></li>
+      <li class="track" data-track="Static Bloom"><span class="track-num">02</span><span class="track-name">Static Bloom</span><span class="track-len">4:05</span></li>
+      <li class="track" data-track="Halflight"><span class="track-num">03</span><span class="track-name">Halflight</span><span class="track-len">3:18</span></li>
+      <li class="track" data-track="Glass Fields"><span class="track-num">04</span><span class="track-name">Glass Fields</span><span class="track-len">5:01</span></li>
+      <li class="track" data-track="Afterimage"><span class="track-num">05</span><span class="track-name">Afterimage</span><span class="track-len">3:56</span></li>
+    </ul>
+  </section>
+
+  <section class="tour" id="tour">
+    <h2>Tour dates</h2>
+    <div class="tour-list">
+      <div class="tour-row"><span class="tdate">OCT 14</span><span class="tcity">Los Angeles, CA — The Wiltern</span><a href="#" class="btn-tix">Tickets</a></div>
+      <div class="tour-row"><span class="tdate">OCT 22</span><span class="tcity">Austin, TX — Stubb's</span><a href="#" class="btn-tix">Tickets</a></div>
+      <div class="tour-row"><span class="tdate">NOV 03</span><span class="tcity">Chicago, IL — Metro</span><a href="#" class="btn-tix">Tickets</a></div>
+      <div class="tour-row"><span class="tdate">NOV 18</span><span class="tcity">Brooklyn, NY — Elsewhere</span><a href="#" class="btn-tix">Tickets</a></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Mailing list</h2>
+    <p>Get tour alerts and unreleased tracks first.</p>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Subscribe</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<div class="now-playing" id="nowPlaying" hidden>
+  <span id="npTrack">Undertow</span>
+  <div class="np-bars" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <button id="npClose" aria-label="Stop">×</button>
+</div>
+
+<footer class="footer">
+  <p>ECHO VALE</p>
+  <p>© 2026 · Website 38 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

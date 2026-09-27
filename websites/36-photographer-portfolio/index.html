@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lenscape — Mara Voss, Photographer</title>
+<meta name="description" content="Mara Voss is a documentary and portrait photographer based in Berlin. Browse the full-bleed gallery and inquire about bookings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">MARA VOSS</a>
+  <nav aria-label="Primary">
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Bookings</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Bookings</a></nav>
+
+<main id="top">
+  <section class="cover">
+    <img src="https://picsum.photos/seed/mara-cover/1800/1100" alt="Portrait series by Mara Voss, subject lit by window light">
+    <div class="cover-copy">
+      <p class="eyebrow">Documentary &amp; Portrait</p>
+      <h1>LENSCAPE</h1>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="gallery-item" data-idx="0"><img src="https://picsum.photos/seed/mv1/500/650" alt="Portrait of a woman in golden hour light" loading="lazy"></button>
+      <button class="gallery-item" data-idx="1"><img src="https://picsum.photos/seed/mv2/650/500" alt="Street scene in Berlin at dusk" loading="lazy"></button>
+      <button class="gallery-item" data-idx="2"><img src="https://picsum.photos/seed/mv3/500/650" alt="Candid portrait of an elderly fisherman" loading="lazy"></button>
+      <button class="gallery-item" data-idx="3"><img src="https://picsum.photos/seed/mv4/650/500" alt="Wide landscape of a foggy forest" loading="lazy"></button>
+      <button class="gallery-item" data-idx="4"><img src="https://picsum.photos/seed/mv5/500/650" alt="Black and white portrait of a musician" loading="lazy"></button>
+      <button class="gallery-item" data-idx="5"><img src="https://picsum.photos/seed/mv6/650/500" alt="Market scene with vendors and produce" loading="lazy"></button>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <img src="https://picsum.photos/seed/mara-portrait/500/620" alt="Portrait of photographer Mara Voss">
+    <div>
+      <h2>About Mara</h2>
+      <p>Mara Voss is a documentary and portrait photographer based in Berlin, with work published in six countries. Her practice centers on unposed, natural-light portraiture — she shoots exclusively on film for personal work.</p>
+      <p>Available for editorial assignments, brand campaigns, and private portrait sessions worldwide.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Book a session</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="ctype"><option>Portrait Session</option><option>Editorial Assignment</option><option>Brand Campaign</option></select>
+      <button type="submit" class="btn btn-block">Request Availability</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous image">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-next" id="lbNext" aria-label="Next image">›</button>
+</div>
+
+<footer class="footer">
+  <p>MARA VOSS PHOTOGRAPHY</p>
+  <p>© 2026 · Website 36 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

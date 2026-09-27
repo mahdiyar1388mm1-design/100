@@ -1,0 +1,62 @@
+/* Midnight Press Records — Record Label | Retro vinyl/grain */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --cream:#f3ead9; --ink:#241d16; --rust:#b3502b; --olive:#5c6146; --line:#ddceb0;
+  --display:'Fraunces',serif; --type:'Special Elite',cursive;
+}
+body{background:var(--cream);color:var(--ink);font-family:var(--type);line-height:1.7;-webkit-font-smoothing:antialiased;position:relative}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display)}
+:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(243,234,217,.92);border-bottom:2px solid var(--ink)}
+.logo{font-family:var(--display);font-weight:700;letter-spacing:.02em}
+header nav{display:flex;gap:1.8rem;font-size:.9rem}
+header nav a:hover{color:var(--rust)}
+.menu-btn{display:none;background:none;border:2px solid var(--ink);width:38px;height:38px}
+.mobile-nav{display:none;flex-direction:column;background:var(--cream);border-bottom:2px solid var(--ink)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:clamp(3rem,7vw,5rem) 1.5rem;display:grid;grid-template-columns:280px 1fr;gap:3rem;align-items:center}
+.vinyl{width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at center,#111 0 20%,#222 21% 30%,#111 31% 40%,#222 41% 50%,#111 51% 60%,#222 61% 70%,#111 71%,#000 100%);position:relative;animation:spin 6s linear infinite;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.vinyl-label{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:36%;height:36%;border-radius:50%;object-fit:cover;border:3px solid #111}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.vinyl{animation:none}}
+.eyebrow{color:var(--rust);text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;margin-bottom:1rem}
+.hero-copy h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:1.2rem}
+.hero-desc{max-width:52ch;margin-bottom:1.6rem}
+.btn{display:inline-block;background:var(--rust);color:var(--cream);padding:.9rem 1.8rem;border:none;cursor:pointer;font-family:var(--type)}
+.btn:hover{background:#8f3d20}
+.btn-block{width:100%}
+
+.releases,.roster,.contact{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:2px solid var(--ink)}
+.releases h2,.roster h2,.contact h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.release-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.release-card img{border:2px solid var(--ink);margin-bottom:.7rem;aspect-ratio:1;object-fit:cover}
+.release-card h3{font-size:1.05rem}
+.release-card p{color:var(--olive);font-size:.85rem}
+
+.roster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.roster-card{text-align:center}
+.roster-card img{border-radius:50%;aspect-ratio:1;object-fit:cover;margin:0 auto .8rem;filter:sepia(.3)}
+.roster-card span{font-family:var(--display);font-weight:600}
+
+.contact{max-width:600px}
+.contact p{color:var(--olive);margin-bottom:1.4rem}
+.contact input{width:100%;padding:.85rem 1rem;border:2px solid var(--ink);background:var(--cream);margin-bottom:1rem;font-family:var(--type)}
+.form-note{margin-top:1rem;color:var(--rust)}
+
+.footer{position:relative;z-index:2;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:2px solid var(--ink);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .release-grid{grid-template-columns:repeat(2,1fr)}
+  .roster-grid{grid-template-columns:repeat(2,1fr)}
+}
