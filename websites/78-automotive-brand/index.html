@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raven Automotive — Engineering the Future of Driving</title>
+<meta name="description" content="Raven Automotive designs electric performance vehicles with a futuristic interactive 3D configurator experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="header">
+  <a href="#top" class="logo">RAVEN</a>
+  <nav aria-label="Primary">
+    <a href="#showcase">Showcase</a>
+    <a href="#specs">Specs</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#showcase">Showcase</a><a href="#specs">Specs</a><a href="#reserve">Reserve</a></nav>
+
+<main id="top">
+  <section class="hero" id="showcase">
+    <p class="eyebrow">RAVEN ONE · ALL-ELECTRIC GT</p>
+    <h1>THE FUTURE,<br>UNVEILED.</h1>
+    <div class="showcase-3d" id="showcase3d" role="img" aria-label="Rotating 3D preview of the Raven One electric GT — drag to rotate">
+      <div class="car-plate" id="carPlate">
+        <img src="https://picsum.photos/seed/raven-car/900/500" alt="Raven One electric grand tourer, three-quarter view">
+      </div>
+      <div class="glow-ring"></div>
+    </div>
+    <p class="drag-hint">← drag to rotate →</p>
+  </section>
+
+  <section class="specs" id="specs">
+    <h2>Performance specs</h2>
+    <div class="spec-grid">
+      <div class="spec-card"><span>0–60 mph</span><strong>2.4s</strong></div>
+      <div class="spec-card"><span>Range</span><strong>410 mi</strong></div>
+      <div class="spec-card"><span>Power</span><strong>1,020 hp</strong></div>
+      <div class="spec-card"><span>Top Speed</span><strong>205 mph</strong></div>
+    </div>
+  </section>
+
+  <section class="colorways">
+    <h2>Choose your finish</h2>
+    <div class="swatch-row" id="swatchRow">
+      <button class="swatch" style="--c:#0d0d10" data-name="Obsidian Black" aria-label="Obsidian Black"></button>
+      <button class="swatch" style="--c:#e63946" data-name="Raven Red" aria-label="Raven Red"></button>
+      <button class="swatch" style="--c:#e8e8ea" data-name="Lunar Silver" aria-label="Lunar Silver"></button>
+      <button class="swatch" style="--c:#1d3557" data-name="Deep Cobalt" aria-label="Deep Cobalt"></button>
+    </div>
+    <p class="swatch-label" id="swatchLabel">Obsidian Black selected</p>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <h2>Reserve yours</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Full name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Reserve with $500 Deposit</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>RAVEN AUTOMOTIVE</p>
+  <p>© 2026 · Website 78 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZipRide — Your Ride, On Demand</title>
+<meta name="description" content="ZipRide connects riders with nearby drivers in seconds. Estimate your fare and request a ride instantly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Zip<span>Ride</span></a>
+  <nav aria-label="Primary">
+    <a href="#ride">Get a Ride</a>
+    <a href="#drive">Drive</a>
+    <a href="#cities">Cities</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#ride">Get a Ride</a><a href="#drive">Drive</a><a href="#cities">Cities</a></nav>
+
+<main id="top">
+  <section class="hero" id="ride">
+    <div class="hero-copy">
+      <h1>Go anywhere.<br>Get there fast.</h1>
+      <p>Request a ride in seconds and watch your driver arrive in real time.</p>
+    </div>
+    <div class="fare-card">
+      <h2>Estimate your fare</h2>
+      <label for="pickupIn">Pickup</label>
+      <input type="text" id="pickupIn" placeholder="Current location" value="Dam Square">
+      <label for="dropIn">Drop-off</label>
+      <input type="text" id="dropIn" placeholder="Where to?" value="Amsterdam Airport">
+      <div class="ride-types" id="rideTypes">
+        <button class="ride-type active" data-mult="1" data-name="ZipX">🚗 ZipX</button>
+        <button class="ride-type" data-mult="1.4" data-name="Zip Comfort">🚙 Comfort</button>
+        <button class="ride-type" data-mult="2.1" data-name="Zip XL">🚐 XL</button>
+      </div>
+      <div class="fare-output">
+        <span>Estimated fare</span>
+        <strong id="fareOut">€18–22</strong>
+      </div>
+      <button class="btn btn-block" id="requestBtn">Request ZipX</button>
+      <p class="form-note" id="rideNote" role="status"></p>
+    </div>
+  </section>
+
+  <section class="drive" id="drive">
+    <div class="drive-copy">
+      <h2>Drive when you want. Earn what you need.</h2>
+      <p>Set your own hours, keep more of every fare, and get paid weekly.</p>
+      <a href="#signup" class="btn">Become a Driver</a>
+    </div>
+    <img src="https://picsum.photos/seed/zipride-driver/700/500" alt="Driver smiling behind the wheel of a rideshare car" loading="lazy">
+  </section>
+
+  <section class="cities" id="cities">
+    <h2>Available in these cities</h2>
+    <div class="city-grid">
+      <span>Amsterdam</span><span>Rotterdam</span><span>The Hague</span><span>Utrecht</span><span>Eindhoven</span><span>Groningen</span>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <h2>Sign up to drive</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Full name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Start Application</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>ZIPRIDE</p>
+  <p>© 2026 · Website 80 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

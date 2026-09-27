@@ -80,11 +80,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 73 | Job Marketplace | HireWave | Marketplace grid/filters | ✅ |
 | 74 | Freelancer Marketplace | GigSphere | Vibrant marketplace | ✅ |
 | 75 | Logistics Company | Cargoline Logistics | Industrial bold route graphics | ✅ |
-| 76 | Shipping Platform | Portline Shipping | Data-driven tracking UI (advanced) | ⬜ |
-| 77 | Car Dealership | Velocity Motors | Bold automotive dark | ⬜ |
-| 78 | Automotive Brand | Raven Automotive | Futuristic 3D car showcase (advanced) | ⬜ |
-| 79 | Car Rental Platform | DriveNow Rentals | Clean app-style booking | ⬜ |
-| 80 | Taxi/Ride Sharing Platform | ZipRide | Bright modern app UI | ⬜ |
+| 76 | Shipping Platform | Portline Shipping | Data-driven tracking UI (advanced) | ✅ |
+| 77 | Car Dealership | Velocity Motors | Bold automotive dark | ✅ |
+| 78 | Automotive Brand | Raven Automotive | Futuristic 3D car showcase (advanced) | ✅ |
+| 79 | Car Rental Platform | DriveNow Rentals | Clean app-style booking | ✅ |
+| 80 | Taxi/Ride Sharing Platform | ZipRide | Bright modern app UI | ✅ |
 | 81 | Event Management Company | Lumen Events | Elegant editorial gold | ⬜ |
 | 82 | Wedding Planner | Ivory & Oak Weddings | Romantic soft elegant | ⬜ |
 | 83 | Photography Booking Platform | Shuttr | Clean marketplace booking | ⬜ |

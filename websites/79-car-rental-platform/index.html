@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveNow Rentals — Book a Car in Minutes</title>
+<meta name="description" content="DriveNow Rentals lets you book a rental car in minutes with transparent pricing and flexible pickup locations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">DriveNow</a>
+  <nav aria-label="Primary">
+    <a href="#booking">Book</a>
+    <a href="#fleet">Fleet</a>
+    <a href="#locations">Locations</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#booking">Book</a><a href="#fleet">Fleet</a><a href="#locations">Locations</a></nav>
+
+<main id="top">
+  <section class="hero" id="booking">
+    <h1>Book a car in minutes.</h1>
+    <p>Pick a location, pick your dates, pick your car. No lines, no paperwork.</p>
+
+    <div class="booking-card">
+      <div class="steps">
+        <span class="step active" data-step="1">1. Location</span>
+        <span class="step" data-step="2">2. Dates</span>
+        <span class="step" data-step="3">3. Car</span>
+      </div>
+      <div class="step-panel" data-panel="1">
+        <label for="pickup">Pickup location</label>
+        <select id="pickup">
+          <option>Amsterdam Airport (AMS)</option>
+          <option>Amsterdam Central</option>
+          <option>Rotterdam Downtown</option>
+          <option>Utrecht Station</option>
+        </select>
+        <button class="btn next-btn" data-next="2">Continue</button>
+      </div>
+      <div class="step-panel" data-panel="2" hidden>
+        <label for="pickupDate">Pickup date</label>
+        <input type="date" id="pickupDate">
+        <label for="returnDate">Return date</label>
+        <input type="date" id="returnDate">
+        <button class="btn next-btn" data-next="3">Continue</button>
+      </div>
+      <div class="step-panel" data-panel="3" hidden>
+        <div class="car-options" id="carOptions"></div>
+        <button class="btn btn-block" id="confirmBtn">Confirm Booking</button>
+        <p class="form-note" id="bookingNote" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fleet" id="fleet">
+    <h2>Our fleet</h2>
+    <div class="fleet-grid">
+      <article class="fleet-card"><img src="https://picsum.photos/seed/dn-economy/400/260" alt="Compact economy car" loading="lazy"><h3>Economy</h3><p>From €29/day</p></article>
+      <article class="fleet-card"><img src="https://picsum.photos/seed/dn-suv/400/260" alt="Mid-size SUV" loading="lazy"><h3>SUV</h3><p>From €49/day</p></article>
+      <article class="fleet-card"><img src="https://picsum.photos/seed/dn-lux/400/260" alt="Luxury sedan" loading="lazy"><h3>Luxury</h3><p>From €89/day</p></article>
+    </div>
+  </section>
+
+  <section class="locations" id="locations">
+    <h2>Pickup locations</h2>
+    <ul class="location-list">
+      <li><strong>Amsterdam Airport</strong><span>Open 24/7</span></li>
+      <li><strong>Amsterdam Central</strong><span>6:00–23:00</span></li>
+      <li><strong>Rotterdam Downtown</strong><span>7:00–22:00</span></li>
+      <li><strong>Utrecht Station</strong><span>6:30–22:30</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>DRIVENOW RENTALS</p>
+  <p>© 2026 · Website 79 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

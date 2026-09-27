@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portline Shipping — Track Any Container, Anywhere</title>
+<meta name="description" content="Portline Shipping offers real-time container tracking and ocean freight booking across 60 global ports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">⚓ Portline</a>
+  <nav aria-label="Primary">
+    <a href="#tracking">Tracking</a>
+    <a href="#network">Network</a>
+    <a href="#booking">Book Freight</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#tracking">Tracking</a><a href="#network">Network</a><a href="#booking">Book Freight</a></nav>
+
+<main id="top">
+  <section class="hero" id="tracking">
+    <div class="hero-copy">
+      <h1>Track any container, live.</h1>
+      <p>Real-time visibility into 40,000+ containers moving across 60 global ports.</p>
+      <form class="track-form" id="trackForm">
+        <input type="text" id="trackInput" placeholder="Enter container ID (e.g. PORT-88291)" value="PORT-88291">
+        <button type="submit">Track</button>
+      </form>
+    </div>
+    <div class="tracking-card">
+      <div class="tracking-head"><span id="trackId">PORT-88291</span><span class="status-badge">In Transit</span></div>
+      <svg viewBox="0 0 400 140" class="route-svg" aria-hidden="true">
+        <path id="routePath" d="M 30 100 Q 150 20 200 60 T 370 40" fill="none" stroke="#233" stroke-width="2" stroke-dasharray="4 6"></path>
+        <circle cx="30" cy="100" r="6" fill="#0b3d91"></circle>
+        <circle cx="370" cy="40" r="6" fill="#0b3d91"></circle>
+        <circle id="shipDot" r="7" fill="#e8471c"></circle>
+      </svg>
+      <div class="route-labels"><span>Shanghai</span><span>Rotterdam</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:62%"></div></div>
+      <div class="tracking-meta"><span>ETA: Oct 12</span><span id="progressPct">62% complete</span></div>
+    </div>
+  </section>
+
+  <section class="network" id="network">
+    <h2>Our network</h2>
+    <div class="stat-grid">
+      <div class="stat"><strong id="statPorts">0</strong><span>Ports served</span></div>
+      <div class="stat"><strong id="statContainers">0</strong><span>Containers tracked daily</span></div>
+      <div class="stat"><strong id="statVessels">0</strong><span>Vessels in fleet</span></div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <h2>Book ocean freight</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="corigin" placeholder="Origin port" required>
+        <input type="text" id="cdest" placeholder="Destination port" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Request Booking Quote</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>PORTLINE SHIPPING</p>
+  <p>© 2026 · Website 76 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

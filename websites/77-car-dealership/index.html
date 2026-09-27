@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velocity Motors — New &amp; Certified Pre-Owned Vehicles</title>
+<meta name="description" content="Velocity Motors offers new and certified pre-owned vehicles with transparent pricing and no-haggle deals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">VELOCITY MOTORS</a>
+  <nav aria-label="Primary">
+    <a href="#inventory">Inventory</a>
+    <a href="#financing">Financing</a>
+    <a href="#trade">Trade-In</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#inventory">Inventory</a><a href="#financing">Financing</a><a href="#trade">Trade-In</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/velocity-hero/1800/1000" alt="Sports sedan parked in a dramatic dark showroom">
+    <div class="hero-copy">
+      <h1>DRIVE WHAT<br>MOVES YOU.</h1>
+      <a href="#inventory" class="btn">Browse Inventory</a>
+    </div>
+  </section>
+
+  <section class="inventory" id="inventory">
+    <div class="inventory-head">
+      <h2>Current inventory</h2>
+      <div class="filter-chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="sedan">Sedan</button>
+        <button class="chip" data-filter="suv">SUV</button>
+        <button class="chip" data-filter="electric">Electric</button>
+      </div>
+    </div>
+    <div class="car-grid" id="carGrid"></div>
+  </section>
+
+  <section class="financing" id="financing">
+    <h2>Financing calculator</h2>
+    <div class="calc-grid">
+      <div class="calc-inputs">
+        <label>Vehicle Price: $<span id="priceOut">32,000</span><input type="range" id="priceSlider" min="10000" max="90000" step="1000" value="32000"></label>
+        <label>Down Payment: $<span id="downOut">4,000</span><input type="range" id="downSlider" min="0" max="30000" step="500" value="4000"></label>
+        <label>Loan Term: <span id="termOut">60</span> months<input type="range" id="termSlider" min="24" max="84" step="12" value="60"></label>
+      </div>
+      <div class="calc-result">
+        <span>Estimated monthly payment</span>
+        <strong id="paymentOut">$498</strong>
+        <p>Based on 6.5% APR. Actual terms vary by credit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trade" id="trade">
+    <h2>Get a trade-in value</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cmake" placeholder="Make &amp; Model" required>
+        <input type="text" id="cyear" placeholder="Year" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Get My Trade-In Value</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>VELOCITY MOTORS</p>
+  <p>© 2026 · Website 77 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
