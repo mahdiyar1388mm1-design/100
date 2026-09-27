@@ -1,0 +1,63 @@
+/* Victoria Sterling | Ultra-luxury editorial personal brand */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff; --surface:#f7f6f3; --ink:#111111; --accent:#8a7150; --text-dim:#5a5a5a; --line:#e5e2da;
+  --serif:'Bodoni Moda',serif; --sans:'Jost',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--serif)}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem clamp(1.2rem,4vw,3.5rem);position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);letter-spacing:.1em;font-size:1.05rem;font-weight:700}
+header nav{display:flex;gap:2rem;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);text-transform:uppercase;font-size:.85rem}
+
+.hero{position:relative;height:min(92vh,780px)}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:top}
+.hero-copy{position:absolute;bottom:0;left:0;padding:clamp(2rem,5vw,4rem);background:linear-gradient(0deg,rgba(0,0,0,.7),transparent);color:#fff;width:100%}
+.kicker{letter-spacing:.2em;font-size:.75rem;color:var(--accent);margin-bottom:1rem;text-transform:uppercase}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);max-width:16ch;margin-bottom:1.6rem;font-weight:500}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:.9rem 2rem;font-weight:500;letter-spacing:.03em;border:none;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:var(--accent)}
+.btn.outline{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+.btn.outline:hover{border-color:var(--accent);color:var(--accent)}
+
+.about{max-width:900px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;border-top:1px solid var(--line)}
+.about-grid h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.4rem;font-weight:500}
+.about-grid p{color:var(--text-dim);font-size:1.15rem;max-width:60ch}
+
+.book{max-width:1000px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;border-top:1px solid var(--line)}
+.book-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:center}
+.book-grid h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:.6rem 0 1rem;font-weight:500}
+.book-grid p{color:var(--text-dim);margin-bottom:1.6rem;max-width:44ch}
+
+.speaking{max-width:800px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;text-align:center;border-top:1px solid var(--line)}
+.speaking h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem;font-weight:500}
+.quote-rotator blockquote{font-size:clamp(1.3rem,3vw,1.8rem);font-style:italic;margin-bottom:1rem;font-family:var(--serif)}
+.quote-rotator p{color:var(--text-dim);font-size:.9rem;letter-spacing:.05em;text-transform:uppercase}
+
+.contact{max-width:560px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;border-top:1px solid var(--line)}
+.contact h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.6rem;font-weight:500}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.contact input,.contact textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--line);margin-bottom:1rem;font-family:var(--sans)}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1000px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.8rem;letter-spacing:.05em}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .book-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .form-row{grid-template-columns:1fr}
+}

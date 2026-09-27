@@ -1,0 +1,61 @@
+/* Terra Guard | Earthy bold + data stats (advanced: canvas progress ring + bar chart, animated counters) */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#f5f1e6; --surface:#fff; --ink:#1e2b1a; --accent:#3f7d3a; --accent2:#c96a2c; --text-dim:#5a6353; --line:#e0d9c4;
+  --display:'Archivo Black',sans-serif; --sans:'Archivo',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:400}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(245,241,230,.94);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
+.logo{font-family:var(--display);font-size:1.1rem}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.9rem;text-transform:uppercase}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:2px solid var(--ink);width:38px;height:38px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:2px solid var(--ink)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600;text-transform:uppercase}
+
+.hero{max-width:1000px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;margin-bottom:1.2rem}
+.hero p{color:var(--text-dim);max-width:52ch;margin:0 auto;font-size:1.1rem}
+
+.data{max-width:1100px;margin:0 auto;padding:0 1.5rem clamp(3rem,6vw,4rem)}
+.data-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:1.4rem;margin-bottom:1.6rem}
+.ring-card,.bar-card{background:var(--surface);border:2px solid var(--ink);border-radius:16px;padding:1.6rem;text-align:center}
+.ring-card p{margin-top:.8rem;color:var(--text-dim);font-size:.85rem}
+.panel-head{text-align:left;color:var(--text-dim);font-size:.8rem;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+canvas{max-width:100%;height:auto}
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;text-align:center}
+.stat{background:var(--ink);color:#fff;border-radius:16px;padding:1.6rem}
+.stat strong{display:block;font-family:var(--display);font-size:1.9rem;color:#a9d18e}
+.stat span{font-size:.85rem;opacity:.85}
+
+.missions{max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:2px solid var(--ink)}
+.missions h2{text-align:center;font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:2rem}
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.mission-card{background:var(--surface);border:2px solid var(--ink);border-radius:14px;overflow:hidden}
+.mission-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.mission-card h3{padding:1rem 1.2rem .3rem;font-size:1rem}
+.mission-card p{padding:0 1.2rem 1.2rem;color:var(--text-dim);font-size:.88rem;font-family:var(--sans)}
+
+.act{max-width:480px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:2px solid var(--ink);text-align:center}
+.act h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.6rem}
+.act input{width:100%;padding:.9rem 1.1rem;border:2px solid var(--ink);border-radius:8px;margin-bottom:1rem}
+.btn{background:var(--accent2);color:#fff;padding:.9rem 1.6rem;border:none;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--sans);text-transform:uppercase}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent);font-weight:700}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:2px solid var(--ink);color:var(--text-dim);font-size:.85rem;text-transform:uppercase}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .data-grid{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:1fr}
+  .mission-grid{grid-template-columns:1fr}
+}

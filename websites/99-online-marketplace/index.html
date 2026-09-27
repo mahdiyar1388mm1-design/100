@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketly — Buy and Sell Almost Anything</title>
+<meta name="description" content="Marketly is an online marketplace connecting local buyers and sellers across electronics, home goods, fashion, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Marketly</a>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search for anything...">
+  </div>
+  <nav aria-label="Primary">
+    <a href="#sell">Sell an Item</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#sell">Sell an Item</a></nav>
+
+<main id="top">
+  <section class="categories">
+    <div class="cat-row" id="catRow"></div>
+  </section>
+
+  <section class="listings" id="listings">
+    <div class="section-head">
+      <h1>Popular near you</h1>
+      <span id="resultCount"></span>
+    </div>
+    <div class="listing-grid" id="listingGrid"></div>
+  </section>
+
+  <section class="sell" id="sell">
+    <h2>Have something to sell?</h2>
+    <p>List your item in under two minutes — no fees for your first 5 listings.</p>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="ititle" placeholder="Item title" required>
+        <input type="text" id="iprice" placeholder="Price" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">List My Item</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>MARKETLY</p>
+  <p>© 2026 · Website 99 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

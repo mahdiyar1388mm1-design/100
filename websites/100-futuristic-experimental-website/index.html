@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Void // Studio — Experimental Digital Design Collective</title>
+<meta name="description" content="Void // Studio is an experimental digital design collective building generative, interactive, and WebGL-driven web experiences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="glCanvas" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">VOID<span>//</span>STUDIO</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#lab">Lab</a>
+    <a href="#connect">Connect</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#lab">Lab</a><a href="#connect">Connect</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1 class="glitch" data-text="WE BUILD THE WEB'S EDGE CASES.">WE BUILD THE WEB'S EDGE CASES.</h1>
+    <p>Void // Studio is a small collective of designers and engineers making generative, interactive, and shader-driven experiences for brands who want to feel like the future.</p>
+    <p class="coord" id="coordDisplay">x: 0000 · y: 0000</p>
+  </section>
+
+  <section class="work" id="work">
+    <h2>Selected experiments</h2>
+    <div class="exp-grid" id="expGrid"></div>
+  </section>
+
+  <section class="lab" id="lab">
+    <h2>The Lab</h2>
+    <p>We publish one open-source visual experiment every month — shaders, physics, generative type. No two look alike.</p>
+    <div class="lab-tags">
+      <span>#webgl</span><span>#shaders</span><span>#generative</span><span>#motion</span><span>#three.js</span><span>#canvas</span>
+    </div>
+  </section>
+
+  <section class="connect" id="connect">
+    <h2>Start a project</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmsg" rows="3" placeholder="What are we building?"></textarea>
+      <button type="submit" class="btn btn-block">Transmit</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>VOID // STUDIO</p>
+  <p>© 2026 · Website 100 / 100 — final portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

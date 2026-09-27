@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terra Guard — Protecting Forests, Restoring Balance</title>
+<meta name="description" content="Terra Guard is an environmental organization protecting old-growth forests and reversing carbon emissions through data-driven conservation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">🌍 TERRA GUARD</a>
+  <nav aria-label="Primary">
+    <a href="#data">Our Data</a>
+    <a href="#missions">Missions</a>
+    <a href="#act">Take Action</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#data">Our Data</a><a href="#missions">Missions</a><a href="#act">Take Action</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>PROTECT THE FOREST. RESTORE THE BALANCE.</h1>
+    <p>Terra Guard combines satellite data and boots-on-the-ground teams to stop illegal deforestation before it happens.</p>
+  </section>
+
+  <section class="data" id="data">
+    <div class="data-grid">
+      <div class="ring-card">
+        <canvas id="ringCanvas" width="180" height="180" role="img" aria-label="Progress ring showing 74 percent of 2026 forest protection goal reached"></canvas>
+        <p>74% of 2026 protection goal reached</p>
+      </div>
+      <div class="bar-card">
+        <div class="panel-head">Hectares protected per year</div>
+        <canvas id="barCanvas" width="480" height="220" role="img" aria-label="Bar chart of hectares protected per year, rising from 2021 to 2026"></canvas>
+      </div>
+    </div>
+    <div class="stat-strip">
+      <div class="stat"><strong id="stat1">0</strong><span>Hectares protected</span></div>
+      <div class="stat"><strong id="stat2">0</strong><span>Tons CO₂ offset</span></div>
+      <div class="stat"><strong id="stat3">0</strong><span>Rangers employed</span></div>
+    </div>
+  </section>
+
+  <section class="missions" id="missions">
+    <h2>Active missions</h2>
+    <div class="mission-grid">
+      <article class="mission-card"><img src="https://picsum.photos/seed/terra-1/400/280" alt="Aerial view of dense rainforest canopy" loading="lazy"><h3>Amazon Basin Watch</h3><p>Satellite monitoring across 2.1M hectares of rainforest.</p></article>
+      <article class="mission-card"><img src="https://picsum.photos/seed/terra-2/400/280" alt="Ranger team patrolling a forest reserve" loading="lazy"><h3>Congo Ranger Corps</h3><p>140 local rangers trained and equipped for anti-poaching patrol.</p></article>
+      <article class="mission-card"><img src="https://picsum.photos/seed/terra-3/400/280" alt="Reforestation saplings being planted" loading="lazy"><h3>Borneo Reforestation</h3><p>1.2 million native trees planted since 2022.</p></article>
+    </div>
+  </section>
+
+  <section class="act" id="act">
+    <h2>Take action</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn btn-block">Join the Movement</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>TERRA GUARD</p>
+  <p>© 2026 · Website 98 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

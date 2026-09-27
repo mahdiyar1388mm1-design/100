@@ -1,0 +1,67 @@
+/* Hope Bridge Foundation | Warm compassionate photography */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fffaf3; --surface:#fff; --ink:#2c2113; --accent:#d1793a; --accent2:#3f7d5c; --text-dim:#7a6b57; --line:#f0e2cd;
+  --serif:'Merriweather',serif; --sans:'Source Sans 3',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:700}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(255,250,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.2rem}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.9rem;flex:1;justify-content:center}
+header nav a:hover{color:var(--accent)}
+.btn.small{padding:.6rem 1.2rem;font-size:.85rem}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{position:relative;height:min(85vh,650px)}
+.hero img{width:100%;height:100%;object-fit:cover;filter:brightness(.7)}
+.hero-copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;color:#fff;padding:0 clamp(1.5rem,6vw,4rem)}
+.hero h1{font-size:clamp(2rem,5.5vw,3.2rem);max-width:16ch;margin-bottom:1rem}
+.hero p{max-width:44ch;margin-bottom:1.6rem;font-size:1.05rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.9rem 1.9rem;border-radius:8px;font-weight:600;border:none;cursor:pointer;font-family:var(--sans);width:fit-content}
+.btn:hover{background:#b56227}
+
+.impact{max-width:900px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem}
+.impact h2{text-align:center;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2rem}
+.impact-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;text-align:center}
+.stat strong{display:block;font-family:var(--serif);font-size:2.4rem;color:var(--accent)}
+.stat span{color:var(--text-dim);font-size:.9rem}
+
+.causes{max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.causes h2{text-align:center;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2rem}
+.cause-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.cause-card{background:var(--surface);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.cause-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.cause-card h3{padding:1rem 1.2rem .3rem;font-size:1.1rem}
+.cause-card p{padding:0 1.2rem 1.2rem;color:var(--text-dim);font-size:.9rem}
+
+.stories{max-width:800px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;text-align:center;border-top:1px solid var(--line)}
+.stories h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2rem}
+.stories blockquote{font-size:clamp(1.2rem,3vw,1.6rem);font-style:italic;margin-bottom:1rem}
+.stories p{color:var(--text-dim);font-size:.9rem}
+
+.donate{max-width:480px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.donate h2{text-align:center;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:1.6rem}
+.amount-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1.2rem}
+.amount{background:var(--surface);border:2px solid var(--line);border-radius:8px;padding:.7rem;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.amount.active{border-color:var(--accent);color:var(--accent);background:#fdf0e6}
+.donate input{width:100%;padding:.9rem 1.1rem;border:1px solid var(--line);border-radius:8px;margin-bottom:1rem}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2);font-weight:600;text-align:center}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav,.header .btn.small{display:none}
+  .menu-btn{display:block}
+  .impact-stats,.cause-grid{grid-template-columns:1fr}
+  .amount-row{grid-template-columns:repeat(2,1fr)}
+}

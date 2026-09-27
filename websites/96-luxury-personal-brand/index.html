@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victoria Sterling — Executive Coach &amp; Author</title>
+<meta name="description" content="Victoria Sterling is an executive coach, keynote speaker, and bestselling author helping leaders build enduring companies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">VICTORIA STERLING</a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#book">The Book</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#about">About</a><a href="#book">The Book</a><a href="#speaking">Speaking</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/victoria-hero/1400/1700" alt="Portrait of Victoria Sterling in a tailored black blazer">
+    <div class="hero-copy">
+      <p class="kicker">EXECUTIVE COACH · AUTHOR · SPEAKER</p>
+      <h1>Lead with clarity. Build without burnout.</h1>
+      <a href="#contact" class="btn">Work With Victoria</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-grid">
+      <h2>About</h2>
+      <p>For fifteen years, Victoria Sterling has advised founders and executives at companies including three unicorn startups and two Fortune 500 firms. Her work centers on one idea: sustainable leadership outperforms heroic leadership, every time.</p>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="book-grid">
+      <img src="https://picsum.photos/seed/victoria-book/500/650" alt="Cover of the book The Quiet Advantage by Victoria Sterling">
+      <div>
+        <p class="kicker">NEW YORK TIMES BESTSELLER</p>
+        <h2>The Quiet Advantage</h2>
+        <p>A field guide for leaders who want to build enduring companies without sacrificing themselves in the process.</p>
+        <a href="#" class="btn outline">Order the Book</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="speaking" id="speaking">
+    <h2>Speaking</h2>
+    <div class="quote-rotator">
+      <blockquote id="quoteText"></blockquote>
+      <p id="quoteAuthor"></p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in touch</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="text" id="corg" placeholder="Organization" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmsg" rows="3" placeholder="How can Victoria help?"></textarea>
+      <button type="submit" class="btn btn-block">Send Message</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>VICTORIA STERLING</p>
+  <p>© 2026 · Website 96 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

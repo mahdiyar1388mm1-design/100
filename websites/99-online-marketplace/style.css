@@ -1,0 +1,60 @@
+/* Marketly | General marketplace grid */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff; --surface:#f5f6f8; --ink:#1a1c22; --accent:#2f80ed; --accent2:#eb5757; --text-dim:#666c7a; --line:#e6e8ee;
+  --font:'Rubik',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6}
+a{color:inherit;text-decoration:none}
+h1,h2{font-weight:700}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:1.2rem;color:var(--accent)}
+.search-wrap{flex:1;max-width:480px}
+.search-wrap input{width:100%;padding:.7rem 1rem;border:1px solid var(--line);border-radius:100px;background:var(--surface)}
+header nav{display:flex}
+header nav a{background:var(--accent2);color:#fff;padding:.6rem 1.2rem;border-radius:100px;font-weight:600;font-size:.85rem;white-space:nowrap}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.categories{max-width:1200px;margin:0 auto;padding:1.4rem 1.5rem 0}
+.cat-row{display:flex;gap:.7rem;overflow-x:auto;padding-bottom:.5rem}
+.cat-chip{flex-shrink:0;background:var(--surface);border:1px solid var(--line);padding:.6rem 1.2rem;border-radius:100px;font-weight:600;font-size:.85rem;cursor:pointer;white-space:nowrap}
+.cat-chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.listings{max-width:1200px;margin:0 auto;padding:1.5rem 1.5rem clamp(3rem,6vw,4rem)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1.2rem}
+.section-head h1{font-size:clamp(1.4rem,3.5vw,1.8rem)}
+.section-head span{color:var(--text-dim);font-size:.85rem}
+.listing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem}
+.listing-card{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.listing-card img{aspect-ratio:1;object-fit:cover;width:100%}
+.listing-body{padding:.9rem 1rem}
+.listing-price{font-weight:700;font-size:1.1rem}
+.listing-title{color:var(--text-dim);font-size:.88rem;margin:.2rem 0 .4rem}
+.listing-meta{display:flex;justify-content:space-between;color:var(--text-dim);font-size:.78rem}
+
+.sell{max-width:520px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line);text-align:center}
+.sell h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:.6rem}
+.sell > p{color:var(--text-dim);margin-bottom:1.6rem}
+.sell form{text-align:left}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.sell input{width:100%;padding:.85rem 1rem;border:1px solid var(--line);border-radius:8px;margin-bottom:1rem}
+.btn{background:var(--accent);color:#fff;padding:.9rem 1.6rem;border:none;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--font)}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent);text-align:center}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  .search-wrap,header nav{display:none}
+  .menu-btn{display:block}
+}
+@media (max-width:560px){
+  .form-row{grid-template-columns:1fr}
+}

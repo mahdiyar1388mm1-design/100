@@ -1,0 +1,70 @@
+/* Void // Studio | Experimental WebGL interactive (advanced: raw WebGL shader background w/ canvas 2D fallback, glitch type, grain overlay) */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#020203; --surface:#0c0c10; --ink:#f0f0f5; --accent:#ff2e63; --accent2:#08d9d6; --text-dim:#8d8d9c; --line:#232330;
+  --display:'Unbounded',sans-serif; --mono:'Space Mono',monospace;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--mono);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--display)}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+
+#glCanvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.header,main,.footer{position:relative;z-index:2}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(2,2,3,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:700;letter-spacing:.05em;font-size:1rem}
+.logo span{color:var(--accent)}
+header nav{display:flex;gap:1.8rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em}
+header nav a:hover{color:var(--accent2)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);width:38px;height:38px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line);position:relative;z-index:3}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);text-transform:uppercase;font-size:.85rem}
+
+.hero{max-width:1100px;margin:0 auto;padding:clamp(4rem,10vw,8rem) 1.5rem clamp(3rem,6vw,4rem);position:relative}
+.glitch{font-size:clamp(2rem,7vw,4.6rem);font-weight:900;line-height:1.05;position:relative;margin-bottom:2rem}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;overflow:hidden}
+.glitch::before{color:var(--accent);clip-path:inset(0 0 60% 0);animation:glitchTop 3.5s infinite linear;}
+.glitch::after{color:var(--accent2);clip-path:inset(60% 0 0 0);animation:glitchBottom 3.5s infinite linear;}
+@keyframes glitchTop{0%,92%{transform:translate(0,0)}93%{transform:translate(-3px,-2px)}95%{transform:translate(3px,1px)}97%{transform:translate(-2px,2px)}100%{transform:translate(0,0)}}
+@keyframes glitchBottom{0%,92%{transform:translate(0,0)}93%{transform:translate(3px,2px)}95%{transform:translate(-3px,-1px)}97%{transform:translate(2px,-2px)}100%{transform:translate(0,0)}}
+.hero p{color:var(--text-dim);max-width:56ch;font-size:1rem;margin-bottom:1.6rem}
+.coord{color:var(--accent2);font-size:.8rem;letter-spacing:.05em}
+
+.work{max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.work h2,.lab h2,.connect h2{font-family:var(--display);font-size:clamp(1.5rem,3.5vw,2.2rem);margin-bottom:2rem;text-transform:uppercase}
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.exp-card{position:relative;border:1px solid var(--line);border-radius:4px;overflow:hidden;aspect-ratio:4/5}
+.exp-card img{width:100%;height:100%;object-fit:cover;filter:grayscale(.5) contrast(1.1);transition:transform .4s, filter .4s}
+.exp-card:hover img{transform:scale(1.06);filter:grayscale(0) contrast(1.1)}
+.exp-cap{position:absolute;bottom:0;left:0;right:0;padding:1rem;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent);font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+
+.lab{max-width:800px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.lab p{color:var(--text-dim);margin-bottom:1.4rem}
+.lab-tags{display:flex;flex-wrap:wrap;gap:.6rem}
+.lab-tags span{border:1px solid var(--accent2);color:var(--accent2);padding:.4rem .9rem;border-radius:100px;font-size:.8rem}
+
+.connect{max-width:520px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.connect input,.connect textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);margin-bottom:1rem;border-radius:4px;font-family:var(--mono)}
+.btn{background:var(--accent);color:#fff;padding:.9rem 1.6rem;border:none;border-radius:4px;font-weight:700;cursor:pointer;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em}
+.btn:hover{background:#d61f4d}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.8rem;text-transform:uppercase}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .exp-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .exp-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  .glitch::before,.glitch::after{animation:none}
+}
