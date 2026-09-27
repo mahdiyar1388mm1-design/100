@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ironclad Build — Commercial &amp; Industrial Construction</title>
+<meta name="description" content="Ironclad Build delivers commercial and industrial construction projects on time, on budget, with a perfect safety record across 180 projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">IRONCLAD<span>BUILD</span></a>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#safety">Safety</a>
+    <a href="#quote">Get a Quote</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#safety">Safety</a><a href="#quote">Get a Quote</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="tape" aria-hidden="true"></div>
+    <img src="https://picsum.photos/seed/ironclad-hero/1600/900" alt="Steel-frame commercial building under construction at sunset">
+    <div class="hero-copy">
+      <h1>BUILT ON TIME.<br>BUILT TO CODE.</h1>
+      <p>180 commercial and industrial projects delivered across the region — zero lost-time incidents in six years.</p>
+      <a href="#quote" class="btn">Request a Quote</a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>180</strong><span>Projects Delivered</span></div>
+    <div><strong>6 yrs</strong><span>Zero Lost-Time Incidents</span></div>
+    <div><strong>$420M</strong><span>Total Project Value</span></div>
+    <div><strong>98%</strong><span>On-Time Completion</span></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we build</h2>
+    <div class="service-grid">
+      <div class="service-card"><span class="icon">⛏</span><h3>Commercial Construction</h3><p>Office, retail and mixed-use builds from ground-up to fit-out.</p></div>
+      <div class="service-card"><span class="icon">🏭</span><h3>Industrial &amp; Warehousing</h3><p>Logistics centers and manufacturing facilities engineered for throughput.</p></div>
+      <div class="service-card"><span class="icon">🔧</span><h3>Renovation &amp; Retrofit</h3><p>Structural upgrades and seismic retrofits on occupied buildings.</p></div>
+      <div class="service-card"><span class="icon">📐</span><h3>Design-Build</h3><p>Single point of accountability from architectural concept to handover.</p></div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Recent projects</h2>
+    <div class="project-grid">
+      <article><img src="https://picsum.photos/seed/ic1/500/380" alt="Completed distribution center exterior" loading="lazy"><h3>Meridian Distribution Center</h3><p>310,000 sqft · Completed 2025</p></article>
+      <article><img src="https://picsum.photos/seed/ic2/500/380" alt="Completed office tower exterior" loading="lazy"><h3>Harbor Point Office Tower</h3><p>12 floors · Completed 2024</p></article>
+      <article><img src="https://picsum.photos/seed/ic3/500/380" alt="Completed manufacturing plant exterior" loading="lazy"><h3>Aldergate Manufacturing Plant</h3><p>180,000 sqft · Completed 2023</p></article>
+    </div>
+  </section>
+
+  <section class="safety" id="safety">
+    <h2>Safety first, always</h2>
+    <div class="cert-row">
+      <span>OSHA VPP Star Site</span>
+      <span>ISO 45001 Certified</span>
+      <span>AGC Safety Excellence Award</span>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <h2>Request a project quote</h2>
+    <form id="quoteForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="qname" placeholder="Full name" required>
+        <input type="email" id="qemail" placeholder="Email" required>
+      </div>
+      <select id="qtype">
+        <option>Project type: Commercial</option>
+        <option>Project type: Industrial</option>
+        <option>Project type: Renovation</option>
+        <option>Project type: Design-Build</option>
+      </select>
+      <textarea id="qmessage" rows="4" placeholder="Project details, timeline, and budget range"></textarea>
+      <button type="submit" class="btn btn-block">Submit Request</button>
+      <p class="form-note" id="quoteNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">IRONCLAD<span>BUILD</span></span>
+  <p>© 2026 Ironclad Build Co. · Website 23 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

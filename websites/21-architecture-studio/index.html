@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Meridian — Architecture</title>
+<meta name="description" content="Studio Meridian is a 14-person architecture practice designing quiet, material-honest buildings across residential and civic work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">STUDIO MERIDIAN</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#practice">Practice</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">＋</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#practice">Practice</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <p class="index">001 / STUDIO</p>
+    <h1>We design the pause<br>between rooms.</h1>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work-list" id="workList">
+      <button class="work-row active" data-project="0">
+        <span class="w-num">01</span><span class="w-name">House of Two Courtyards</span><span class="w-loc">Kyoto, Japan</span>
+      </button>
+      <button class="work-row" data-project="1">
+        <span class="w-num">02</span><span class="w-name">Meridian Civic Library</span><span class="w-loc">Portland, USA</span>
+      </button>
+      <button class="work-row" data-project="2">
+        <span class="w-num">03</span><span class="w-name">Stonewell Residence</span><span class="w-loc">Cotswolds, UK</span>
+      </button>
+      <button class="work-row" data-project="3">
+        <span class="w-num">04</span><span class="w-name">Folded Roof Pavilion</span><span class="w-loc">Oslo, Norway</span>
+      </button>
+    </div>
+    <div class="work-preview">
+      <img id="workImg" src="https://picsum.photos/seed/meridian0/900/1100" alt="House of Two Courtyards, a minimalist concrete residence in Kyoto">
+      <p id="workDesc">A residence organized around two enclosed courtyards, using board-formed concrete and shoji-inspired sliding screens to modulate light through the day.</p>
+    </div>
+  </section>
+
+  <section class="practice" id="practice">
+    <h2>Practice</h2>
+    <div class="principles">
+      <div><span>01</span><p>Material honesty — nothing is dressed to look like something else.</p></div>
+      <div><span>02</span><p>Light is a building material, drawn and detailed like any other.</p></div>
+      <div><span>03</span><p>A building should age visibly, and better, over fifty years.</p></div>
+    </div>
+    <div class="stats">
+      <div><strong>14</strong><span>architects</span></div>
+      <div><strong>62</strong><span>completed projects</span></div>
+      <div><strong>9</strong><span>design awards</span></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Start a project</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmessage" rows="4" placeholder="Tell us about the site and program"></textarea>
+      <button type="submit" class="btn">Send Inquiry</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>STUDIO MERIDIAN — Architecture &amp; Interiors</p>
+  <p>© 2026 · Website 21 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

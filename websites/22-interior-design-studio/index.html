@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atelier Lune — Interior Design Studio</title>
+<meta name="description" content="Atelier Lune designs quietly luxurious interiors for homes and boutique hospitality. Browse the portfolio and start a consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Atelier Lune</a>
+  <nav aria-label="Primary">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#feature">Feature</a>
+    <a href="#team">Team</a>
+    <a href="#consult">Consult</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#portfolio">Portfolio</a><a href="#feature">Feature</a><a href="#team">Team</a><a href="#consult">Consult</a></nav>
+
+<main id="top">
+  <section class="masthead">
+    <p class="issue">Issue No. 14 — Interiors</p>
+    <h1>Rooms that hold<br>their quiet.</h1>
+    <p class="dek">Atelier Lune designs homes, boutique hotels and private clubs across Europe — led by principal designer Margaux Lune.</p>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-grid">
+      <figure class="span-2"><img src="https://picsum.photos/seed/lune1/900/620" alt="Living room with plaster walls and a linen sofa, Atelier Lune project"><figcaption>Villa Sable — Provence, France</figcaption></figure>
+      <figure><img src="https://picsum.photos/seed/lune2/500/620" alt="Boutique hotel lobby with travertine floors"><figcaption>Hôtel Marceline — Lyon</figcaption></figure>
+      <figure><img src="https://picsum.photos/seed/lune3/500/620" alt="Kitchen with fluted oak cabinetry"><figcaption>The Aldergate Flat — London</figcaption></figure>
+      <figure class="span-2"><img src="https://picsum.photos/seed/lune4/900/620" alt="Bedroom with sculptural pendant light"><figcaption>Casa Lira — Lisbon</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="feature" id="feature">
+    <div class="feature-text">
+      <p class="dropcap">M</p>
+      <p>argaux Lune founded the studio in 2015 after a decade designing hospitality interiors across Paris and Milan. Her approach favours restraint: plaster over paint, reclaimed stone over new, and never more than three materials in a single room.</p>
+      <p>The studio now leads a team of eleven, working on residential and boutique hospitality projects across eight countries — each one built around what she calls "the discipline of leaving things out."</p>
+      <blockquote>"A room finishes itself. Our job is to know when to stop."</blockquote>
+    </div>
+    <div class="compare-wrap">
+      <p class="compare-label">Before → After: The Aldergate Flat</p>
+      <div class="compare-slider" id="compareSlider">
+        <img src="https://picsum.photos/seed/lune-after/800/560" alt="Aldergate Flat living room after renovation" class="after">
+        <div class="before-wrap" id="beforeWrap"><img src="https://picsum.photos/seed/lune-before/800/560" alt="Aldergate Flat living room before renovation"></div>
+        <input type="range" id="compareRange" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <h2>The studio</h2>
+    <div class="team-grid">
+      <div><img src="https://picsum.photos/seed/lune-team1/300/360" alt="Margaux Lune, Principal Designer"><h3>Margaux Lune</h3><p>Principal Designer</p></div>
+      <div><img src="https://picsum.photos/seed/lune-team2/300/360" alt="Théo Bernard, Head of Projects"><h3>Théo Bernard</h3><p>Head of Projects</p></div>
+      <div><img src="https://picsum.photos/seed/lune-team3/300/360" alt="Ines Costa, Materials Lead"><h3>Ines Costa</h3><p>Materials Lead</p></div>
+    </div>
+  </section>
+
+  <section class="consult" id="consult">
+    <h2>Start a project</h2>
+    <form id="consultForm" novalidate>
+      <input type="text" id="cname" placeholder="Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <select id="cbudget"><option>Budget: $50k–$150k</option><option>Budget: $150k–$400k</option><option>Budget: $400k+</option></select>
+      <button type="submit" class="btn">Request a Consultation</button>
+      <p class="form-note" id="consultNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo">Atelier Lune</p>
+  <p>© 2026 Atelier Lune Interiors · Website 22 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

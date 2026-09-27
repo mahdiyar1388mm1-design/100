@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cognita AI — Reasoning Infrastructure for Enterprises</title>
+<meta name="description" content="Cognita AI builds reasoning infrastructure that lets enterprises deploy reliable, explainable AI agents in weeks, not quarters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">◆ Cognita<span>AI</span></a>
+  <nav aria-label="Primary">
+    <a href="#platform">Platform</a>
+    <a href="#models">Models</a>
+    <a href="#trust">Trust</a>
+  </nav>
+  <a href="#contact" class="btn btn-small">Book a Demo</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#platform">Platform</a><a href="#models">Models</a><a href="#trust">Trust</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="networkCanvas" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="kicker">Series B · Backed by Lattice Ventures</p>
+      <h1>Reasoning infrastructure for enterprise AI.</h1>
+      <p class="lede">Cognita gives your team explainable, auditable AI agents that plug into existing systems — deployed in weeks, not quarters.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn">Book a Demo</a>
+        <a href="#platform" class="btn btn-ghost">Explore the Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <div><span class="metric-num" data-target="340">0</span><span>ms average latency</span></div>
+    <div><span class="metric-num" data-target="99">0</span><span>% uptime SLA</span></div>
+    <div><span class="metric-num" data-target="120">0</span><span>enterprise deployments</span></div>
+  </section>
+
+  <section class="platform" id="platform">
+    <h2>One platform, three layers</h2>
+    <div class="layer-grid">
+      <div class="layer-card"><span class="l-num">01</span><h3>Reasoning Engine</h3><p>Chain-of-thought orchestration with built-in fact verification and citation tracing.</p></div>
+      <div class="layer-card"><span class="l-num">02</span><h3>Agent Runtime</h3><p>Deploy autonomous agents with guardrails, approval steps, and full audit logs.</p></div>
+      <div class="layer-card"><span class="l-num">03</span><h3>Enterprise Fabric</h3><p>Connects to your data warehouse, CRM and internal APIs without custom pipelines.</p></div>
+    </div>
+  </section>
+
+  <section class="models" id="models">
+    <h2>Model-agnostic by design</h2>
+    <p class="sub">Bring your own model, or use Cognita's tuned reasoning models — switch anytime.</p>
+    <div class="model-tabs" role="tablist">
+      <button class="model-tab active" role="tab" aria-selected="true" data-model="cognita">Cognita R1</button>
+      <button class="model-tab" role="tab" aria-selected="false" data-model="byo">Bring Your Own Model</button>
+      <button class="model-tab" role="tab" aria-selected="false" data-model="hybrid">Hybrid Routing</button>
+    </div>
+    <div class="model-panel" id="modelPanel"></div>
+  </section>
+
+  <section class="trust" id="trust">
+    <h2>Built for regulated industries</h2>
+    <div class="trust-grid">
+      <div>SOC 2 Type II</div>
+      <div>HIPAA Ready</div>
+      <div>GDPR Compliant</div>
+      <div>On-Prem Available</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>See Cognita on your data</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Work email" required>
+      </div>
+      <input type="text" id="ccompany" placeholder="Company">
+      <button type="submit" class="btn btn-block">Book a Demo</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">◆ Cognita<span>AI</span></span>
+  <p>© 2026 Cognita AI, Inc. · Website 25 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

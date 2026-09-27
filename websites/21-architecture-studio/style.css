@@ -1,0 +1,61 @@
+/* Studio Meridian — Architecture Studio | Japanese minimal monochrome grid */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#181818; --paper:#ffffff; --grey:#8a8a8a; --line:#e4e4e4;
+  --serif:'EB Garamond',serif; --sans:'Noto Sans',sans-serif;
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--serif);font-weight:400}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.6rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.logo{font-size:.95rem;letter-spacing:.14em}
+header nav{display:flex;gap:2.2rem;font-size:.85rem}
+header nav a:hover{color:var(--grey)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:36px;height:36px;font-size:1.2rem}
+.mobile-nav{display:none;flex-direction:column;border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{max-width:1100px;margin:0 auto;padding:clamp(4rem,10vw,7rem) 1.5rem clamp(3rem,6vw,5rem)}
+.index{letter-spacing:.14em;font-size:.78rem;color:var(--grey);margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.25;max-width:16ch}
+
+.work{max-width:1320px;margin:0 auto;padding:clamp(2rem,5vw,3rem) 1.5rem clamp(4rem,7vw,6rem);display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;border-top:1px solid var(--line)}
+.work-list{display:flex;flex-direction:column}
+.work-row{display:grid;grid-template-columns:40px 1fr auto;gap:1rem;align-items:baseline;padding:1.5rem 0;border-bottom:1px solid var(--line);background:none;border-left:none;border-right:none;border-top:none;text-align:left;cursor:pointer;font-family:inherit;color:inherit}
+.w-num{color:var(--grey);font-size:.85rem}
+.w-name{font-family:var(--serif);font-size:1.3rem}
+.w-loc{color:var(--grey);font-size:.85rem}
+.work-row.active .w-name{color:var(--ink);text-decoration:underline}
+.work-preview{position:sticky;top:6rem;align-self:start}
+.work-preview img{margin-bottom:1.2rem;filter:grayscale(.1)}
+.work-preview p{color:#4c4c4c;max-width:48ch}
+
+.practice{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;border-top:1px solid var(--line)}
+.practice h2,.contact h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:3rem}
+.principles span{color:var(--grey);font-size:.85rem;display:block;margin-bottom:.6rem}
+.stats{display:flex;gap:3rem;border-top:1px solid var(--line);padding-top:2rem}
+.stats strong{display:block;font-family:var(--serif);font-size:2rem}
+.stats span{color:var(--grey);font-size:.85rem}
+
+.contact{max-width:640px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;border-top:1px solid var(--line)}
+.contact input,.contact textarea{width:100%;padding:.9rem 0;border:none;border-bottom:1px solid var(--line);margin-bottom:1.4rem;font-family:inherit;background:none}
+.contact input:focus,.contact textarea:focus{outline:none;border-color:var(--ink)}
+.btn{background:var(--ink);color:#fff;padding:.9rem 2rem;border:none;font-size:.85rem;letter-spacing:.04em;cursor:pointer}
+.btn:hover{background:#3a3a3a}
+.form-note{margin-top:1rem;color:var(--grey)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:2rem clamp(1.2rem,4vw,3rem);border-top:1px solid var(--line);font-size:.8rem;color:var(--grey)}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .work{grid-template-columns:1fr}
+  .work-preview{position:static}
+  .principles{grid-template-columns:1fr}
+}
