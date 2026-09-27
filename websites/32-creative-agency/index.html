@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAUS OF IDEAS — Creative Agency</title>
+<meta name="description" content="Haus of Ideas is a creative agency that makes brands impossible to ignore. Branding, campaigns, and things that break the internet a little.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">HAUS<br>OF<br>IDEAS</a>
+  <nav aria-label="Primary">
+    <a href="#work">[ WORK ]</a>
+    <a href="#services">[ SERVICES ]</a>
+    <a href="#contact">[ CONTACT ]</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">[MENU]</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>WE MAKE BRANDS<br>PEOPLE CAN'T<br>STOP TALKING ABOUT.</h1>
+    <p>// no moodboards. no stock photos of handshakes. just work that gets talked about.</p>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>BRANDING</span><span>CAMPAIGNS</span><span>ART DIRECTION</span><span>SOCIAL</span><span>WEB</span>
+      <span>BRANDING</span><span>CAMPAIGNS</span><span>ART DIRECTION</span><span>SOCIAL</span><span>WEB</span>
+    </div>
+  </div>
+
+  <section class="work" id="work">
+    <div class="work-item"><img src="https://picsum.photos/seed/haus1/500/400" alt="Rebrand campaign visuals for a sneaker startup" loading="lazy"><div><h3>01 — SOLESTEP</h3><p>Full rebrand + launch campaign for a sneaker resale startup.</p></div></div>
+    <div class="work-item reverse"><img src="https://picsum.photos/seed/haus2/500/400" alt="Guerrilla campaign posters for an energy drink brand" loading="lazy"><div><h3>02 — VOLTZ ENERGY</h3><p>Guerrilla campaign that got banned in two cities. Worth it.</p></div></div>
+    <div class="work-item"><img src="https://picsum.photos/seed/haus3/500/400" alt="App icon and identity system for a fintech app" loading="lazy"><div><h3>03 — CASHLINE</h3><p>Identity system for a fintech app that doesn't look like a bank.</p></div></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>[ WHAT WE DO ]</h2>
+    <ul class="service-list">
+      <li><span>01</span> Brand Identity</li>
+      <li><span>02</span> Campaign Strategy</li>
+      <li><span>03</span> Art Direction</li>
+      <li><span>04</span> Social &amp; Content</li>
+      <li><span>05</span> Web Design</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>[ SAY SOMETHING ]</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="YOUR NAME" required>
+      <input type="email" id="cemail" placeholder="YOUR EMAIL" required>
+      <textarea id="cmessage" rows="3" placeholder="WHAT'S THE PROJECT?"></textarea>
+      <button type="submit" class="btn">SEND IT</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>HAUS OF IDEAS — EST. 2018</p>
+  <p>© 2026 · Website 32 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

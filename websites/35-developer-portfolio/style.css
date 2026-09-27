@@ -1,0 +1,61 @@
+/* Alex Kim — Developer Portfolio | Terminal/code dark */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#0b0e0f; --surface:#12171a; --green:#5ef29c; --amber:#ffcf5c; --text:#d6e3e0; --text-dim:#7c8c88; --line:#1e2427;
+  --mono:'JetBrains Mono',monospace;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h3{font-weight:700}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+
+.header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(11,14,15,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-weight:700}
+.logo span{color:var(--green)}
+header nav{display:flex;gap:1.6rem;color:var(--text-dim);font-size:.92rem}
+header nav a:hover{color:var(--green)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:.4rem .8rem;font-family:inherit}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{max-width:800px;margin:0 auto;padding:clamp(3rem,7vw,5rem) 1.5rem}
+.prompt{color:var(--text-dim);margin-bottom:.6rem}
+.prompt::before{content:"";}
+.hero h1{font-size:clamp(1.8rem,5vw,2.8rem);color:var(--green);margin-bottom:1.2rem;min-height:1.3em}
+.hero h1::after{content:"▍";animation:blink 1s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+.hero-desc{color:var(--text-dim);max-width:60ch;margin-bottom:1.8rem}
+.hero-links{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--green);color:#04140c;padding:.8rem 1.4rem;border:none;cursor:pointer;font-family:inherit;font-weight:700}
+.btn:hover{background:#8ff7bd}
+.btn-ghost{background:none;border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green)}
+
+.projects,.stack,.contact{max-width:1000px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.repo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
+.repo-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.3rem;display:block;transition:.2s}
+.repo-card:hover{border-color:var(--green);transform:translateY(-3px)}
+.repo-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--amber)}
+.repo-head h3{color:var(--text);font-size:1.05rem;flex:1}
+.lang{color:var(--text-dim);font-size:.78rem}
+.repo-card p{color:var(--text-dim);font-size:.9rem;margin-bottom:.9rem}
+.repo-meta{display:flex;gap:1rem;font-size:.8rem;color:var(--amber)}
+
+.code-block{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.4rem;overflow-x:auto;color:var(--green);font-size:.88rem}
+
+.contact form{max-width:500px;display:flex;flex-direction:column}
+.contact label{color:var(--text-dim);margin-top:1rem;margin-bottom:.4rem;font-size:.88rem}
+.contact input,.contact textarea{background:var(--surface);border:1px solid var(--line);color:var(--text);padding:.7rem .9rem;font-family:inherit}
+.contact button{margin-top:1.4rem;align-self:flex-start}
+.form-note{margin-top:1rem;color:var(--green)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1000px;margin:0 auto;padding:1.6rem 1.5rem;color:var(--text-dim);font-size:.82rem;border-top:1px solid var(--line)}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .repo-grid{grid-template-columns:1fr}
+}

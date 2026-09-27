@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Reyes — Product Designer</title>
+<meta name="description" content="Jordan Reyes is a freelance product designer helping startups design and ship better software. View selected work and get in touch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Jordan Reyes</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/jordan-portrait/240/240" alt="Portrait of Jordan Reyes" class="portrait">
+    <div>
+      <p class="status">● Available for new projects — Nov 2026</p>
+      <h1>Product designer helping startups ship things people actually enjoy using.</h1>
+      <p class="lede">8 years designing B2B and consumer software. Previously at Notion and a Y Combinator startup.</p>
+      <div class="hero-links">
+        <a href="#work" class="btn">See My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <h2>Selected work</h2>
+    <div class="work-grid">
+      <a class="work-card" href="#"><img src="https://picsum.photos/seed/jr1/600/420" alt="Onboarding flow redesign case study thumbnail" loading="lazy"><h3>Redesigning Onboarding for a 40k-user SaaS</h3><p>Reduced time-to-value from 12 minutes to 3.</p></a>
+      <a class="work-card" href="#"><img src="https://picsum.photos/seed/jr2/600/420" alt="Design system case study thumbnail" loading="lazy"><h3>Building a Design System from Scratch</h3><p>Shipped 60+ components used across 4 product teams.</p></a>
+      <a class="work-card" href="#"><img src="https://picsum.photos/seed/jr3/600/420" alt="Mobile app redesign case study thumbnail" loading="lazy"><h3>Mobile App Redesign for a Fintech Startup</h3><p>App Store rating improved from 3.2 to 4.7 stars.</p></a>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="tl-row"><span class="tl-year">2022–Now</span><div><h3>Freelance Product Designer</h3><p>Working with 6 startups across fintech, healthtech and dev tools.</p></div></div>
+      <div class="tl-row"><span class="tl-year">2019–2022</span><div><h3>Senior Product Designer, Notion</h3><p>Led design for the Notion databases team.</p></div></div>
+      <div class="tl-row"><span class="tl-year">2017–2019</span><div><h3>Product Designer, Y Combinator Startup</h3><p>First design hire, employee #6.</p></div></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's work together</h2>
+    <p>Currently taking on 1–2 new engagements starting November 2026.</p>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmessage" rows="3" placeholder="What are you working on?"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Jordan Reyes — Product Designer</p>
+  <p>© 2026 · Website 34 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

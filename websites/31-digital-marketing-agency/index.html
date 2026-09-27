@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surge Digital — Performance Marketing That Compounds</title>
+<meta name="description" content="Surge Digital runs paid, SEO and lifecycle marketing for growth-stage brands. See the real numbers behind our client campaigns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">SURGE<span>.</span></a>
+  <nav aria-label="Primary">
+    <a href="#results">Results</a>
+    <a href="#services">Services</a>
+    <a href="#cases">Case Studies</a>
+  </nav>
+  <a href="#contact" class="btn btn-small">Get a Proposal</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#results">Results</a><a href="#services">Services</a><a href="#cases">Case Studies</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>MARKETING THAT<br><span class="glow">COMPOUNDS.</span></h1>
+    <p>We don't sell impressions. We build paid, SEO and lifecycle systems that get cheaper to run every month.</p>
+    <a href="#contact" class="btn">Get a Free Growth Audit</a>
+  </section>
+
+  <section class="results" id="results">
+    <div class="result"><span class="r-num" data-target="340">0</span><span>% avg. ROAS lift</span></div>
+    <div class="result"><span class="r-num" data-target="58">0</span><span>M ad spend managed</span></div>
+    <div class="result"><span class="r-num" data-target="92">0</span><span>client retention rate %</span></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we run</h2>
+    <div class="service-acc" id="serviceAcc">
+      <div class="acc-item">
+        <button class="acc-head active">Paid Media <span>+</span></button>
+        <div class="acc-body open"><p>Meta, Google, TikTok and programmatic — managed with weekly creative testing cycles.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">SEO &amp; Content <span>+</span></button>
+        <div class="acc-body"><p>Technical SEO audits plus a content engine built to rank in 90 days, not 12 months.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Lifecycle &amp; CRM <span>+</span></button>
+        <div class="acc-body"><p>Email and SMS flows that turn one-time buyers into repeat customers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <h2>Case studies</h2>
+    <div class="case-grid">
+      <article class="case-card"><img src="https://picsum.photos/seed/surge1/500/340" alt="Case study graph for a DTC skincare brand" loading="lazy"><h3>DTC Skincare Brand</h3><p>3.2x ROAS in 90 days across Meta &amp; TikTok</p></article>
+      <article class="case-card"><img src="https://picsum.photos/seed/surge2/500/340" alt="Case study graph for a B2B SaaS company" loading="lazy"><h3>B2B SaaS Company</h3><p>210% increase in organic demo requests</p></article>
+      <article class="case-card"><img src="https://picsum.photos/seed/surge3/500/340" alt="Case study graph for a furniture retailer" loading="lazy"><h3>Furniture Retailer</h3><p>41% lower CAC after full-funnel rebuild</p></article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get a free growth audit</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Work email" required>
+      </div>
+      <input type="text" id="cwebsite" placeholder="Website URL">
+      <button type="submit" class="btn btn-block">Request Audit</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">SURGE<span>.</span></span>
+  <p>© 2026 Surge Digital · Website 31 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

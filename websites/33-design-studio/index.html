@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Nova — Design Studio</title>
+<meta name="description" content="Studio Nova is a small design studio focused on one project at a time. Brand identity, product design, and editorial design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Studio Nova</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>We take on <em>one</em> project at a time.</h1>
+    <p>Studio Nova is a two-person design practice. No account managers, no bloated decks — just the work.</p>
+  </section>
+
+  <section class="work" id="work">
+    <article class="work-entry">
+      <p class="year">2025</p>
+      <h2>Identity for Meridian Coffee Roasters</h2>
+      <p class="desc">Full brand identity, packaging system and a roastery signage program for a 12-location specialty roaster.</p>
+      <img src="https://picsum.photos/seed/nova1/1000/600" alt="Meridian Coffee Roasters packaging and identity design" loading="lazy">
+    </article>
+    <article class="work-entry">
+      <p class="year">2024</p>
+      <h2>Product Design for Arclight Audio</h2>
+      <p class="desc">Industrial design and packaging for a wireless speaker line, from concept sketch to retail shelf.</p>
+      <img src="https://picsum.photos/seed/nova2/1000/600" alt="Arclight Audio wireless speaker product design" loading="lazy">
+    </article>
+    <article class="work-entry">
+      <p class="year">2023</p>
+      <h2>Editorial Design for Fieldnotes Quarterly</h2>
+      <p class="desc">A full redesign of a quarterly print magazine, including a new modular grid system.</p>
+      <img src="https://picsum.photos/seed/nova3/1000/600" alt="Fieldnotes Quarterly magazine editorial design spread" loading="lazy">
+    </article>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About the studio</h2>
+    <p>Studio Nova was founded in 2019 by designers Ren Osei and Ines Marchetti. We work with one client at a time, typically for eight to twelve weeks, and we don't start a new project until the current one ships.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Interested in working together?</h2>
+    <p>We take on a new project roughly every quarter. <a href="#" id="waitlistLink">Join the waitlist</a> to be first in line.</p>
+    <form id="contactForm" novalidate hidden>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Join Waitlist</button>
+    </form>
+    <p class="form-note" id="contactNote" role="status"></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Studio Nova</p>
+  <p>© 2026 · Website 33 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

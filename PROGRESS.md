@@ -35,11 +35,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 28 | Cloud Computing Company | Skyframe Cloud | Premium corporate network viz | ✅ |
 | 29 | Software Development Agency | Byteforge | Swiss design grid, mono type | ✅ |
 | 30 | Web Development Agency | Pixelworks | Bold creative, custom cursor | ✅ |
-| 31 | Digital Marketing Agency | Surge Digital | Bold neon kinetic stats | ⬜ |
-| 32 | Creative Agency | Haus of Ideas | Brutalist experimental | ⬜ |
-| 33 | Design Studio | Studio Nova | Minimalist single-accent | ⬜ |
-| 34 | Freelancer Portfolio | Jordan Reyes | Personal minimal warm portfolio | ⬜ |
-| 35 | Developer Portfolio | Alex Kim // Dev | Terminal/code dark portfolio | ⬜ |
+| 31 | Digital Marketing Agency | Surge Digital | Bold neon kinetic stats | ✅ |
+| 32 | Creative Agency | Haus of Ideas | Brutalist experimental | ✅ |
+| 33 | Design Studio | Studio Nova | Minimalist single-accent | ✅ |
+| 34 | Freelancer Portfolio | Jordan Reyes | Personal minimal warm portfolio | ✅ |
+| 35 | Developer Portfolio | Alex Kim // Dev | Terminal/code dark portfolio | ✅ |
 | 36 | Photographer Portfolio | Lenscape — Mara Voss | Full-bleed gallery | ⬜ |
 | 37 | Video Production Studio | Frame & Motion | Dark cinematic reel (advanced) | ⬜ |
 | 38 | Music Artist Website | Echo Vale | Immersive dark, audio player | ⬜ |

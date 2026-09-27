@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Kim // Backend &amp; Systems Engineer</title>
+<meta name="description" content="Alex Kim is a backend and systems engineer specializing in distributed systems and developer tools. View projects and get in touch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">alex<span>@</span>kim<span>:~$</span></a>
+  <nav aria-label="Primary">
+    <a href="#projects">./projects</a>
+    <a href="#stack">./stack</a>
+    <a href="#contact">./contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">[=]</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#projects">./projects</a><a href="#stack">./stack</a><a href="#contact">./contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <p class="prompt">$ whoami</p>
+    <h1 id="typedName"></h1>
+    <p class="hero-desc">Backend engineer, 7 years. I build systems that stay up at 3am so nobody has to think about them.</p>
+    <div class="hero-links">
+      <a href="#projects" class="btn">cat ./projects</a>
+      <a href="#contact" class="btn btn-ghost">./contact --email</a>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <p class="prompt">$ ls ./projects</p>
+    <div class="repo-grid">
+      <a class="repo-card" href="#">
+        <div class="repo-head"><span class="dot"></span><h3>queuecraft</h3><span class="lang">Go</span></div>
+        <p>Distributed job queue handling 40k jobs/sec with exactly-once delivery.</p>
+        <div class="repo-meta"><span>★ 1.2k</span><span>MIT License</span></div>
+      </a>
+      <a class="repo-card" href="#">
+        <div class="repo-head"><span class="dot"></span><h3>schemasync</h3><span class="lang">TypeScript</span></div>
+        <p>Zero-downtime database schema migration tool for Postgres.</p>
+        <div class="repo-meta"><span>★ 640</span><span>Apache-2.0</span></div>
+      </a>
+      <a class="repo-card" href="#">
+        <div class="repo-head"><span class="dot"></span><h3>edgecache</h3><span class="lang">Rust</span></div>
+        <p>Edge caching layer with sub-millisecond invalidation propagation.</p>
+        <div class="repo-meta"><span>★ 890</span><span>MIT License</span></div>
+      </a>
+      <a class="repo-card" href="#">
+        <div class="repo-head"><span class="dot"></span><h3>logline</h3><span class="lang">Go</span></div>
+        <p>Structured log aggregation CLI, 50MB binary, no dependencies.</p>
+        <div class="repo-meta"><span>★ 410</span><span>MIT License</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="stack" id="stack">
+    <p class="prompt">$ cat ./stack.json</p>
+    <pre class="code-block"><code>{
+  "languages": ["Go", "Rust", "TypeScript", "SQL"],
+  "infra": ["Kubernetes", "Terraform", "AWS", "Postgres"],
+  "focus": ["distributed systems", "developer tools", "observability"]
+}</code></pre>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="prompt">$ ./contact --email</p>
+    <form id="contactForm" novalidate>
+      <label for="cname">name:</label>
+      <input type="text" id="cname" required>
+      <label for="cemail">email:</label>
+      <input type="email" id="cemail" required>
+      <label for="cmessage">message:</label>
+      <textarea id="cmessage" rows="3"></textarea>
+      <button type="submit" class="btn">send()</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>$ echo "© 2026 Alex Kim"</p>
+  <p>Website 35 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
