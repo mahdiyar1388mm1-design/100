@@ -1,0 +1,72 @@
+/* Fern & Fold — Coffee Shop | Cozy craft kraft texture */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --kraft:#e7d7bd; --kraft-dark:#d8c4a0; --ink:#3f3121; --green:#5c6e4a; --rust:#b5602f;
+  --line:rgba(63,49,33,.18);
+  --hand:'Caveat',cursive; --sans:'Nunito',sans-serif;
+}
+body{background:var(--kraft);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(rgba(63,49,33,.05) 1px,transparent 1px);background-size:5px 5px;}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-weight:800}
+:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(231,215,189,.92);backdrop-filter:blur(6px);border-bottom:2px dashed var(--line)}
+.logo{font-family:var(--hand);font-size:1.8rem;color:var(--green)}
+header nav{display:flex;gap:1.8rem;font-weight:700;font-size:.9rem}
+header nav a:hover{color:var(--rust)}
+.menu-btn{display:none;background:none;border:2px solid var(--ink);width:38px;height:38px;border-radius:50%}
+.mobile-nav{display:none;flex-direction:column;background:var(--kraft);border-bottom:2px dashed var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px dashed var(--line);font-weight:700}
+
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:center;max-width:1280px;margin:0 auto;padding:clamp(2rem,6vw,4rem) 1.5rem}
+.scribble{font-family:var(--hand);font-size:1.5rem;color:var(--rust);margin-bottom:.6rem}
+.scribble.small{font-size:1.2rem;margin-top:1rem}
+.hero-copy h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1;margin-bottom:1.1rem}
+.hero-copy p{max-width:42ch;margin-bottom:1.8rem;color:#5a4a35}
+.hero img{border-radius:12px;border:6px solid #fff;box-shadow:0 10px 24px rgba(63,49,33,.2);transform:rotate(-1.5deg)}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:.9rem 1.8rem;border-radius:100px;font-weight:700;border:none;cursor:pointer;transition:.25s}
+.btn:hover{background:#4a5a3a}
+
+.board{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.board h2,.brew h2,.loyalty h2{text-align:center;font-family:var(--hand);font-size:clamp(2rem,5vw,2.8rem);margin-bottom:2rem;color:var(--green)}
+.chalkboard{background:#2c2418;color:#f2e9d8;border-radius:14px;padding:clamp(1.5rem,4vw,2.5rem);display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.board-col h3{font-family:var(--hand);font-size:1.6rem;color:#e0c98f;margin-bottom:1rem}
+.board-col li{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px dotted rgba(242,233,216,.25);font-size:.95rem}
+
+.brew{max-width:900px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;text-align:center}
+.brew-tabs{display:flex;justify-content:center;gap:.6rem;margin-bottom:2rem;flex-wrap:wrap}
+.brew-tab{background:#fff;border:2px solid var(--ink);padding:.6rem 1.3rem;border-radius:100px;cursor:pointer;font-weight:700}
+.brew-tab.active{background:var(--rust);color:#fff;border-color:var(--rust)}
+.brew-panel{background:#fff;border-radius:14px;padding:clamp(1.5rem,4vw,2.5rem);text-align:left;box-shadow:0 8px 20px rgba(63,49,33,.1)}
+.brew-panel ol{padding-left:1.3rem}
+.brew-panel li{margin-bottom:.6rem}
+
+.loyalty{max-width:700px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;text-align:center}
+.loyalty p{margin-bottom:1.6rem;color:#5a4a35}
+.punch-card{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;background:#fff;border-radius:14px;padding:1.6rem;box-shadow:0 8px 20px rgba(63,49,33,.12)}
+.cup{aspect-ratio:1;border:2px dashed var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;cursor:pointer;background:none;transition:.2s}
+.cup.filled{background:var(--rust);border-style:solid;border-color:var(--rust)}
+.form-note{margin-top:1.2rem;font-weight:700;color:var(--green)}
+
+.visit{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.visit h2{font-family:var(--hand);font-size:2rem;color:var(--green);margin-bottom:.8rem}
+.events{background:#fff;border-radius:14px;padding:1.6rem;box-shadow:0 8px 20px rgba(63,49,33,.1)}
+.events h3{margin-bottom:1rem}
+.events li{padding:.6rem 0;border-bottom:1px dashed var(--line)}
+
+.footer{text-align:center;padding:2.5rem;border-top:2px dashed var(--line)}
+.footer .logo{font-family:var(--hand);font-size:1.6rem;color:var(--green);margin-bottom:.4rem;display:block}
+.footer p:last-child{font-size:.8rem;color:#7a6850}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .hero img{order:-1}
+  .chalkboard{grid-template-columns:1fr}
+  .visit{grid-template-columns:1fr}
+}

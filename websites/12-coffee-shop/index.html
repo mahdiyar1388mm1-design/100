@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fern &amp; Fold Coffee — Slow Brews, Small Batches</title>
+<meta name="description" content="Fern & Fold is a small-batch coffee roaster and neighborhood café. Explore our brew methods, punch your loyalty card, and find us nearby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Fern &amp; Fold</a>
+  <nav aria-label="Primary">
+    <a href="#board">Menu Board</a>
+    <a href="#brew">Brew Methods</a>
+    <a href="#loyalty">Loyalty Card</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#board">Menu Board</a><a href="#brew">Brew Methods</a><a href="#loyalty">Loyalty Card</a><a href="#visit">Visit</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="scribble">small batch · slow mornings</p>
+      <h1>Coffee worth<br>slowing down for.</h1>
+      <p>We roast twice a week in-house and pour every cup to order — no batch brewers, no shortcuts.</p>
+      <a href="#board" class="btn">See the Menu Board</a>
+    </div>
+    <img src="https://picsum.photos/seed/fernfold-hero/800/720" alt="Barista pouring latte art at Fern and Fold coffee counter">
+  </section>
+
+  <section class="board" id="board">
+    <h2>Today's Board</h2>
+    <div class="chalkboard">
+      <div class="board-col">
+        <h3>Espresso</h3>
+        <ul><li><span>Espresso</span><span>$3.50</span></li><li><span>Cortado</span><span>$4.50</span></li><li><span>Flat White</span><span>$5.00</span></li><li><span>Cappuccino</span><span>$5.00</span></li></ul>
+      </div>
+      <div class="board-col">
+        <h3>Filter</h3>
+        <ul><li><span>Pour Over</span><span>$5.50</span></li><li><span>Cold Brew</span><span>$5.00</span></li><li><span>Batch Drip</span><span>$3.75</span></li></ul>
+      </div>
+      <div class="board-col">
+        <h3>From the Case</h3>
+        <ul><li><span>Brown Butter Croissant</span><span>$4.75</span></li><li><span>Cardamom Bun</span><span>$4.25</span></li><li><span>Oat &amp; Fig Bar</span><span>$3.95</span></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="brew" id="brew">
+    <h2>How we brew it</h2>
+    <div class="brew-tabs" role="tablist">
+      <button class="brew-tab active" role="tab" aria-selected="true" data-brew="pourover">Pour Over</button>
+      <button class="brew-tab" role="tab" aria-selected="false" data-brew="espresso">Espresso</button>
+      <button class="brew-tab" role="tab" aria-selected="false" data-brew="coldbrew">Cold Brew</button>
+    </div>
+    <div class="brew-panel" id="brewPanel"></div>
+  </section>
+
+  <section class="loyalty" id="loyalty">
+    <h2>Punch your loyalty card</h2>
+    <p>Tap a cup for every visit — your 9th coffee is on us.</p>
+    <div class="punch-card" id="punchCard"></div>
+    <p class="form-note" id="punchNote" role="status"></p>
+  </section>
+
+  <section class="visit" id="visit">
+    <div>
+      <h2>Find us</h2>
+      <p>142 Maple Street, Portland, OR<br>Mon–Fri 6:30am–5pm · Sat–Sun 7am–4pm</p>
+      <p class="scribble small">roasting Tuesdays &amp; Fridays</p>
+    </div>
+    <div class="events">
+      <h3>Upcoming at the shop</h3>
+      <ul>
+        <li><strong>Sat, Mar 22</strong> — Free cupping: Ethiopia Yirgacheffe</li>
+        <li><strong>Sun, Apr 6</strong> — Latte art workshop, 10am</li>
+        <li><strong>Sat, Apr 19</strong> — Local zine market on the patio</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo">Fern &amp; Fold</p>
+  <p>© 2026 Fern &amp; Fold Coffee Roasters · Website 12 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

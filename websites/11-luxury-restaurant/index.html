@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noir &amp; Sel — Tasting Menu, Downtown</title>
+<meta name="description" content="Noir & Sel is an intimate tasting-menu restaurant helmed by Chef Élise Moreau. Nine courses, one seating per night, reservation only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">NOIR <em>&amp;</em> SEL</a>
+  <nav aria-label="Primary">
+    <a href="#menu">Tasting Menu</a>
+    <a href="#chef">The Chef</a>
+    <a href="#reserve">Reservations</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#menu">Tasting Menu</a><a href="#chef">The Chef</a><a href="#reserve">Reservations</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/noirsel-hero/1800/1000" alt="Elegantly plated tasting course at Noir & Sel, dim candlelit table">
+    <div class="hero-copy">
+      <p class="eyebrow">One seating nightly · 16 guests</p>
+      <h1>Nine courses.<br>No repeats.</h1>
+      <a href="#reserve" class="btn">Request a Table</a>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>The Tasting Menu</h2>
+    <p class="menu-sub">$225 per guest · changes weekly with the market</p>
+
+    <div class="pairing-toggle">
+      <label class="switch">
+        <input type="checkbox" id="pairingToggle">
+        <span class="slider"></span>
+      </label>
+      <span>Add sommelier wine pairing (+$120)</span>
+    </div>
+
+    <div class="courses">
+      <div class="course"><span class="course-num">I</span><div><h3>Oyster, Yuzu Pearl</h3><p>Fine de Claire oyster, yuzu kosho, sea lettuce</p></div></div>
+      <div class="course"><span class="course-num">II</span><div><h3>Foie Gras, Quince</h3><p>Torched foie gras, poached quince, brioche crumble</p></div></div>
+      <div class="course"><span class="course-num">III</span><div><h3>Scallop, Brown Butter</h3><p>Hokkaido scallop, brown butter emulsion, hazelnut</p></div></div>
+      <div class="course"><span class="course-num">IV</span><div><h3>Celeriac, Black Truffle</h3><p>Roasted celeriac, black truffle jus, aged parmesan</p></div></div>
+      <div class="course"><span class="course-num">V</span><div><h3>Turbot, Beurre Blanc</h3><p>Line-caught turbot, champagne beurre blanc</p></div></div>
+      <div class="course"><span class="course-num">VI</span><div><h3>Squab, Cherry</h3><p>Dry-aged squab, cherry gastrique, foie gras jus</p></div></div>
+      <div class="course"><span class="course-num">VII</span><div><h3>Aged Comté</h3><p>36-month Comté, honeycomb, walnut bread</p></div></div>
+      <div class="course"><span class="course-num">VIII</span><div><h3>Pear, Sauternes</h3><p>Poached pear, Sauternes sabayon, brown butter cake</p></div></div>
+      <div class="course"><span class="course-num">IX</span><div><h3>Valrhona, Espresso</h3><p>Dark chocolate crémeux, espresso tuile, cocoa nib</p></div></div>
+    </div>
+    <p class="menu-total">Estimated total per guest: <strong id="menuTotal">$225</strong></p>
+  </section>
+
+  <section class="chef" id="chef">
+    <img src="https://picsum.photos/seed/noirsel-chef/700/840" alt="Chef Élise Moreau plating a dish in the Noir & Sel kitchen" loading="lazy">
+    <div class="chef-copy">
+      <p class="eyebrow">Chef de Cuisine</p>
+      <h2>Élise Moreau</h2>
+      <p>Formerly of two Michelin-starred kitchens in Lyon and Copenhagen, Chef Moreau opened Noir &amp; Sel in 2019 with a single rule: nothing repeats on the menu for at least eight weeks.</p>
+      <p class="quote">“Salt is not a seasoning. It's a decision made nine times over the course of a meal.”</p>
+    </div>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <h2>Request a table</h2>
+    <p>Seatings begin at 7:00pm, Wednesday through Sunday. We hold your table for 15 minutes past the reservation time.</p>
+    <form id="reserveForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="rname" placeholder="Full name" required>
+        <input type="email" id="remail" placeholder="Email" required>
+      </div>
+      <div class="form-row">
+        <input type="date" id="rdate" required>
+        <select id="rguests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5–8 guests (call us)</option></select>
+      </div>
+      <button type="submit" class="btn btn-block">Submit Request</button>
+      <p class="form-note" id="reserveNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo">NOIR <em>&amp;</em> SEL</p>
+  <p>29 Blackwood Lane · Reservations only · © 2026 · Website 11 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
