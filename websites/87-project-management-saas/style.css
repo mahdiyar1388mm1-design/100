@@ -1,0 +1,75 @@
+/* Taskflow | Clean SaaS kanban dashboard */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff; --surface:#f8f9fc; --ink:#1a1d29; --accent:#5b5bf6; --accent2:#22c55e; --text-dim:#666b80; --line:#e7e8f0;
+  --font:'Plus Jakarta Sans',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-weight:800}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:1.2rem;color:var(--accent)}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.9rem;flex:1;justify-content:center}
+header nav a:hover{color:var(--accent)}
+.btn.small{padding:.6rem 1.2rem;font-size:.85rem}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:800px;margin:0 auto;padding:clamp(2.5rem,5vw,3.5rem) 1.5rem;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,2.8rem);margin-bottom:.8rem}
+.hero p{color:var(--text-dim);margin-bottom:1.6rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.9rem 1.8rem;border-radius:10px;font-weight:700;border:none;cursor:pointer;font-family:var(--font)}
+.btn:hover{background:#4747d9}
+
+.board{max-width:1200px;margin:0 auto;padding:0 1.5rem clamp(3rem,6vw,4rem)}
+.kanban{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.kanban-col{background:var(--surface);border-radius:14px;padding:1.1rem;border:1px solid var(--line)}
+.kanban-col h3{font-size:.9rem;text-transform:uppercase;letter-spacing:.03em;color:var(--text-dim);margin-bottom:1rem;display:flex;justify-content:space-between}
+.kanban-col h3 span{background:var(--line);color:var(--ink);border-radius:100px;padding:.1rem .6rem;font-size:.75rem}
+.kcard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.9rem;margin-bottom:.8rem;box-shadow:0 4px 10px rgba(26,29,41,.04);cursor:grab}
+.kcard:active{cursor:grabbing}
+.kcard-tag{display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .5rem;border-radius:100px;margin-bottom:.5rem}
+.kcard-tag.bug{background:#fee2e2;color:#dc2626}
+.kcard-tag.feature{background:#dbeafe;color:#2563eb}
+.kcard-tag.design{background:#ede9fe;color:#7c3aed}
+.kcard p{font-size:.9rem;font-weight:600}
+.kcard .assignee{margin-top:.6rem;display:flex;align-items:center;gap:.4rem;color:var(--text-dim);font-size:.8rem}
+.kcard .assignee img{width:22px;height:22px;border-radius:50%}
+
+.features{max-width:1000px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.features h2{text-align:center;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2rem}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.feature-grid article{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.6rem}
+.feature-grid h3{margin-bottom:.5rem}
+.feature-grid p{color:var(--text-dim);font-size:.9rem}
+
+.pricing{max-width:1000px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.pricing h2{text-align:center;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2rem}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.price-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.8rem;text-align:center}
+.price-card.featured{border-color:var(--accent);box-shadow:0 20px 40px rgba(91,91,246,.12)}
+.price-card h3{margin-bottom:.6rem}
+.price-card .price{font-size:2rem;font-weight:800;margin-bottom:1rem}
+.price-card .price span{font-size:.9rem;font-weight:500;color:var(--text-dim)}
+.price-card ul{list-style:none;text-align:left;color:var(--text-dim);font-size:.9rem}
+.price-card li{padding:.4rem 0;border-top:1px solid var(--line)}
+
+.start{max-width:480px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line);text-align:center}
+.start h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:1.6rem}
+.start input{width:100%;padding:.9rem 1.1rem;border:1px solid var(--line);border-radius:10px;margin-bottom:1rem}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2);font-weight:700}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav,.header .btn.small{display:none}
+  .menu-btn{display:block}
+  .kanban{grid-template-columns:1fr}
+  .feature-grid,.pricing-grid{grid-template-columns:1fr}
+}

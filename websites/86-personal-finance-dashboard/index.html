@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budgetly — See Where Your Money Goes</title>
+<meta name="description" content="Budgetly is a personal finance dashboard that visualizes your spending, budgets, and savings goals in real time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">💰 Budgetly</a>
+  <nav aria-label="Primary">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#features">Features</a>
+    <a href="#start">Get Started</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#dashboard">Dashboard</a><a href="#features">Features</a><a href="#start">Get Started</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>See where your money really goes.</h1>
+    <p>Budgetly connects your accounts and turns transactions into a clear, visual picture of your finances.</p>
+  </section>
+
+  <section class="dashboard" id="dashboard">
+    <div class="dash-grid">
+      <div class="card balance-card">
+        <span>Total balance</span>
+        <strong id="balanceOut">$0</strong>
+        <p class="delta positive">▲ 4.2% this month</p>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-head"><span>Spending by category</span></div>
+        <canvas id="donutChart" width="220" height="220" role="img" aria-label="Donut chart of spending by category"></canvas>
+        <ul class="legend" id="legendList"></ul>
+      </div>
+      <div class="card trend-card">
+        <div class="chart-head"><span>Spending trend (6 months)</span></div>
+        <canvas id="lineChart" width="480" height="180" role="img" aria-label="Line chart of spending trend over 6 months"></canvas>
+      </div>
+      <div class="card goal-card">
+        <span>Savings goal: New car</span>
+        <div class="progress-bar"><div class="progress-fill" id="goalFill" style="width:0%"></div></div>
+        <p id="goalText">$0 of $12,000</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Everything in one place</h2>
+    <div class="feature-grid">
+      <article><h3>Auto-categorized</h3><p>Every transaction sorted automatically into clear categories.</p></article>
+      <article><h3>Budget alerts</h3><p>Get notified before you go over budget, not after.</p></article>
+      <article><h3>Goal tracking</h3><p>Set savings goals and watch your progress build week by week.</p></article>
+    </div>
+  </section>
+
+  <section class="start" id="start">
+    <h2>Start budgeting for free</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn btn-block">Create Free Account</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>BUDGETLY</p>
+  <p>© 2026 · Website 86 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

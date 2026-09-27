@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopPanel — The Admin Dashboard for Online Stores</title>
+<meta name="description" content="ShopPanel gives store owners one dashboard for orders, inventory, and revenue across every sales channel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">ShopPanel</a>
+  <nav aria-label="Primary">
+    <a href="#preview">Product</a>
+    <a href="#features">Features</a>
+    <a href="#trial">Pricing</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#preview">Product</a><a href="#features">Features</a><a href="#trial">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>One dashboard for your whole store.</h1>
+    <p>Orders, inventory, and revenue from every channel — Shopify, Amazon, in-store — in a single admin panel.</p>
+  </section>
+
+  <section class="preview" id="preview">
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <p class="sidebar-logo">ShopPanel</p>
+        <nav>
+          <a href="#" class="active">Overview</a>
+          <a href="#">Orders</a>
+          <a href="#">Products</a>
+          <a href="#">Customers</a>
+          <a href="#">Reports</a>
+        </nav>
+      </aside>
+      <div class="admin-main">
+        <div class="admin-topbar">
+          <h2>Overview</h2>
+          <select id="rangeSelect">
+            <option>Last 7 days</option>
+            <option>Last 30 days</option>
+            <option>This quarter</option>
+          </select>
+        </div>
+        <div class="kpi-row" id="kpiRow"></div>
+        <div class="admin-panels">
+          <div class="admin-panel">
+            <h3>Recent orders</h3>
+            <table>
+              <thead><tr><th>Order</th><th>Customer</th><th>Status</th><th>Total</th></tr></thead>
+              <tbody id="ordersBody"></tbody>
+            </table>
+          </div>
+          <div class="admin-panel">
+            <h3>Low stock</h3>
+            <ul class="stock-list" id="stockList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Everything your team needs</h2>
+    <div class="feature-grid">
+      <article><h3>Multi-channel sync</h3><p>Inventory updates automatically across every store you sell on.</p></article>
+      <article><h3>Order automation</h3><p>Auto-route fulfillment and flag orders that need attention.</p></article>
+      <article><h3>Revenue reports</h3><p>See profit margins by product, not just top-line sales.</p></article>
+    </div>
+  </section>
+
+  <section class="trial" id="trial">
+    <h2>Try ShopPanel free for 14 days</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Store email" required>
+      <button type="submit" class="btn btn-block">Start Free Trial</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>SHOPPANEL</p>
+  <p>© 2026 · Website 90 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clientele CRM — Manage Every Customer Relationship</title>
+<meta name="description" content="Clientele CRM helps sales teams track deals, manage contacts, and close more business with a unified pipeline view.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Clientele<span>CRM</span></a>
+  <nav aria-label="Primary">
+    <a href="#pipeline">Pipeline</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#demo">Request Demo</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#pipeline">Pipeline</a><a href="#contacts">Contacts</a><a href="#demo">Request Demo</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Every customer relationship, in one view.</h1>
+    <p>Clientele CRM unifies your pipeline, contacts, and communication history so nothing falls through the cracks.</p>
+  </section>
+
+  <section class="pipeline" id="pipeline">
+    <div class="section-head"><h2>Deal pipeline</h2><span class="total-value" id="totalValue"></span></div>
+    <div class="pipeline-stages" id="pipelineStages"></div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <h2>Recent contacts</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Name</th><th>Company</th><th>Stage</th><th>Last Contact</th><th>Value</th></tr></thead>
+        <tbody id="contactsBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why sales teams choose Clientele</h2>
+    <div class="feature-grid">
+      <article><h3>Unified timeline</h3><p>Every email, call, and note in one customer record.</p></article>
+      <article><h3>Forecasting</h3><p>See projected revenue by stage and close date.</p></article>
+      <article><h3>Integrations</h3><p>Connects with your inbox, calendar, and phone system.</p></article>
+    </div>
+  </section>
+
+  <section class="demo" id="demo">
+    <h2>Request a demo</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="text" id="ccompany" placeholder="Company" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Work email" required>
+      <button type="submit" class="btn btn-block">Request Demo</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>CLIENTELE CRM</p>
+  <p>© 2026 · Website 88 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

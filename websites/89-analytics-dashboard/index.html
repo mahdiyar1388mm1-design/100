@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metriq Analytics — Real-Time Product Analytics</title>
+<meta name="description" content="Metriq Analytics gives product teams real-time dashboards for traffic, conversion, and retention metrics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">metriq<span>.</span></a>
+  <nav aria-label="Primary">
+    <a href="#live">Live Dashboard</a>
+    <a href="#features">Features</a>
+    <a href="#trial">Start Trial</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#live">Live Dashboard</a><a href="#features">Features</a><a href="#trial">Start Trial</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Your product's pulse, live.</h1>
+    <p>Metriq streams every event as it happens — no waiting for nightly reports.</p>
+  </section>
+
+  <section class="live" id="live">
+    <div class="metric-row" id="metricRow"></div>
+    <div class="chart-panels">
+      <div class="panel">
+        <div class="panel-head"><span>Active users (live)</span><span class="live-dot">● LIVE</span></div>
+        <canvas id="liveChart" width="700" height="220" role="img" aria-label="Live active users line chart"></canvas>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><span>Top events</span></div>
+        <div class="bar-list" id="barList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Analytics without the wait</h2>
+    <div class="feature-grid">
+      <article><h3>Sub-second latency</h3><p>Events appear on your dashboard within milliseconds of firing.</p></article>
+      <article><h3>Custom funnels</h3><p>Build conversion funnels without writing a single query.</p></article>
+      <article><h3>Alerting</h3><p>Get paged the moment a key metric moves outside its normal range.</p></article>
+    </div>
+  </section>
+
+  <section class="trial" id="trial">
+    <h2>Start your free trial</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Work email" required>
+      <button type="submit" class="btn btn-block">Start Free — No Card Required</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>METRIQ ANALYTICS</p>
+  <p>© 2026 · Website 89 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

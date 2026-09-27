@@ -1,0 +1,69 @@
+/* Clientele CRM | Corporate SaaS dashboard */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#f4f6f9; --surface:#fff; --ink:#1c2534; --accent:#0f4c81; --accent2:#0e9f6e; --text-dim:#5c6579; --line:#dfe4ec;
+  --font:'IBM Plex Sans',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-weight:700}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(244,246,249,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:1.1rem}
+.logo span{color:var(--accent)}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.9rem}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:6px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:800px;margin:0 auto;padding:clamp(2.5rem,5vw,3.5rem) 1.5rem;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,2.6rem);margin-bottom:.8rem}
+.hero p{color:var(--text-dim)}
+
+.pipeline,.contacts,.features,.demo{max-width:1200px;margin:0 auto;padding:clamp(2rem,4vw,3rem) 1.5rem;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem}
+.pipeline h2,.contacts h2,.features h2,.demo h2{font-size:clamp(1.5rem,3.5vw,2rem)}
+.total-value{color:var(--accent2);font-weight:700}
+.pipeline-stages{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem}
+.stage h3{font-size:.85rem;text-transform:uppercase;color:var(--text-dim);margin-bottom:.8rem;display:flex;justify-content:space-between}
+.deal-card{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:.7rem .8rem;margin-bottom:.6rem;font-size:.85rem}
+.deal-card strong{display:block;margin-bottom:.2rem}
+.deal-card span{color:var(--accent);font-weight:700}
+
+.table-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{text-align:left;padding:.9rem 1.1rem;font-size:.9rem;border-bottom:1px solid var(--line)}
+th{color:var(--text-dim);font-weight:700;text-transform:uppercase;font-size:.75rem}
+.badge{padding:.25rem .7rem;border-radius:100px;font-size:.75rem;font-weight:700}
+.badge.lead{background:#fef3c7;color:#92400e}
+.badge.negotiation{background:#dbeafe;color:#1e40af}
+.badge.won{background:#d1fae5;color:#065f46}
+
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.feature-grid article{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.feature-grid h3{margin-bottom:.5rem;font-size:1.05rem}
+.feature-grid p{color:var(--text-dim);font-size:.9rem}
+
+.demo{max-width:520px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.demo input{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:var(--surface);margin-bottom:1rem;border-radius:8px}
+.btn{background:var(--accent);color:#fff;padding:.9rem 1.6rem;border:none;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--font)}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .pipeline-stages{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .form-row{grid-template-columns:1fr}
+}

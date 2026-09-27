@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taskflow — Project Management for Fast-Moving Teams</title>
+<meta name="description" content="Taskflow is a kanban-based project management tool that helps teams plan sprints, track tasks, and ship faster.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Taskflow</a>
+  <nav aria-label="Primary">
+    <a href="#board">Board</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#start" class="btn small">Start Free Trial</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#board">Board</a><a href="#features">Features</a><a href="#pricing">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Plan sprints. Track tasks. Ship faster.</h1>
+    <p>Taskflow gives your team one shared board to move work from idea to done.</p>
+    <a href="#start" class="btn">Start Free Trial</a>
+  </section>
+
+  <section class="board" id="board">
+    <div class="kanban" id="kanban"></div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Built for how teams actually work</h2>
+    <div class="feature-grid">
+      <article><h3>Sprint Planning</h3><p>Plan two-week sprints with capacity tracking built in.</p></article>
+      <article><h3>Automations</h3><p>Auto-assign, auto-notify, and auto-archive completed work.</p></article>
+      <article><h3>Reporting</h3><p>Burndown charts and velocity reports, generated automatically.</p></article>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Simple pricing</h2>
+    <div class="pricing-grid">
+      <article class="price-card"><h3>Starter</h3><p class="price">$0</p><ul><li>Up to 5 members</li><li>3 boards</li><li>Basic reporting</li></ul></article>
+      <article class="price-card featured"><h3>Team</h3><p class="price">$12<span>/user/mo</span></p><ul><li>Unlimited boards</li><li>Automations</li><li>Sprint reporting</li></ul></article>
+      <article class="price-card"><h3>Enterprise</h3><p class="price">Custom</p><ul><li>SSO &amp; permissions</li><li>Dedicated support</li><li>Custom integrations</li></ul></article>
+    </div>
+  </section>
+
+  <section class="start" id="start">
+    <h2>Start your free trial</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Work email" required>
+      <button type="submit" class="btn btn-block">Get Started Free</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>TASKFLOW</p>
+  <p>© 2026 · Website 87 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

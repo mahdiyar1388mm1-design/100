@@ -90,11 +90,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 83 | Photography Booking Platform | Shuttr | Clean marketplace booking | ✅ |
 | 84 | Social Media Platform | Loopli | Playful modern app landing | ✅ |
 | 85 | Community Platform | The Commons | Warm community illustration | ✅ |
-| 86 | Personal Finance Dashboard | Budgetly | Clean dashboard data viz (advanced) | ⬜ |
-| 87 | Project Management SaaS | Taskflow | Clean SaaS kanban dashboard | ⬜ |
-| 88 | CRM Platform | Clientele CRM | Corporate SaaS dashboard | ⬜ |
-| 89 | Analytics Dashboard | Metriq Analytics | Data-driven dark dashboard (advanced) | ⬜ |
-| 90 | E-commerce Admin Dashboard | ShopPanel | Admin UI dashboard | ⬜ |
+| 86 | Personal Finance Dashboard | Budgetly | Clean dashboard data viz (advanced) | ✅ |
+| 87 | Project Management SaaS | Taskflow | Clean SaaS kanban dashboard | ✅ |
+| 88 | CRM Platform | Clientele CRM | Corporate SaaS dashboard | ✅ |
+| 89 | Analytics Dashboard | Metriq Analytics | Data-driven dark dashboard (advanced) | ✅ |
+| 90 | E-commerce Admin Dashboard | ShopPanel | Admin UI dashboard | ✅ |
 | 91 | AI Dashboard | NeuralDesk | Futuristic dark AI dashboard (advanced) | ⬜ |
 | 92 | Developer Tools Platform | GitForge | Dark developer terminal aesthetic | ⬜ |
 | 93 | Mobile App Landing Page | PocketWallet | Vibrant app landing, phone mockup | ⬜ |
