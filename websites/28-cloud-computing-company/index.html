@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyframe Cloud — Global Cloud Infrastructure</title>
+<meta name="description" content="Skyframe Cloud delivers low-latency compute, storage and networking across 34 regions, with pricing that scales with real usage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Skyframe<span>Cloud</span></a>
+  <nav aria-label="Primary">
+    <a href="#regions">Regions</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#reliability">Reliability</a>
+  </nav>
+  <a href="#pricing" class="btn btn-small">Get Started</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#regions">Regions</a><a href="#pricing">Pricing</a><a href="#reliability">Reliability</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Cloud infrastructure that scales with you, not against you.</h1>
+    <p>34 regions, sub-20ms edge latency, and pricing that only charges for what you actually use.</p>
+    <div class="hero-cta">
+      <a href="#pricing" class="btn">Get Started Free</a>
+      <a href="#regions" class="btn btn-outline">View Regions</a>
+    </div>
+  </section>
+
+  <section class="regions" id="regions">
+    <h2>34 regions, one network</h2>
+    <div class="region-panel">
+      <div class="region-list">
+        <button class="region-item active" data-region="us">North America <span>12 zones</span></button>
+        <button class="region-item" data-region="eu">Europe <span>9 zones</span></button>
+        <button class="region-item" data-region="apac">Asia Pacific <span>8 zones</span></button>
+        <button class="region-item" data-region="sa">South America <span>5 zones</span></button>
+      </div>
+      <div class="region-stat">
+        <p>Average latency in <strong id="regionName">North America</strong></p>
+        <div class="latency-bar"><div class="latency-fill" id="latencyFill"></div></div>
+        <p class="latency-value"><span id="latencyValue">14</span>ms</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Usage-based pricing calculator</h2>
+    <div class="calc-panel">
+      <div class="calc-field"><label for="compute">Compute hours / month</label><input type="range" id="compute" min="0" max="10000" value="2000"><span id="computeOut">2,000 hrs</span></div>
+      <div class="calc-field"><label for="storage">Storage (TB)</label><input type="range" id="storage" min="0" max="100" value="10"><span id="storageOut">10 TB</span></div>
+      <div class="calc-result"><p>Estimated monthly cost</p><strong id="cloudTotal">$0</strong></div>
+    </div>
+  </section>
+
+  <section class="reliability" id="reliability">
+    <h2>Built for reliability</h2>
+    <div class="reliability-grid">
+      <div><strong>99.99%</strong><span>uptime SLA</span></div>
+      <div><strong>24/7</strong><span>NOC monitoring</span></div>
+      <div><strong>N+2</strong><span>redundancy per region</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Skyframe<span>Cloud</span></span>
+  <p>© 2026 Skyframe Cloud Inc. · Website 28 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

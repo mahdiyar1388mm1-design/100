@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Byteforge — Software Engineering Studio</title>
+<meta name="description" content="Byteforge is a 30-person software engineering studio building production systems for funded startups and enterprise teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">BYTEFORGE</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">[ + ]</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#process">Process</a><a href="#stack">Stack</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <div class="grid-frame">
+    <section class="hero">
+      <p class="index">Software Engineering Studio — Est. 2016</p>
+      <h1>We ship production software, not prototypes.</h1>
+      <p class="lede">30 engineers. Fixed-scope delivery. Code you own outright, with documentation your own team can maintain.</p>
+    </section>
+
+    <section class="work" id="work">
+      <h2><span>01</span> Selected Work</h2>
+      <div class="case-grid">
+        <article class="case-card"><p class="c-meta">FinTech · Web Platform</p><h3>Ledgerline — Reconciliation Engine</h3><p>Rebuilt a legacy reconciliation system to process 4M transactions/day at sub-second latency.</p></article>
+        <article class="case-card"><p class="c-meta">Healthcare · Mobile</p><h3>VitalCare — Patient App</h3><p>HIPAA-compliant mobile app connecting 80,000 patients to their care teams.</p></article>
+        <article class="case-card"><p class="c-meta">Logistics · Internal Tools</p><h3>Cargoline — Dispatch Console</h3><p>Real-time dispatch dashboard cutting average routing time by 34%.</p></article>
+        <article class="case-card"><p class="c-meta">E-commerce · Infrastructure</p><h3>Marketly — Checkout Rebuild</h3><p>Migrated checkout to an event-driven architecture, reducing failed payments by 22%.</p></article>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <h2><span>02</span> Process</h2>
+      <div class="process-grid">
+        <div><span class="p-num">01</span><h3>Scope</h3><p>2-week discovery sprint, fixed-price proposal</p></div>
+        <div><span class="p-num">02</span><h3>Build</h3><p>2-week sprints, shipped to staging every Friday</p></div>
+        <div><span class="p-num">03</span><h3>Harden</h3><p>Load testing, security review, documentation</p></div>
+        <div><span class="p-num">04</span><h3>Handoff</h3><p>Full source, infra-as-code, and a 30-day support window</p></div>
+      </div>
+    </section>
+
+    <section class="stack" id="stack">
+      <h2><span>03</span> Stack</h2>
+      <div class="stack-row">
+        <span>TypeScript</span><span>React</span><span>Go</span><span>PostgreSQL</span><span>AWS</span><span>Kubernetes</span><span>Terraform</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2><span>04</span> Start a Project</h2>
+      <form id="contactForm" novalidate>
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+        <textarea id="cmessage" rows="3" placeholder="What are you building?"></textarea>
+        <button type="submit" class="btn">Send</button>
+        <p class="form-note" id="contactNote" role="status"></p>
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>BYTEFORGE — Software Engineering Studio</p>
+  <p>© 2026 · Website 29 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

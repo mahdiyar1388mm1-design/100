@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PromptHub — The Marketplace for AI Tools</title>
+<meta name="description" content="PromptHub is a curated marketplace of 1,200+ AI tools and prompt packs, rated and reviewed by real builders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Prompt<span>Hub</span></a>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search 1,200+ AI tools...">
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#browse">Browse</a><a href="#submit">Submit a Tool</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Find the right AI tool, fast.</h1>
+    <p>1,200+ tools, ranked by real reviews from builders who actually shipped with them.</p>
+  </section>
+
+  <section class="browse" id="browse">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <div class="cat-list" id="catList">
+        <button class="cat-item active" data-cat="all">All Tools <span>1,200</span></button>
+        <button class="cat-item" data-cat="writing">Writing <span>310</span></button>
+        <button class="cat-item" data-cat="image">Image Generation <span>245</span></button>
+        <button class="cat-item" data-cat="code">Code Assistants <span>190</span></button>
+        <button class="cat-item" data-cat="voice">Voice &amp; Audio <span>140</span></button>
+        <button class="cat-item" data-cat="data">Data Analysis <span>315</span></button>
+      </div>
+      <h2>Sort by</h2>
+      <select id="sortSelect">
+        <option value="rating">Top Rated</option>
+        <option value="newest">Newest</option>
+        <option value="reviews">Most Reviewed</option>
+      </select>
+    </aside>
+    <div class="tool-area">
+      <p class="result-count" id="resultCount"></p>
+      <div class="tool-grid" id="toolGrid"></div>
+    </div>
+  </section>
+
+  <section class="submit" id="submit">
+    <h2>List your AI tool</h2>
+    <p>Get discovered by 400,000+ monthly builders searching for tools like yours.</p>
+    <a href="#" class="btn">Submit Your Tool</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Prompt<span>Hub</span></span>
+  <p>© 2026 PromptHub · Website 26 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

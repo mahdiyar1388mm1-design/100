@@ -1,0 +1,63 @@
+/* Byteforge — Software Development Agency | Swiss design grid, mono type */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#111111; --paper:#ffffff; --red:#e13a2e; --line:#111111; --text-dim:#555;
+  --mono:'Space Mono',monospace; --sans:'Archivo',sans-serif;
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--mono);font-weight:700}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:2px solid var(--ink)}
+.logo{font-family:var(--mono);font-weight:700;font-size:1.15rem;letter-spacing:.02em}
+header nav{display:flex;gap:2rem;font-family:var(--mono);font-size:.85rem}
+header nav a:hover{color:var(--red)}
+.menu-btn{display:none;background:none;border:1px solid var(--ink);font-family:var(--mono);padding:.4rem .8rem}
+.mobile-nav{display:none;flex-direction:column;border-bottom:2px solid var(--ink)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--ink);font-family:var(--mono)}
+
+.grid-frame{max-width:1320px;margin:0 auto;border-left:2px solid var(--ink);border-right:2px solid var(--ink)}
+.hero{padding:clamp(3rem,7vw,6rem) clamp(1.2rem,4vw,3rem);border-bottom:2px solid var(--ink)}
+.index{font-family:var(--mono);font-size:.82rem;color:var(--red);margin-bottom:1.4rem}
+.hero h1{font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.15;max-width:18ch;margin-bottom:1.4rem}
+.lede{max-width:52ch;color:var(--text-dim);font-size:1.05rem}
+
+.work,.process,.stack,.contact{padding:clamp(2.5rem,5vw,4rem) clamp(1.2rem,4vw,3rem);border-bottom:2px solid var(--ink)}
+h2{font-size:1.3rem;margin-bottom:2rem;display:flex;gap:.8rem;align-items:baseline}
+h2 span{color:var(--red)}
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--ink);border-left:1px solid var(--ink)}
+.case-card{padding:1.6rem;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.c-meta{font-family:var(--mono);font-size:.78rem;color:var(--red);margin-bottom:.6rem}
+.case-card h3{font-family:var(--sans);font-size:1.15rem;margin-bottom:.6rem}
+.case-card p{color:var(--text-dim);font-size:.9rem}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink);border-left:1px solid var(--ink)}
+.process-grid > div{padding:1.4rem;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.p-num{font-family:var(--mono);color:var(--red);font-size:.85rem}
+.process-grid h3{font-family:var(--sans);font-size:1.05rem;margin:.5rem 0}
+.process-grid p{color:var(--text-dim);font-size:.85rem}
+
+.stack-row{display:flex;flex-wrap:wrap;gap:.8rem;font-family:var(--mono)}
+.stack-row span{border:1px solid var(--ink);padding:.6rem 1.1rem}
+
+.contact form{max-width:520px}
+.contact input,.contact textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--ink);margin-bottom:1rem;font-family:inherit}
+.btn{background:var(--ink);color:#fff;padding:.9rem 2rem;border:none;font-family:var(--mono);cursor:pointer}
+.btn:hover{background:var(--red)}
+.form-note{margin-top:1rem;font-family:var(--mono);font-size:.85rem;color:var(--red)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1320px;margin:0 auto;padding:1.6rem clamp(1.2rem,4vw,3rem);font-family:var(--mono);font-size:.8rem;color:var(--text-dim)}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .case-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .process-grid{grid-template-columns:1fr}
+}

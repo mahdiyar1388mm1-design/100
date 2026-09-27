@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixelworks — We Build Websites People Remember</title>
+<meta name="description" content="Pixelworks is a web design and development studio crafting bold, fast, conversion-driven websites for ambitious brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">Pixelworks</a>
+  <nav aria-label="Primary">
+    <a href="#work" data-cursor="view">Work</a>
+    <a href="#services" data-cursor="view">Services</a>
+    <a href="#contact" data-cursor="view">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1 data-cursor="drag">Websites that<br>make people stop<br>scrolling.</h1>
+    <p>Pixelworks designs and builds bold, fast websites for brands who refuse to look generic.</p>
+    <a href="#contact" class="btn" data-cursor="click">Start a Project</a>
+  </section>
+
+  <section class="work" id="work">
+    <h2>Selected work</h2>
+    <div class="work-grid">
+      <a class="work-card" href="#" data-cursor="view"><img src="https://picsum.photos/seed/pw1/700/500" alt="Nova Robotics website homepage design" loading="lazy"><h3>Nova Robotics</h3><span>Brand + Web</span></a>
+      <a class="work-card" href="#" data-cursor="view"><img src="https://picsum.photos/seed/pw2/700/500" alt="Fernweg Travel website homepage design" loading="lazy"><h3>Fernweg Travel</h3><span>E-commerce</span></a>
+      <a class="work-card" href="#" data-cursor="view"><img src="https://picsum.photos/seed/pw3/700/500" alt="Cursive Coffee website homepage design" loading="lazy"><h3>Cursive Coffee</h3><span>Web Design</span></a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we do</h2>
+    <div class="service-list">
+      <div class="service-row"><h3>Brand &amp; Art Direction</h3><p>Visual identity systems built to survive contact with a browser.</p></div>
+      <div class="service-row"><h3>Website Design &amp; Build</h3><p>Design and front-end development, shipped together, fast.</p></div>
+      <div class="service-row"><h3>E-commerce</h3><p>Custom storefronts that convert better than off-the-shelf themes.</p></div>
+      <div class="service-row"><h3>Motion &amp; Interaction</h3><p>Scroll and hover interactions that feel considered, not decorative.</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Got a project in mind?</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmessage" rows="3" placeholder="Tell us about it"></textarea>
+      <button type="submit" class="btn" data-cursor="click">Send Message</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Pixelworks</span>
+  <p>© 2026 Pixelworks Studio · Website 30 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

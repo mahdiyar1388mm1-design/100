@@ -30,11 +30,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 23 | Construction Company | Ironclad Build | Industrial bold, yellow/black | ✅ |
 | 24 | SaaS Platform | Flowstack | Modern SaaS clean | ✅ |
 | 25 | AI Startup | Cognita AI | Futuristic dark 3D glow (advanced) | ✅ |
-| 26 | AI Tools Marketplace | PromptHub | Data-driven marketplace grid | ⬜ |
-| 27 | Cybersecurity Company | Sentinel Shield | Dark cyber grid | ⬜ |
-| 28 | Cloud Computing Company | Skyframe Cloud | Premium corporate network viz | ⬜ |
-| 29 | Software Development Agency | Byteforge | Swiss design grid, mono type | ⬜ |
-| 30 | Web Development Agency | Pixelworks | Bold creative, custom cursor | ⬜ |
+| 26 | AI Tools Marketplace | PromptHub | Data-driven marketplace grid | ✅ |
+| 27 | Cybersecurity Company | Sentinel Shield | Dark cyber grid | ✅ |
+| 28 | Cloud Computing Company | Skyframe Cloud | Premium corporate network viz | ✅ |
+| 29 | Software Development Agency | Byteforge | Swiss design grid, mono type | ✅ |
+| 30 | Web Development Agency | Pixelworks | Bold creative, custom cursor | ✅ |
 | 31 | Digital Marketing Agency | Surge Digital | Bold neon kinetic stats | ⬜ |
 | 32 | Creative Agency | Haus of Ideas | Brutalist experimental | ⬜ |
 | 33 | Design Studio | Studio Nova | Minimalist single-accent | ⬜ |
