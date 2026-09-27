@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChainPoint — Enterprise Blockchain Infrastructure</title>
+<meta name="description" content="ChainPoint provides enterprise-grade blockchain infrastructure for supply chain, finance, and identity applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">ChainPoint</a>
+  <nav aria-label="Primary">
+    <a href="#network">Network</a>
+    <a href="#usecases">Use Cases</a>
+    <a href="#developers">Developers</a>
+  </nav>
+  <a href="#contact" class="btn btn-small nav-cta">Talk to Sales</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#network">Network</a><a href="#usecases">Use Cases</a><a href="#developers">Developers</a></nav>
+
+<main id="top">
+  <section class="hero" id="network">
+    <canvas id="nodeCanvas" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="eyebrow">Enterprise-Grade · Carbon-Neutral</p>
+      <h1>The infrastructure layer for trusted networks.</h1>
+      <p class="hero-desc">ChainPoint powers permissioned blockchain networks for supply chain traceability, cross-border settlement, and digital identity — processing 40,000 transactions per second.</p>
+      <div class="hero-actions"><a href="#contact" class="btn">Talk to Sales</a><a href="#developers" class="btn btn-ghost">Read the Docs</a></div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>40,000</strong><span>Transactions / sec</span></div>
+    <div><strong>99.995%</strong><span>Network uptime</span></div>
+    <div><strong>62</strong><span>Enterprise partners</span></div>
+    <div><strong>0g CO₂</strong><span>Net carbon footprint</span></div>
+  </section>
+
+  <section class="usecases" id="usecases">
+    <h2>Built for regulated industries</h2>
+    <div class="usecase-grid">
+      <article class="usecase-card"><span class="ico">🚚</span><h3>Supply Chain</h3><p>End-to-end product provenance from raw material to shelf.</p></article>
+      <article class="usecase-card"><span class="ico">🏦</span><h3>Cross-Border Settlement</h3><p>Settle interbank transactions in seconds, not days.</p></article>
+      <article class="usecase-card"><span class="ico">🪪</span><h3>Digital Identity</h3><p>Self-sovereign identity credentials for citizens and institutions.</p></article>
+    </div>
+  </section>
+
+  <section class="developers" id="developers">
+    <h2>Built for developers</h2>
+    <div class="dev-grid">
+      <div class="dev-copy">
+        <p>Deploy a permissioned node in minutes with our SDKs for Node.js, Go, and Rust. Full REST and gRPC APIs included.</p>
+        <ul class="dev-list"><li>Smart contract templates</li><li>Real-time network explorer</li><li>99.99% SLA on managed nodes</li></ul>
+      </div>
+      <pre class="code-block"><code>$ chainpoint init supply-network
+$ chainpoint deploy --nodes 5 --region eu-west
+✔ Network live at chn-8f2a.chainpoint.io</code></pre>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Talk to our infrastructure team</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Work email" required>
+      </div>
+      <textarea id="cmessage" rows="3" placeholder="Tell us about your use case"></textarea>
+      <button type="submit" class="btn btn-block">Request Consultation</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>CHAINPOINT</p>
+  <p>© 2026 · Website 52 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

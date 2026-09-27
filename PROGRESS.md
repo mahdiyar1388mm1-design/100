@@ -55,11 +55,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 48 | Technology Blog | Signal//Noise | Dark tech blog, code blocks | ✅ |
 | 49 | Finance Platform | Ledgerline | Premium corporate + charts | ✅ |
 | 50 | Investment Platform | Capitalis | Trust navy/gold + charts | ✅ |
-| 51 | Cryptocurrency Platform | Coinforge | Cyberpunk neon dark | ⬜ |
-| 52 | Blockchain Company | ChainPoint | Futuristic geometric 3D nodes (advanced) | ⬜ |
-| 53 | Web3 Startup | Nexum Protocol | Experimental glass/neon | ⬜ |
-| 54 | NFT Marketplace | Artifact NFT | Vibrant gradient marketplace | ⬜ |
-| 55 | Fitness Platform | PulseFit | Bold energetic dark/red | ⬜ |
+| 51 | Cryptocurrency Platform | Coinforge | Cyberpunk neon dark | ✅ |
+| 52 | Blockchain Company | ChainPoint | Futuristic geometric 3D nodes (advanced) | ✅ |
+| 53 | Web3 Startup | Nexum Protocol | Experimental glass/neon | ✅ |
+| 54 | NFT Marketplace | Artifact NFT | Vibrant gradient marketplace | ✅ |
+| 55 | Fitness Platform | PulseFit | Bold energetic dark/red | ✅ |
 | 56 | Gym Website | Ironworks Gym | Industrial bold grit | ⬜ |
 | 57 | Sports Club | Riverside SC | Team pride bold + stats | ⬜ |
 | 58 | Football Club | United FC Athletic | Stadium cinematic crest (advanced) | ⬜ |

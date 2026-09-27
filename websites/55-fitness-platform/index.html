@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseFit — Train Anywhere, Track Everything</title>
+<meta name="description" content="PulseFit is a fitness app with personalized training plans, live classes, and progress tracking for every goal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">PULSE<span>FIT</span></a>
+  <nav aria-label="Primary">
+    <a href="#programs">Programs</a>
+    <a href="#classes">Classes</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#pricing" class="btn btn-small nav-cta">Start Free Trial</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#programs">Programs</a><a href="#classes">Classes</a><a href="#pricing">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/pulsefit-hero/1800/1100" alt="Athlete mid-motion during high-intensity training">
+    <div class="hero-copy">
+      <h1>TRAIN<br>HARDER.<br>TRACK<br>SMARTER.</h1>
+      <a href="#pricing" class="btn">Start Your Free Trial</a>
+    </div>
+  </section>
+
+  <section class="stat-strip">
+    <div><strong id="statUsers">0</strong><span>Active members</span></div>
+    <div><strong id="statWorkouts">0</strong><span>Workouts completed</span></div>
+    <div><strong id="statCoaches">0</strong><span>Certified coaches</span></div>
+  </section>
+
+  <section class="programs" id="programs">
+    <h2>Programs for every goal</h2>
+    <div class="program-grid">
+      <article class="program-card"><img src="https://picsum.photos/seed/pf-p1/450/300" alt="Person doing strength training with barbell"><span class="tag">Strength</span><h3>Power Foundations</h3><p>12-week progressive strength program.</p></article>
+      <article class="program-card"><img src="https://picsum.photos/seed/pf-p2/450/300" alt="Person running outdoors at sunrise"><span class="tag">Endurance</span><h3>Distance Builder</h3><p>Marathon-ready in 16 weeks.</p></article>
+      <article class="program-card"><img src="https://picsum.photos/seed/pf-p3/450/300" alt="Person doing yoga pose"><span class="tag">Mobility</span><h3>Full-Body Flow</h3><p>Daily mobility &amp; recovery routines.</p></article>
+    </div>
+  </section>
+
+  <section class="classes" id="classes">
+    <h2>This week's live classes</h2>
+    <div class="class-schedule" id="classSchedule"></div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Start your free trial</h2>
+    <div class="pricing-grid">
+      <div class="price-card"><h3>Monthly</h3><p class="price">$24<span>/mo</span></p></div>
+      <div class="price-card featured"><span class="badge">Save 30%</span><h3>Annual</h3><p class="price">$17<span>/mo</span></p></div>
+    </div>
+    <form id="contactForm" novalidate class="trial-form">
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn btn-block">Start Free Trial</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>PULSEFIT</p>
+  <p>© 2026 · Website 55 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

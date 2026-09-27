@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coinforge — Trade Crypto With Confidence</title>
+<meta name="description" content="Coinforge is a cryptocurrency exchange with real-time markets, low fees, and institutional-grade security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ticker" id="ticker" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">COIN<span>FORGE</span></a>
+  <nav aria-label="Primary">
+    <a href="#markets">Markets</a>
+    <a href="#trade">Trade</a>
+    <a href="#security">Security</a>
+  </nav>
+  <button class="btn btn-small nav-cta" id="walletBtn">Connect Wallet</button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#markets">Markets</a><a href="#trade">Trade</a><a href="#security">Security</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>TRADE THE FUTURE OF MONEY</h1>
+      <p>Coinforge gives you real-time markets, deep liquidity, and cold-storage security across 200+ assets.</p>
+      <div class="hero-actions"><button class="btn" id="createAccountBtn">Create Free Account</button><a href="#markets" class="btn btn-ghost">View Markets</a></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-head"><span>BTC/USD</span><span class="price-up" id="btcPrice">$67,240.18</span></div>
+      <svg viewBox="0 0 300 120" class="candles" id="candleChart" aria-hidden="true"></svg>
+    </div>
+  </section>
+
+  <section class="markets" id="markets">
+    <h2>Live markets</h2>
+    <table class="market-table">
+      <thead><tr><th>Asset</th><th>Price</th><th>24h Change</th><th>Market Cap</th></tr></thead>
+      <tbody id="marketBody"></tbody>
+    </table>
+  </section>
+
+  <section class="trade" id="trade">
+    <h2>Built for every trader</h2>
+    <div class="feature-grid">
+      <article class="feature-card"><span class="ico">⚡</span><h3>Instant Execution</h3><p>Sub-50ms order matching engine.</p></article>
+      <article class="feature-card"><span class="ico">💸</span><h3>Low Fees</h3><p>0.05% maker / 0.10% taker, no hidden costs.</p></article>
+      <article class="feature-card"><span class="ico">📱</span><h3>Mobile &amp; Desktop</h3><p>Trade anywhere with full feature parity.</p></article>
+    </div>
+  </section>
+
+  <section class="security" id="security">
+    <h2>Security first</h2>
+    <div class="security-grid">
+      <div class="sec-item"><strong>98%</strong><span>Assets in cold storage</span></div>
+      <div class="sec-item"><strong>$250M</strong><span>Insurance coverage</span></div>
+      <div class="sec-item"><strong>2FA + Yubikey</strong><span>Account protection</span></div>
+    </div>
+    <form id="contactForm" novalidate class="signup-form">
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Create Account</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>COINFORGE — Digital assets involve risk.</p>
+  <p>© 2026 · Website 51 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

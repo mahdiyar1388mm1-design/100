@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artifact — Discover &amp; Collect Digital Art</title>
+<meta name="description" content="Artifact is an NFT marketplace for discovering, buying, and selling digital art from creators worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Artifact</a>
+  <nav aria-label="Primary">
+    <a href="#explore">Explore</a>
+    <a href="#creators">Creators</a>
+    <a href="#drops">Drops</a>
+  </nav>
+  <button class="btn btn-small nav-cta" id="connectBtn">Connect Wallet</button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#explore">Explore</a><a href="#creators">Creators</a><a href="#drops">Drops</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Live Auction Ends in <span id="countdown">05:42:18</span></p>
+      <h1>Discover extraordinary digital art.</h1>
+      <p>Artifact connects collectors with independent digital artists — no gas fees on your first mint.</p>
+      <div class="hero-actions"><a href="#explore" class="btn">Explore Marketplace</a><a href="#drops" class="btn btn-ghost">View Drops</a></div>
+    </div>
+    <div class="hero-nft">
+      <img src="https://picsum.photos/seed/artifact-hero/500/500" alt="Featured generative art piece, colorful abstract shapes">
+      <div class="nft-badge">Featured Drop</div>
+    </div>
+  </section>
+
+  <section class="explore" id="explore">
+    <div class="explore-head">
+      <h2>Trending now</h2>
+      <div class="filter-chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="art">Art</button>
+        <button class="chip" data-filter="photo">Photography</button>
+        <button class="chip" data-filter="3d">3D</button>
+      </div>
+    </div>
+    <div class="nft-grid" id="nftGrid"></div>
+  </section>
+
+  <section class="creators" id="creators">
+    <h2>Top creators</h2>
+    <div class="creator-row" id="creatorRow"></div>
+  </section>
+
+  <section class="drops" id="drops">
+    <h2>Get notified about new drops</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Notify Me</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>ARTIFACT</p>
+  <p>© 2026 · Website 54 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

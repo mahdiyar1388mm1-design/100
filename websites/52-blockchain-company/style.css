@@ -1,0 +1,73 @@
+/* ChainPoint — Blockchain Company | Futuristic geometric 3D nodes (advanced) */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#080b14; --surface:#101526; --line:#232b45; --accent:#5c7cff; --accent2:#5cf0d0; --text-dim:#95a0c2;
+  --display:'Sora',sans-serif; --sans:'Inter',sans-serif;
+}
+body{background:var(--ink);color:#eaeefb;font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:700}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+
+.header{display:flex;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(8,11,20,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:800;font-size:1.15rem}
+header nav{display:flex;gap:1.6rem;flex:1;margin-left:1.6rem;color:var(--text-dim);font-size:.92rem}
+header nav a:hover{color:var(--accent2)}
+.nav-cta{margin-left:auto}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:#fff;width:38px;height:38px;border-radius:6px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{position:relative;overflow:hidden;padding:clamp(4rem,9vw,7rem) 1.5rem;min-height:70vh;display:flex;align-items:center}
+#nodeCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero-copy{position:relative;z-index:1;max-width:720px;margin:0 auto;text-align:center}
+.eyebrow{color:var(--accent2);letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.1rem,5vw,3.2rem);margin-bottom:1.2rem;line-height:1.2}
+.hero-desc{color:var(--text-dim);margin-bottom:1.8rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.btn{background:var(--accent);color:#fff;padding:.9rem 1.7rem;border:none;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--display);display:inline-block}
+.btn:hover{background:#4361e0}
+.btn-ghost{background:none;border:1px solid var(--line);color:#fff}
+.btn-ghost:hover{border-color:var(--accent2);color:var(--accent2)}
+.btn-small{padding:.55rem 1.1rem;font-size:.88rem}
+.btn-block{width:100%}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);text-align:center}
+.stats strong{display:block;font-family:var(--display);font-size:1.7rem;color:var(--accent2)}
+.stats span{color:var(--text-dim);font-size:.85rem}
+
+.usecases,.developers,.contact{max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.usecases h2,.developers h2,.contact h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.usecase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.usecase-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.6rem}
+.usecase-card .ico{font-size:1.8rem;display:block;margin-bottom:.7rem}
+.usecase-card h3{font-size:1.05rem;margin-bottom:.5rem}
+.usecase-card p{color:var(--text-dim);font-size:.9rem}
+
+.dev-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.dev-copy p{color:var(--text-dim);margin-bottom:1.2rem}
+.dev-list{list-style:none}
+.dev-list li{padding:.4rem 0;color:var(--text-dim)}
+.dev-list li::before{content:"✓ ";color:var(--accent2);font-weight:700}
+.code-block{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.4rem;color:var(--accent2);font-family:monospace;font-size:.85rem;overflow-x:auto}
+
+.contact{max-width:600px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.contact input,.contact textarea{width:100%;padding:.85rem 1rem;background:var(--surface);border:1px solid var(--line);color:#fff;border-radius:8px;margin-bottom:1rem;font-family:var(--sans)}
+.form-note{margin-top:1rem;color:var(--accent2)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .nav-cta{display:none}
+  .menu-btn{display:block}
+  .stats{grid-template-columns:repeat(2,1fr);row-gap:1.4rem}
+  .usecase-grid{grid-template-columns:1fr}
+  .dev-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .form-row{grid-template-columns:1fr}
+}

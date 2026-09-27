@@ -1,0 +1,69 @@
+/* Nexum Protocol — Web3 Startup | Experimental glass/neon */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#07060f; --accent:#8b5cf6; --accent2:#22d3ee; --text-dim:#a8a3c9; --line:rgba(255,255,255,.12);
+  --sans:'Manrope',sans-serif;
+}
+body{background:var(--ink);color:#f3f1ff;font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;position:relative}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-weight:800}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+
+.bg-glow{position:fixed;inset:0;z-index:0;background:radial-gradient(circle at 20% 10%,rgba(139,92,246,.25),transparent 45%),radial-gradient(circle at 80% 60%,rgba(34,211,238,.2),transparent 45%);pointer-events:none}
+
+.header{position:relative;z-index:2;display:flex;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;background:rgba(7,6,15,.7);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:1.2rem}
+header nav{display:flex;gap:1.6rem;flex:1;margin-left:1.6rem;color:var(--text-dim);font-weight:600;font-size:.92rem}
+header nav a:hover{color:var(--accent2)}
+.nav-cta{margin-left:auto}
+.menu-btn{display:none;background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff;width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:#0d0b1c;border-bottom:1px solid var(--line);position:relative;z-index:2}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:clamp(3rem,7vw,5rem) 1.5rem;text-align:center}
+.pill{display:inline-block;background:rgba(139,92,246,.15);border:1px solid var(--accent);color:var(--accent2);padding:.4rem 1rem;border-radius:100px;font-size:.8rem;font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:clamp(2.3rem,6vw,3.6rem);margin-bottom:1.2rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--text-dim);max-width:56ch;margin:0 auto 1.8rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.4rem}
+.btn{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0a0714;padding:.9rem 1.8rem;border:none;border-radius:100px;font-weight:800;cursor:pointer;font-family:var(--sans);display:inline-block}
+.btn:hover{filter:brightness(1.1)}
+.btn-ghost{background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff}
+.btn-ghost:hover{border-color:var(--accent2);color:var(--accent2)}
+.btn-small{padding:.55rem 1.1rem;font-size:.85rem}
+
+.glass-panel,.glass-card{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(16px)}
+.glass-panel{max-width:400px;margin:0 auto;padding:1.4rem;text-align:left}
+.swap-row{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.4rem 0}
+.swap-row span:first-child{color:var(--text-dim);font-size:.85rem}
+.chain-badge{background:rgba(34,211,238,.15);color:var(--accent2);font-size:.75rem;padding:.2rem .6rem;border-radius:100px}
+.swap-arrow{text-align:center;color:var(--text-dim);margin:.3rem 0}
+.swap-meta{display:flex;justify-content:space-between;color:var(--text-dim);font-size:.78rem;margin-top:.8rem;border-top:1px solid var(--line);padding-top:.8rem}
+
+.protocol,.chains,.docs,.launch{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.protocol h2,.chains h2,.docs h2,.launch h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem;text-align:center}
+.step-grid,.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.glass-card{padding:1.8rem;text-align:center}
+.step-num{color:var(--accent2);font-weight:800;font-size:1.3rem}
+.step-grid .glass-card h3{margin:.6rem 0 .5rem}
+.step-grid .glass-card p{color:var(--text-dim);font-size:.9rem}
+.stat-grid .glass-card strong{display:block;font-size:1.8rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.4rem}
+.stat-grid .glass-card span{color:var(--text-dim);font-size:.88rem}
+
+.chain-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.chain-chip{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:100px;padding:.7rem 1.4rem;font-weight:600}
+
+.launch{text-align:center;max-width:520px}
+.launch form{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center}
+.launch input{flex:1;min-width:200px;padding:.85rem 1.1rem;background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff;border-radius:100px}
+.form-note{margin-top:1rem;color:var(--accent2);flex-basis:100%}
+
+.footer{position:relative;z-index:1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .nav-cta{display:none}
+  .menu-btn{display:block}
+  .step-grid,.stat-grid{grid-template-columns:1fr}
+}

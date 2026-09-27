@@ -1,0 +1,77 @@
+/* Artifact — NFT Marketplace | Vibrant gradient marketplace */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#141221; --bg:#0f0d1a; --surface:#1c1930; --line:#2f2a4a; --grad1:#ff6ec4; --grad2:#7873f5; --grad3:#4ade80; --text-dim:#a79fc9;
+  --display:'Unbounded',sans-serif; --sans:'Sora',sans-serif;
+}
+body{background:var(--bg);color:#f4f2ff;font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:700}
+:focus-visible{outline:2px solid var(--grad3);outline-offset:2px}
+
+.header{display:flex;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(15,13,26,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.2rem}
+header nav{display:flex;gap:1.6rem;flex:1;margin-left:1.6rem;color:var(--text-dim);font-weight:600;font-size:.92rem}
+header nav a:hover{color:#fff}
+.nav-cta{margin-left:auto}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:#fff;width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{max-width:1200px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.eyebrow{color:var(--grad3);font-weight:700;font-size:.85rem;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.1rem,4.8vw,3.2rem);margin-bottom:1.2rem;line-height:1.2}
+.hero-copy p{color:var(--text-dim);max-width:48ch;margin-bottom:1.8rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{background:linear-gradient(90deg,var(--grad1),var(--grad2));color:#fff;padding:.9rem 1.7rem;border:none;border-radius:100px;font-weight:700;cursor:pointer;font-family:var(--sans);display:inline-block}
+.btn:hover{filter:brightness(1.1)}
+.btn-ghost{background:var(--surface);border:1px solid var(--line);color:#fff}
+.btn-ghost:hover{border-color:var(--grad2)}
+.btn-small{padding:.55rem 1.1rem;font-size:.85rem}
+
+.hero-nft{position:relative}
+.hero-nft img{border-radius:20px;aspect-ratio:1;object-fit:cover;box-shadow:0 30px 60px rgba(120,115,245,.3)}
+.nft-badge{position:absolute;top:1rem;left:1rem;background:rgba(20,18,33,.85);padding:.4rem 1rem;border-radius:100px;font-size:.78rem;font-weight:700}
+
+.explore,.creators,.drops{max-width:1200px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.explore-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.8rem}
+.explore-head h2,.creators h2,.drops h2{font-size:clamp(1.8rem,4vw,2.4rem)}
+.filter-chips{display:flex;gap:.7rem;flex-wrap:wrap}
+.chip{background:var(--surface);border:1px solid var(--line);color:var(--text-dim);padding:.5rem 1.1rem;border-radius:100px;cursor:pointer;font-weight:600;font-size:.85rem}
+.chip.active{background:linear-gradient(90deg,var(--grad1),var(--grad2));color:#fff;border-color:transparent}
+
+.nft-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.nft-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s}
+.nft-card:hover{transform:translateY(-4px)}
+.nft-card img{aspect-ratio:1;object-fit:cover}
+.nft-body{padding:1rem}
+.nft-body h3{font-size:.95rem;margin-bottom:.5rem;font-family:var(--sans);font-weight:700}
+.nft-foot{display:flex;justify-content:space-between;font-size:.85rem;color:var(--text-dim)}
+.nft-price{color:var(--grad3);font-weight:700}
+.nft-card[hidden]{display:none}
+
+.creator-row{display:flex;gap:1.4rem;overflow-x:auto;padding-bottom:.5rem}
+.creator-card{flex:0 0 160px;text-align:center}
+.creator-card img{border-radius:50%;aspect-ratio:1;object-fit:cover;margin:0 auto .7rem}
+.creator-card span{font-size:.85rem;color:var(--text-dim)}
+
+.drops{text-align:center;max-width:520px}
+.drops form{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center}
+.drops input{flex:1;min-width:200px;padding:.85rem 1.1rem;background:var(--surface);border:1px solid var(--line);color:#fff;border-radius:100px}
+.form-note{margin-top:1rem;color:var(--grad3);flex-basis:100%}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .nav-cta{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .nft-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .nft-grid{grid-template-columns:1fr}
+}

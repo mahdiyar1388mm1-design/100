@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexum Protocol — Cross-Chain Liquidity Layer</title>
+<meta name="description" content="Nexum Protocol is a cross-chain liquidity protocol enabling instant, trustless asset transfers across 14 blockchains.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">◈ Nexum</a>
+  <nav aria-label="Primary">
+    <a href="#protocol">Protocol</a>
+    <a href="#chains">Chains</a>
+    <a href="#docs">Docs</a>
+  </nav>
+  <a href="#launch" class="btn btn-small nav-cta">Launch App</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#protocol">Protocol</a><a href="#chains">Chains</a><a href="#docs">Docs</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <span class="pill">Now live on 14 chains</span>
+    <h1>Liquidity without borders.</h1>
+    <p>Nexum lets assets move trustlessly across chains in under 10 seconds, secured by a decentralized validator network.</p>
+    <div class="hero-actions"><a href="#launch" class="btn">Launch App</a><a href="#docs" class="btn btn-ghost">Read Whitepaper</a></div>
+    <div class="glass-panel">
+      <div class="swap-row"><span>From</span><strong>2.5 ETH</strong><span class="chain-badge">Ethereum</span></div>
+      <div class="swap-arrow">↓</div>
+      <div class="swap-row"><span>To</span><strong>2.498 ETH</strong><span class="chain-badge">Arbitrum</span></div>
+      <div class="swap-meta"><span>Bridge fee: 0.08%</span><span>~6s</span></div>
+    </div>
+  </section>
+
+  <section class="protocol" id="protocol">
+    <h2>How Nexum works</h2>
+    <div class="step-grid">
+      <div class="glass-card"><span class="step-num">01</span><h3>Lock</h3><p>Assets are locked in an audited smart contract on the source chain.</p></div>
+      <div class="glass-card"><span class="step-num">02</span><h3>Verify</h3><p>A decentralized validator set attests to the lock event.</p></div>
+      <div class="glass-card"><span class="step-num">03</span><h3>Mint</h3><p>Equivalent liquidity is released on the destination chain.</p></div>
+    </div>
+  </section>
+
+  <section class="chains" id="chains">
+    <h2>Supported networks</h2>
+    <div class="chain-grid">
+      <span class="chain-chip">Ethereum</span><span class="chain-chip">Arbitrum</span><span class="chain-chip">Optimism</span>
+      <span class="chain-chip">Polygon</span><span class="chain-chip">Base</span><span class="chain-chip">Avalanche</span>
+      <span class="chain-chip">Solana</span><span class="chain-chip">BNB Chain</span>
+    </div>
+  </section>
+
+  <section class="docs" id="docs">
+    <h2>Total value locked</h2>
+    <div class="stat-grid">
+      <div class="glass-card"><strong>$1.8B</strong><span>Total value locked</span></div>
+      <div class="glass-card"><strong>14</strong><span>Connected chains</span></div>
+      <div class="glass-card"><strong>420k</strong><span>Cross-chain transfers</span></div>
+    </div>
+  </section>
+
+  <section class="launch" id="launch">
+    <h2>Get early access to Nexum V2</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Join Waitlist</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>NEXUM PROTOCOL</p>
+  <p>© 2026 · Website 53 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
