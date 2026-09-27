@@ -1,0 +1,67 @@
+/* Loopli | Playful modern app landing */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff; --surface:#f7f4ff; --ink:#241c3b; --accent:#7b2ff7; --accent2:#ff6fa5; --text-dim:#665c7d; --line:#ece6fb;
+  --display:'Baloo 2',sans-serif; --sans:'Inter',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:700}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:800;font-size:1.4rem;color:var(--accent)}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.9rem}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:10px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{position:relative;max-width:1200px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:center}
+.blob{position:absolute;border-radius:50%;filter:blur(50px);opacity:.35;z-index:0}
+.blob1{width:400px;height:400px;background:var(--accent);top:-100px;left:-100px}
+.blob2{width:350px;height:350px;background:var(--accent2);bottom:-120px;right:0}
+.hero-copy{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.4rem);margin-bottom:1rem;line-height:1.15}
+.hero p{color:var(--text-dim);max-width:40ch;margin-bottom:1.8rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.95rem 2rem;border-radius:100px;font-weight:700;border:none;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:#6521d6}
+
+.phone-mock{position:relative;z-index:1;justify-self:center;width:min(280px,80vw);border-radius:36px;border:8px solid var(--ink);overflow:hidden;box-shadow:0 30px 60px rgba(36,28,59,.25)}
+.phone-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100px;height:20px;background:var(--ink);border-radius:0 0 12px 12px;z-index:2}
+.phone-mock img{width:100%;display:block}
+
+.features{max-width:1000px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid var(--line);text-align:center}
+.features h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.feature-track{display:flex;overflow:hidden;position:relative;min-height:180px}
+.feature-slide{min-width:100%;transition:transform .5s ease;padding:0 1rem}
+.feature-slide h3{font-size:1.4rem;margin-bottom:.6rem}
+.feature-slide p{color:var(--text-dim);max-width:44ch;margin:0 auto}
+.feature-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1.2rem}
+.feature-dots button{width:9px;height:9px;border-radius:50%;border:none;background:var(--line);cursor:pointer}
+.feature-dots button.active{background:var(--accent)}
+
+.circles{max-width:1000px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid var(--line);text-align:center}
+.circles h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.circle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.circle-card img{border-radius:50%;aspect-ratio:1;object-fit:cover;width:100%;margin-bottom:.8rem}
+
+.get{max-width:480px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid var(--line);text-align:center}
+.get h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:.6rem}
+.get > p{color:var(--text-dim);margin-bottom:1.6rem}
+.get input{width:100%;padding:.9rem 1.1rem;border:1px solid var(--line);background:var(--surface);margin-bottom:1rem;border-radius:100px;text-align:center}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2);font-weight:600}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .phone-mock{order:-1}
+  .circle-grid{grid-template-columns:1fr}
+}

@@ -1,0 +1,70 @@
+/* Ivory & Oak Weddings | Romantic soft elegant */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff9f6; --surface:#fff; --ink:#4a3a37; --accent:#c98a7d; --accent2:#9caf88; --text-dim:#8c7770; --line:#f1e3dd;
+  --serif:'Playfair Display',serif; --script:'Petit Formal Script',cursive; --sans:'Karla',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-style:italic;font-weight:500}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,4vw,3.5rem);position:sticky;top:0;z-index:40;background:rgba(255,249,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-style:italic;font-size:1.3rem}
+header nav{display:flex;gap:2rem;font-size:.9rem}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:50%}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{position:relative;height:min(85vh,680px)}
+.hero img{width:100%;height:100%;object-fit:cover;filter:brightness(.75)}
+.hero-copy{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 1.5rem}
+.script{font-family:var(--script);font-size:1.8rem;margin-bottom:.6rem}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin-bottom:2rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.9rem 2rem;border-radius:100px;font-weight:500;border:none;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:#b06f61}
+
+.process{max-width:1000px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem}
+.process h2,.gallery h2,.packages h2,.inquire h2{text-align:center;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:2.5rem}
+.timeline-item{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-bottom:3rem}
+.timeline-item.reverse{direction:rtl}
+.timeline-item.reverse > *{direction:ltr}
+.timeline-item img{border-radius:16px}
+.step-num{color:var(--accent);font-family:var(--serif);font-style:italic;font-size:1.5rem}
+.timeline-item h3{font-size:1.6rem;margin:.4rem 0}
+.timeline-item p{color:var(--text-dim)}
+
+.gallery{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid var(--line)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.gallery-grid img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+
+.packages{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid var(--line)}
+.package-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.package{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:2rem;text-align:center}
+.package.featured{border-color:var(--accent);box-shadow:0 20px 40px rgba(201,138,125,.15)}
+.package h3{font-size:1.3rem;margin-bottom:.6rem}
+.package .price{color:var(--accent);font-weight:700;font-style:normal;font-family:var(--sans);margin-bottom:.8rem}
+.package p:last-child{color:var(--text-dim)}
+
+.inquire{max-width:560px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid var(--line)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.inquire input{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:var(--surface);margin-bottom:1rem;border-radius:100px;font-family:var(--sans)}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2);text-align:center}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .timeline-item,.timeline-item.reverse{grid-template-columns:1fr;direction:ltr}
+  .package-cards{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .form-row{grid-template-columns:1fr}
+}

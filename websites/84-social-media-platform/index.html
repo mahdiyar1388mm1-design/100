@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loopli — Share Moments, Not Metrics</title>
+<meta name="description" content="Loopli is a social app for small circles of friends — share photos, stories, and moments without the noise of public feeds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">loopli</a>
+  <nav aria-label="Primary">
+    <a href="#features">Features</a>
+    <a href="#circles">Circles</a>
+    <a href="#get">Get the App</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#features">Features</a><a href="#circles">Circles</a><a href="#get">Get the App</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="blob blob1" aria-hidden="true"></div>
+    <div class="blob blob2" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <h1>Share moments, not metrics.</h1>
+      <p>Loopli is a private social app for small circles — no ads, no algorithms, no public follower counts.</p>
+      <a href="#get" class="btn">Get Loopli — It's Free</a>
+    </div>
+    <div class="phone-mock" aria-hidden="true">
+      <div class="phone-notch"></div>
+      <img src="https://picsum.photos/seed/loopli-feed/380/700" alt="">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why people love Loopli</h2>
+    <div class="feature-track" id="featureTrack"></div>
+    <div class="feature-dots" id="featureDots"></div>
+  </section>
+
+  <section class="circles" id="circles">
+    <h2>Built for real circles</h2>
+    <div class="circle-grid">
+      <div class="circle-card"><img src="https://picsum.photos/seed/loopli-c1/300/300" alt="Group of friends laughing together" loading="lazy"><h3>Close Friends</h3></div>
+      <div class="circle-card"><img src="https://picsum.photos/seed/loopli-c2/300/300" alt="Family gathered around a dinner table" loading="lazy"><h3>Family</h3></div>
+      <div class="circle-card"><img src="https://picsum.photos/seed/loopli-c3/300/300" alt="Roommates hanging out at home" loading="lazy"><h3>Roommates</h3></div>
+    </div>
+  </section>
+
+  <section class="get" id="get">
+    <h2>Get the app</h2>
+    <p>Enter your number and we'll text you a download link.</p>
+    <form id="contactForm" novalidate>
+      <input type="tel" id="cphone" placeholder="Phone number" required>
+      <button type="submit" class="btn btn-block">Text Me the App</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>LOOPLI</p>
+  <p>© 2026 · Website 84 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

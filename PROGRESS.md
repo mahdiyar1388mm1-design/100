@@ -85,11 +85,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 78 | Automotive Brand | Raven Automotive | Futuristic 3D car showcase (advanced) | ✅ |
 | 79 | Car Rental Platform | DriveNow Rentals | Clean app-style booking | ✅ |
 | 80 | Taxi/Ride Sharing Platform | ZipRide | Bright modern app UI | ✅ |
-| 81 | Event Management Company | Lumen Events | Elegant editorial gold | ⬜ |
-| 82 | Wedding Planner | Ivory & Oak Weddings | Romantic soft elegant | ⬜ |
-| 83 | Photography Booking Platform | Shuttr | Clean marketplace booking | ⬜ |
-| 84 | Social Media Platform | Loopli | Playful modern app landing | ⬜ |
-| 85 | Community Platform | The Commons | Warm community illustration | ⬜ |
+| 81 | Event Management Company | Lumen Events | Elegant editorial gold | ✅ |
+| 82 | Wedding Planner | Ivory & Oak Weddings | Romantic soft elegant | ✅ |
+| 83 | Photography Booking Platform | Shuttr | Clean marketplace booking | ✅ |
+| 84 | Social Media Platform | Loopli | Playful modern app landing | ✅ |
+| 85 | Community Platform | The Commons | Warm community illustration | ✅ |
 | 86 | Personal Finance Dashboard | Budgetly | Clean dashboard data viz (advanced) | ⬜ |
 | 87 | Project Management SaaS | Taskflow | Clean SaaS kanban dashboard | ⬜ |
 | 88 | CRM Platform | Clientele CRM | Corporate SaaS dashboard | ⬜ |

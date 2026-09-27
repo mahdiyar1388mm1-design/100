@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shuttr — Book Trusted Photographers Near You</title>
+<meta name="description" content="Shuttr connects you with vetted photographers for weddings, portraits, and events. Compare portfolios and book instantly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Shuttr</a>
+  <nav aria-label="Primary">
+    <a href="#browse">Browse</a>
+    <a href="#how">How It Works</a>
+    <a href="#join">For Photographers</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#browse">Browse</a><a href="#how">How It Works</a><a href="#join">For Photographers</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Find your photographer.</h1>
+    <p>Compare portfolios, pricing, and availability — then book in minutes.</p>
+  </section>
+
+  <section class="browse" id="browse">
+    <aside class="filters">
+      <h2>Filters</h2>
+      <fieldset>
+        <legend>Style</legend>
+        <label><input type="checkbox" value="wedding" checked> Wedding</label>
+        <label><input type="checkbox" value="portrait" checked> Portrait</label>
+        <label><input type="checkbox" value="event" checked> Event</label>
+        <label><input type="checkbox" value="product" checked> Product</label>
+      </fieldset>
+      <label class="range-label">Max price: $<span id="priceOut">800</span>
+        <input type="range" id="priceRange" min="150" max="1200" step="50" value="800">
+      </label>
+      <p class="result-count" id="resultCount"></p>
+    </aside>
+    <div class="results" id="resultsGrid"></div>
+  </section>
+
+  <section class="how" id="how">
+    <h2>How Shuttr works</h2>
+    <div class="how-grid">
+      <article><span>1</span><h3>Search</h3><p>Filter by style, location, and budget.</p></article>
+      <article><span>2</span><h3>Compare</h3><p>Review portfolios, ratings, and packages.</p></article>
+      <article><span>3</span><h3>Book</h3><p>Reserve your date and pay securely online.</p></article>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <h2>Are you a photographer?</h2>
+    <p>Join Shuttr and get discovered by clients booking shoots in your city.</p>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="text" id="ccity" placeholder="City" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Apply to Join</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>SHUTTR</p>
+  <p>© 2026 · Website 83 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

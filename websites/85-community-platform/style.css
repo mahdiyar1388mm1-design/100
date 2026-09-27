@@ -1,0 +1,62 @@
+/* The Commons | Warm community illustration style */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff8ee; --surface:#fff; --ink:#3a2e22; --accent:#d97b3f; --accent2:#7a9d54; --text-dim:#7b6a58; --line:#f0e2ce;
+  --display:'Fredoka',sans-serif; --sans:'Nunito Sans',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--display);font-weight:600}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(255,248,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:600;font-size:1.2rem}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.9rem}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:10px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:800px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 1.5rem;text-align:center}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.2rem);margin-bottom:1rem}
+.hero p{color:var(--text-dim);max-width:46ch;margin:0 auto 2rem}
+.search-bar{display:flex;gap:.6rem;max-width:560px;margin:0 auto;flex-wrap:wrap}
+.search-bar input{flex:1;min-width:220px;padding:.9rem 1.2rem;border:2px solid var(--line);border-radius:100px;background:var(--surface)}
+.search-bar button{background:var(--accent);color:#fff;border:none;padding:.9rem 1.8rem;border-radius:100px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.search-bar button:hover{background:#c06529}
+
+.groups{max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem}
+.groups h2,.spotlight h2,.start h2{text-align:center;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2rem}
+.group-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.4rem}
+.group-card{background:var(--surface);border:2px solid var(--line);border-radius:20px;padding:1.4rem;text-align:center}
+.group-card .emoji{font-size:2.2rem;display:block;margin-bottom:.6rem}
+.group-card h3{margin-bottom:.3rem}
+.group-card p{color:var(--text-dim);font-size:.85rem;margin-bottom:.6rem}
+.group-card span{background:#fdf0e2;color:var(--accent);padding:.3rem .8rem;border-radius:100px;font-size:.78rem;font-weight:700}
+
+.spotlight{max-width:900px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.spotlight-card{display:flex;gap:2rem;align-items:center;background:var(--surface);border-radius:24px;padding:2rem;border:2px solid var(--line)}
+.spotlight-card img{border-radius:50%;width:140px;height:140px;object-fit:cover;flex-shrink:0}
+.spotlight-quote{font-size:1.15rem;font-style:italic;margin-bottom:.8rem}
+.spotlight-name{color:var(--text-dim);font-size:.9rem}
+
+.start{max-width:520px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.start input{width:100%;padding:.85rem 1.1rem;border:2px solid var(--line);background:var(--surface);margin-bottom:1rem;border-radius:12px}
+.btn{background:var(--accent2);color:#fff;padding:.9rem 1.6rem;border:none;border-radius:12px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.btn-block{width:100%}
+.form-note{margin-top:1rem;color:var(--accent2);text-align:center}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .spotlight-card{flex-direction:column;text-align:center}
+}
+@media (max-width:560px){
+  .form-row{grid-template-columns:1fr}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Commons — Find Your People</title>
+<meta name="description" content="The Commons is a community platform for hosting and discovering local interest groups, from book clubs to hiking crews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">🌾 The Commons</a>
+  <nav aria-label="Primary">
+    <a href="#groups">Groups</a>
+    <a href="#spotlight">Spotlight</a>
+    <a href="#start">Start a Group</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#groups">Groups</a><a href="#spotlight">Spotlight</a><a href="#start">Start a Group</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Find your people.</h1>
+    <p>The Commons connects neighbors around shared interests — from Sunday hikes to Tuesday book clubs.</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search groups near you (e.g. hiking, books, chess)">
+      <button id="searchBtn">Search</button>
+    </div>
+  </section>
+
+  <section class="groups" id="groups">
+    <h2>Popular groups</h2>
+    <div class="group-grid" id="groupGrid"></div>
+  </section>
+
+  <section class="spotlight" id="spotlight">
+    <h2>Member spotlight</h2>
+    <div class="spotlight-card">
+      <img src="https://picsum.photos/seed/commons-member/220/220" alt="Portrait of Renata Silva, community organizer">
+      <div>
+        <p class="spotlight-quote">"I started a weekend pottery group with three friends. A year later, we have forty members and our own studio night."</p>
+        <p class="spotlight-name">Renata Silva — Clayworks Collective, founded 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="start" id="start">
+    <h2>Start your own group</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="gname" placeholder="Group name" required>
+        <input type="text" id="gtopic" placeholder="Topic" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Create My Group</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>THE COMMONS</p>
+  <p>© 2026 · Website 85 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

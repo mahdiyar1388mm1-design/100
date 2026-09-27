@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumen Events — Unforgettable Occasions, Meticulously Crafted</title>
+<meta name="description" content="Lumen Events designs and produces bespoke corporate galas, launches, and celebrations across Europe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">LUMEN</a>
+  <nav aria-label="Primary">
+    <a href="#work">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#enquire">Enquire</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#work">Portfolio</a><a href="#services">Services</a><a href="#enquire">Enquire</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <p class="kicker">EST. 2012 — EVENT DESIGN &amp; PRODUCTION</p>
+    <h1>We design moments people <em>remember</em>.</h1>
+    <div class="hero-grid">
+      <img src="https://picsum.photos/seed/lumen-hero1/700/900" alt="Elegant gala dinner setup with gold table settings" loading="lazy">
+      <div class="hero-text">
+        <p>Lumen Events plans and produces corporate galas, product launches, and milestone celebrations for brands that care about every detail — from lighting design to the last canapé.</p>
+        <a href="#enquire" class="btn">Start an Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <div class="tabs" id="workTabs">
+        <button class="tab active" data-cat="all">All</button>
+        <button class="tab" data-cat="corporate">Corporate</button>
+        <button class="tab" data-cat="launch">Launches</button>
+        <button class="tab" data-cat="gala">Galas</button>
+      </div>
+    </div>
+    <div class="work-grid" id="workGrid"></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we do</h2>
+    <div class="services-list">
+      <article><span>01</span><h3>Concept &amp; Design</h3><p>Full creative direction, from mood boards to floor plans.</p></article>
+      <article><span>02</span><h3>Vendor Management</h3><p>Curated network of caterers, florists, and AV production teams.</p></article>
+      <article><span>03</span><h3>On-Site Production</h3><p>A dedicated producer runs every minute of your event day.</p></article>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <blockquote id="quoteText">"Lumen turned our product launch into a story our guests are still talking about."</blockquote>
+    <p id="quoteAuthor">— Head of Brand, Nordholm Group</p>
+    <div class="quote-dots" id="quoteDots"></div>
+  </section>
+
+  <section class="enquire" id="enquire">
+    <h2>Tell us about your event</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="text" id="ctype" placeholder="Event type" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <textarea id="cmsg" rows="3" placeholder="Tell us a little about your vision"></textarea>
+      <button type="submit" class="btn btn-block">Send Enquiry</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>LUMEN EVENTS</p>
+  <p>© 2026 · Website 81 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

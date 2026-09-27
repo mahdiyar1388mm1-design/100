@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivory &amp; Oak Weddings — Full-Service Wedding Planning</title>
+<meta name="description" content="Ivory & Oak Weddings plans intimate, romantic weddings across the countryside, from venue scouting to day-of coordination.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Petit+Formal+Script&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Ivory &amp; Oak</a>
+  <nav aria-label="Primary">
+    <a href="#process">Our Process</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#inquire">Inquire</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#process">Our Process</a><a href="#gallery">Gallery</a><a href="#inquire">Inquire</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/ivoryoak-hero/1800/1000" alt="Bride and groom under a floral arch at sunset">
+    <div class="hero-copy">
+      <p class="script">for the day you'll never forget</p>
+      <h1>Weddings, planned with love.</h1>
+      <a href="#inquire" class="btn">Check Our Availability</a>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <h2>How we plan your day</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <img src="https://picsum.photos/seed/ivoryoak-1/500/400" alt="Couple meeting with wedding planner over mood boards" loading="lazy">
+        <div><span class="step-num">01</span><h3>The Vision</h3><p>We meet, dream, and build a mood board that feels like the two of you.</p></div>
+      </div>
+      <div class="timeline-item reverse">
+        <img src="https://picsum.photos/seed/ivoryoak-2/500/400" alt="Wedding venue with string lights being set up" loading="lazy">
+        <div><span class="step-num">02</span><h3>The Details</h3><p>Venue, florals, catering, music — we source and manage every vendor.</p></div>
+      </div>
+      <div class="timeline-item">
+        <img src="https://picsum.photos/seed/ivoryoak-3/500/400" alt="Guests dancing at a candlelit wedding reception" loading="lazy">
+        <div><span class="step-num">03</span><h3>The Day</h3><p>Our team runs the full day so you can simply be present in it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Recent celebrations</h2>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <section class="packages">
+    <h2>Planning packages</h2>
+    <div class="package-cards">
+      <article class="package"><h3>Day-Of Coordination</h3><p class="price">From €1,200</p><p>Peace of mind for your wedding day, start to finish.</p></article>
+      <article class="package featured"><h3>Full Planning</h3><p class="price">From €4,500</p><p>End-to-end planning from your first "yes" to the last dance.</p></article>
+      <article class="package"><h3>Partial Planning</h3><p class="price">From €2,600</p><p>You've started — we refine the details and manage the day.</p></article>
+    </div>
+  </section>
+
+  <section class="inquire" id="inquire">
+    <h2>Check our availability</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Your names" required>
+        <input type="date" id="cdate" placeholder="Wedding date" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Send Inquiry</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>IVORY &amp; OAK WEDDINGS</p>
+  <p>© 2026 · Website 82 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
