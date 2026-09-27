@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Consulting Group — Strategy &amp; Operations Consulting</title>
+<meta name="description" content="Apex Consulting Group helps enterprises solve their toughest strategy, operations, and transformation challenges.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">APEX</a>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#insights">Insights</a>
+  </nav>
+  <a href="#contact" class="btn btn-small nav-cta">Speak to a Partner</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#results">Results</a><a href="#insights">Insights</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>We solve the problems that keep executives up at night.</h1>
+    <p>Apex Consulting Group partners with Fortune 500 companies on strategy, operations, and digital transformation.</p>
+    <a href="#contact" class="btn">Speak to a Partner</a>
+  </section>
+
+  <section class="stats-strip">
+    <div><strong>$4.2B</strong><span>Client value created</span></div>
+    <div><strong>280+</strong><span>Engagements delivered</span></div>
+    <div><strong>34</strong><span>Countries served</span></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we do</h2>
+    <div class="service-grid">
+      <article class="service-card"><h3>Strategy</h3><p>Corporate strategy, market entry, and growth planning.</p></article>
+      <article class="service-card"><h3>Operations</h3><p>Process redesign and operational efficiency programs.</p></article>
+      <article class="service-card"><h3>Digital Transformation</h3><p>Technology roadmaps and organizational change management.</p></article>
+      <article class="service-card"><h3>M&amp;A Advisory</h3><p>Due diligence and post-merger integration.</p></article>
+    </div>
+  </section>
+
+  <section class="results" id="results">
+    <h2>Case studies</h2>
+    <div class="case-grid">
+      <article class="case-card"><span class="case-tag">Retail</span><h3>Reduced supply chain costs by 22% for a national retailer</h3></article>
+      <article class="case-card"><span class="case-tag">Financial Services</span><h3>Led digital transformation for a top-10 regional bank</h3></article>
+      <article class="case-card"><span class="case-tag">Manufacturing</span><h3>Guided post-merger integration across 14 countries</h3></article>
+    </div>
+  </section>
+
+  <section class="insights" id="insights">
+    <h2>Latest insights</h2>
+    <div class="insight-list">
+      <article><h3>Why Most Digital Transformations Fail (And How to Avoid It)</h3><span>7 min read</span></article>
+      <article><h3>The New Playbook for Supply Chain Resilience</h3><span>5 min read</span></article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Speak to a partner</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Work email" required>
+      </div>
+      <textarea id="cmessage" rows="3" placeholder="Tell us about your challenge"></textarea>
+      <button type="submit" class="btn btn-block">Request Introduction</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>APEX CONSULTING GROUP</p>
+  <p>© 2026 · Website 71 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

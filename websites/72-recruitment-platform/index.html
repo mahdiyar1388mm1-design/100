@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TalentBridge — Recruitment, Reimagined</title>
+<meta name="description" content="TalentBridge connects growing companies with pre-vetted candidates through AI-assisted matching and dedicated recruiters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Talent<span>Bridge</span></a>
+  <nav aria-label="Primary">
+    <a href="#employers">For Employers</a>
+    <a href="#candidates">For Candidates</a>
+    <a href="#how">How It Works</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#employers">For Employers</a><a href="#candidates">For Candidates</a><a href="#how">How It Works</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Hiring, without the guesswork.</h1>
+      <p>TalentBridge matches you with pre-vetted candidates in days, not months — backed by dedicated recruiters who know your industry.</p>
+      <div class="hero-actions"><a href="#employers" class="btn">I'm Hiring</a><a href="#candidates" class="btn btn-ghost">I'm Job Searching</a></div>
+    </div>
+    <div class="match-card">
+      <div class="match-head"><span>New match</span><span class="match-score">96% Fit</span></div>
+      <div class="match-body"><img src="https://picsum.photos/seed/tb-candidate/80/80" alt="Candidate profile photo"><div><h3>Senior Product Designer</h3><span>8 yrs experience · Available now</span></div></div>
+    </div>
+  </section>
+
+  <section class="employers" id="employers">
+    <h2>For employers</h2>
+    <div class="card-grid">
+      <article class="card"><span class="ico">🎯</span><h3>AI-Assisted Matching</h3><p>Get a shortlist of qualified candidates in 48 hours.</p></article>
+      <article class="card"><span class="ico">🧑‍💼</span><h3>Dedicated Recruiters</h3><p>Industry-specialist recruiters manage your search end-to-end.</p></article>
+      <article class="card"><span class="ico">✅</span><h3>Pre-Vetted Talent</h3><p>Every candidate is skills-assessed before you meet them.</p></article>
+    </div>
+  </section>
+
+  <section class="candidates" id="candidates">
+    <h2>For candidates</h2>
+    <div class="job-grid" id="jobGrid"></div>
+  </section>
+
+  <section class="how" id="how">
+    <h2>How it works</h2>
+    <div class="step-grid">
+      <div class="step"><span class="step-num">1</span><h3>Tell Us Your Needs</h3></div>
+      <div class="step"><span class="step-num">2</span><h3>Get Matched</h3></div>
+      <div class="step"><span class="step-num">3</span><h3>Interview &amp; Hire</h3></div>
+    </div>
+    <form id="contactForm" novalidate class="signup-form">
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Get Started Free</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>TalentBridge</p>
+  <p>© 2026 · Website 72 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

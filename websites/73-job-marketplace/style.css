@@ -1,0 +1,61 @@
+/* HireWave — Job Marketplace | Marketplace grid/filters */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#151b2e; --bg:#f5f6fa; --surface:#fff; --accent:#2857e0; --accent2:#12b886; --text-dim:#5c6377; --line:#e2e4ef;
+  --display:'Sora',sans-serif; --sans:'Inter',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:700}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,2.5rem);position:sticky;top:0;z-index:40;background:rgba(245,246,250,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--accent)}
+header nav{display:flex;gap:1.6rem;flex:1;margin-left:1.6rem;font-weight:600;font-size:.92rem}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:900px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;text-align:center}
+.hero h1{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:1.6rem}
+.search-form{display:flex;gap:.6rem;flex-wrap:wrap;max-width:600px;margin:0 auto}
+.search-form input{flex:1;min-width:160px;padding:.85rem 1rem;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.search-form button{background:var(--accent);color:#fff;border:none;padding:.85rem 1.4rem;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.search-form button:hover{background:#1c42b0}
+
+.browse{max-width:1300px;margin:0 auto;padding:1rem 1.5rem 4rem;display:grid;grid-template-columns:230px 1fr;gap:2rem}
+.filters{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.4rem;align-self:start;position:sticky;top:5.5rem}
+.filters h2{font-size:1.05rem;margin-bottom:1rem}
+.filter-group{margin-bottom:1.4rem}
+.filter-group h3{font-size:.85rem;text-transform:uppercase;color:var(--text-dim);margin-bottom:.6rem}
+.filter-group label{display:flex;align-items:center;gap:.5rem;padding:.3rem 0;font-size:.92rem}
+.filter-group input[type=range]{width:100%}
+
+.results-head{margin-bottom:1.2rem;color:var(--text-dim);font-size:.92rem}
+.job-list{display:flex;flex-direction:column;gap:1rem}
+.job-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.4rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.job-card h3{font-size:1.1rem;margin-bottom:.3rem}
+.job-meta{color:var(--text-dim);font-size:.88rem}
+.job-salary{color:var(--accent2);font-weight:700}
+.job-apply{background:var(--accent);color:#fff;border:none;padding:.7rem 1.3rem;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.job-apply:hover{background:#1c42b0}
+.no-results{text-align:center;color:var(--text-dim);padding:3rem 0}
+
+.post{max-width:600px;margin:0 auto;padding:3rem 1.5rem 4rem;text-align:center;border-top:1px solid var(--line)}
+.post h2{font-size:clamp(1.6rem,4vw,2.1rem);margin-bottom:1.5rem}
+.post form{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center}
+.post input{flex:1;min-width:180px;padding:.85rem 1rem;border:1px solid var(--line);border-radius:8px}
+.btn{background:var(--accent);color:#fff;border:none;padding:.85rem 1.6rem;border-radius:8px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.form-note{margin-top:1rem;color:var(--accent2);flex-basis:100%}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1300px;margin:0 auto;padding:2rem 1.5rem;color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .browse{grid-template-columns:1fr}
+  .filters{position:static}
+}

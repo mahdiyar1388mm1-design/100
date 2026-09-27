@@ -75,11 +75,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 68 | Pharmacy Website | Greenleaf Pharmacy | Clean trustworthy green | ✅ |
 | 69 | Legal Firm | Sterling & Hawke LLP | Premium corporate navy serif | ✅ |
 | 70 | Accounting Company | Ledger & Co. | Swiss clean corporate | ✅ |
-| 71 | Consulting Company | Apex Consulting Group | Premium corporate bold | ⬜ |
-| 72 | Recruitment Platform | TalentBridge | Modern friendly cards | ⬜ |
-| 73 | Job Marketplace | HireWave | Marketplace grid/filters | ⬜ |
-| 74 | Freelancer Marketplace | GigSphere | Vibrant marketplace | ⬜ |
-| 75 | Logistics Company | Cargoline Logistics | Industrial bold route graphics | ⬜ |
+| 71 | Consulting Company | Apex Consulting Group | Premium corporate bold | ✅ |
+| 72 | Recruitment Platform | TalentBridge | Modern friendly cards | ✅ |
+| 73 | Job Marketplace | HireWave | Marketplace grid/filters | ✅ |
+| 74 | Freelancer Marketplace | GigSphere | Vibrant marketplace | ✅ |
+| 75 | Logistics Company | Cargoline Logistics | Industrial bold route graphics | ✅ |
 | 76 | Shipping Platform | Portline Shipping | Data-driven tracking UI (advanced) | ⬜ |
 | 77 | Car Dealership | Velocity Motors | Bold automotive dark | ⬜ |
 | 78 | Automotive Brand | Raven Automotive | Futuristic 3D car showcase (advanced) | ⬜ |

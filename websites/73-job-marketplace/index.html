@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HireWave — Find Your Next Job</title>
+<meta name="description" content="HireWave is a job marketplace with thousands of listings from vetted companies. Filter by role, location, and salary.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">HireWave</a>
+  <nav aria-label="Primary">
+    <a href="#browse">Browse Jobs</a>
+    <a href="#post">Post a Job</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#browse">Browse Jobs</a><a href="#post">Post a Job</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Find work that fits your life.</h1>
+    <form class="search-form" id="searchForm" role="search">
+      <input type="search" id="searchInput" placeholder="Job title or keyword">
+      <input type="text" id="locationInput" placeholder="Location">
+      <button type="submit">Search Jobs</button>
+    </form>
+  </section>
+
+  <section class="browse" id="browse">
+    <aside class="filters">
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <h3>Job Type</h3>
+        <label><input type="checkbox" class="f-type" value="Full-time" checked>Full-time</label>
+        <label><input type="checkbox" class="f-type" value="Part-time" checked>Part-time</label>
+        <label><input type="checkbox" class="f-type" value="Contract" checked>Contract</label>
+        <label><input type="checkbox" class="f-type" value="Remote" checked>Remote</label>
+      </div>
+      <div class="filter-group">
+        <h3>Min Salary: <span id="salaryLabel">$40k</span></h3>
+        <input type="range" id="salaryFilter" min="40" max="200" value="40">
+      </div>
+    </aside>
+    <div class="results">
+      <div class="results-head"><span id="resultCount">6 jobs</span></div>
+      <div class="job-list" id="jobList"></div>
+    </div>
+  </section>
+
+  <section class="post" id="post">
+    <h2>Hiring? Post a job in minutes.</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Company name" required>
+      <input type="email" id="cemail" placeholder="Work email" required>
+      <button type="submit" class="btn">Post a Job</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>HireWave</p>
+  <p>© 2026 · Website 73 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

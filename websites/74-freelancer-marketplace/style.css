@@ -1,0 +1,67 @@
+/* GigSphere — Freelancer Marketplace | Vibrant marketplace */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#1c1730; --bg:#fdf7ff; --surface:#fff; --accent:#8b3ffc; --accent2:#ff5da2; --accent3:#ffb648; --text-dim:#6a6482; --line:#efe3fb;
+  --display:'Baloo 2',sans-serif; --sans:'Inter',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2{font-family:var(--display);font-weight:700}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;align-items:center;gap:1rem;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(253,247,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.2rem}
+.logo span{color:var(--accent)}
+header nav{display:flex;gap:1.6rem;flex:1;margin-left:1.6rem;font-weight:600;font-size:.92rem}
+header nav a:hover{color:var(--accent)}
+.nav-cta{margin-left:auto}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:8px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:800px;margin:0 auto;padding:clamp(2.5rem,6vw,4rem) 1.5rem;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--text-dim);max-width:56ch;margin:0 auto}
+
+.categories{max-width:1200px;margin:0 auto;padding:0 1.5rem 2rem}
+.cat-scroll{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.5rem;justify-content:center;flex-wrap:wrap}
+.cat-chip{background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:.7rem 1.4rem;font-weight:600;white-space:nowrap}
+
+.gigs,.post{max-width:1200px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.gigs h2,.post h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem;text-align:center}
+.gig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.gig-card{background:var(--surface);border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(28,23,48,.06);transition:transform .2s}
+.gig-card:hover{transform:translateY(-4px)}
+.gig-card img{aspect-ratio:4/3;object-fit:cover}
+.gig-body{padding:1.1rem}
+.gig-seller{display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem}
+.gig-seller img{width:26px;height:26px;border-radius:50%;object-fit:cover}
+.gig-seller span{font-size:.82rem;color:var(--text-dim)}
+.gig-title{font-size:.92rem;margin-bottom:.6rem;font-weight:600}
+.gig-foot{display:flex;justify-content:space-between;align-items:center}
+.gig-rating{color:var(--accent3);font-weight:700;font-size:.85rem}
+.gig-price{font-weight:700}
+
+.post{max-width:600px;text-align:center}
+.post form{display:flex;flex-direction:column;gap:.9rem}
+.post input,.post textarea{padding:.85rem 1rem;border:1px solid var(--line);border-radius:10px;font-family:var(--sans)}
+.btn{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;padding:.9rem 1.7rem;border:none;border-radius:10px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.btn:hover{filter:brightness(1.1)}
+.btn-block{width:100%}
+.btn-small{padding:.55rem 1.1rem;font-size:.85rem;border-radius:8px}
+.form-note{margin-top:.4rem;color:var(--accent)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .nav-cta{display:none}
+  .menu-btn{display:block}
+  .gig-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .gig-grid{grid-template-columns:1fr}
+}

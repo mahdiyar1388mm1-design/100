@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargoline Logistics — Freight &amp; Supply Chain Solutions</title>
+<meta name="description" content="Cargoline Logistics provides freight forwarding, warehousing, and supply chain solutions across North America.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">CARGOLINE</a>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#network">Network</a>
+    <a href="#quote">Get a Quote</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#network">Network</a><a href="#quote">Get a Quote</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>YOUR CARGO.<br>ON TIME. EVERY TIME.</h1>
+    <p>Cargoline Logistics moves 40,000 shipments a month across North America — by road, rail, and air.</p>
+    <a href="#quote" class="btn">Get a Freight Quote</a>
+  </section>
+
+  <section class="route-map">
+    <svg viewBox="0 0 800 300" class="route-svg" role="img" aria-label="Illustrated freight route map connecting Los Angeles, Chicago, and New York">
+      <line x1="80" y1="220" x2="400" y2="120" stroke="#e8471c" stroke-width="3" stroke-dasharray="10 6"></line>
+      <line x1="400" y1="120" x2="700" y2="180" stroke="#e8471c" stroke-width="3" stroke-dasharray="10 6"></line>
+      <circle cx="80" cy="220" r="10" fill="#1a1d24"></circle>
+      <circle cx="400" cy="120" r="10" fill="#1a1d24"></circle>
+      <circle cx="700" cy="180" r="10" fill="#1a1d24"></circle>
+      <text x="60" y="250" fill="#1a1d24" font-size="18" font-weight="700">LOS ANGELES</text>
+      <text x="360" y="100" fill="#1a1d24" font-size="18" font-weight="700">CHICAGO</text>
+      <text x="660" y="210" fill="#1a1d24" font-size="18" font-weight="700">NEW YORK</text>
+    </svg>
+  </section>
+
+  <section class="stats-band">
+    <div><strong>40,000</strong><span>Shipments / month</span></div>
+    <div><strong>98.6%</strong><span>On-time delivery</span></div>
+    <div><strong>180</strong><span>Distribution hubs</span></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-grid">
+      <article class="service-card"><h3>Freight Forwarding</h3><p>Full truckload and LTL shipping nationwide.</p></article>
+      <article class="service-card"><h3>Warehousing</h3><p>180 climate-controlled distribution centers.</p></article>
+      <article class="service-card"><h3>Rail &amp; Intermodal</h3><p>Cost-efficient long-haul freight solutions.</p></article>
+      <article class="service-card"><h3>Supply Chain Consulting</h3><p>Network design and inventory optimization.</p></article>
+    </div>
+  </section>
+
+  <section class="network" id="network">
+    <h2>Our network</h2>
+    <div class="network-grid">
+      <div class="network-item"><strong>180</strong><span>Hubs</span></div>
+      <div class="network-item"><strong>2,400</strong><span>Trucks</span></div>
+      <div class="network-item"><strong>48</strong><span>States served</span></div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <h2>Get a freight quote</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cfrom" placeholder="Origin (city, state)" required>
+        <input type="text" id="cto" placeholder="Destination (city, state)" required>
+      </div>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Request Quote</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>CARGOLINE LOGISTICS</p>
+  <p>© 2026 · Website 75 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

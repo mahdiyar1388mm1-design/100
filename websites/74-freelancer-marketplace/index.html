@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GigSphere — Hire Freelancers for Any Project</title>
+<meta name="description" content="GigSphere is a freelancer marketplace for design, writing, development, and marketing gigs. Post a project or find work today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Gig<span>Sphere</span></a>
+  <nav aria-label="Primary">
+    <a href="#categories">Categories</a>
+    <a href="#gigs">Gigs</a>
+  </nav>
+  <a href="#post" class="btn btn-small nav-cta">Post a Project</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#categories">Categories</a><a href="#gigs">Gigs</a><a href="#post">Post a Project</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Great work, on demand.</h1>
+    <p>Browse thousands of freelancers ready to help with design, writing, development, and more.</p>
+  </section>
+
+  <section class="categories" id="categories">
+    <div class="cat-scroll">
+      <span class="cat-chip">🎨 Design</span><span class="cat-chip">💻 Development</span><span class="cat-chip">✍️ Writing</span>
+      <span class="cat-chip">📈 Marketing</span><span class="cat-chip">🎬 Video</span><span class="cat-chip">🎵 Audio</span>
+    </div>
+  </section>
+
+  <section class="gigs" id="gigs">
+    <h2>Popular gigs</h2>
+    <div class="gig-grid" id="gigGrid"></div>
+  </section>
+
+  <section class="post" id="post">
+    <h2>Post your project</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="cname" placeholder="Project title" required>
+      <textarea id="cdesc" rows="3" placeholder="Describe what you need"></textarea>
+      <button type="submit" class="btn btn-block">Post Project</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>GigSphere</p>
+  <p>© 2026 · Website 74 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
