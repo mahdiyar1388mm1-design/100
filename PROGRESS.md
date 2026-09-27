@@ -5,26 +5,26 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 
 | # | Category | Brand | Style Direction | Status |
 |---|----------|-------|------------------|--------|
-| 01 | Luxury E-commerce Store | Maison Vela | Editorial luxury minimal (serif, off-white/black/gold) | ⬜ |
-| 02 | Fashion Brand | Éclat Studio | Bold typography streetwear, color-block | ⬜ |
-| 03 | Electronics Store | Nexora | Futuristic dark tech, neon cyan | ⬜ |
-| 04 | Furniture Store | Nordly Home | Scandinavian minimal, warm neutrals | ⬜ |
-| 05 | Jewelry Brand | Aurelia | Dark luxury elegant, gold on black | ⬜ |
-| 06 | Shoe Store | Stride.Co | Neo-brutalist sneaker culture | ⬜ |
-| 07 | Sportswear Brand | Volt Athletics | Kinetic diagonal energy, high contrast | ⬜ |
-| 08 | Cosmetics Brand | Lumé Beauty | Soft glam, glassmorphism | ⬜ |
-| 09 | Restaurant | Osteria Rosso | Warm editorial trattoria, paper texture | ⬜ |
-| 10 | Fast Food Restaurant | Burnt Bun Co. | Retro pop-art, bold color | ⬜ |
-| 11 | Luxury Restaurant | Noir & Sel | Dark cinematic fine dining | ⬜ |
-| 12 | Coffee Shop | Fern & Fold | Cozy craft, kraft texture | ⬜ |
-| 13 | Bakery | Maple & Crumb | Soft pastel whimsical | ⬜ |
-| 14 | Food Delivery Platform | SwiftBite | Bright friendly app UI | ⬜ |
-| 15 | Hotel | Haven Hotels | Light elegant hospitality | ⬜ |
-| 16 | Luxury Resort | Azure Cove Resort | Immersive parallax cinematic (advanced) | ⬜ |
-| 17 | Travel Agency | Wanderlust Co. | Vibrant destination editorial | ⬜ |
-| 18 | Tourism Platform | Explora | Interactive filterable destination grid | ⬜ |
-| 19 | Real Estate Agency | Cornerstone Realty | Premium corporate clean | ⬜ |
-| 20 | Luxury Real Estate | Pinnacle Estates | Ultra-luxury dark cinematic (advanced) | ⬜ |
+| 01 | Luxury E-commerce Store | Maison Vela | Editorial luxury minimal (serif, off-white/black/gold) | ✅ |
+| 02 | Fashion Brand | Éclat Studio | Bold typography streetwear, color-block | ✅ |
+| 03 | Electronics Store | Nexora | Futuristic dark tech, neon cyan | ✅ |
+| 04 | Furniture Store | Nordly Home | Scandinavian minimal, warm neutrals | ✅ |
+| 05 | Jewelry Brand | Aurelia | Dark luxury elegant, gold on black | ✅ |
+| 06 | Shoe Store | Stride.Co | Neo-brutalist sneaker culture | ✅ |
+| 07 | Sportswear Brand | Volt Athletics | Kinetic diagonal energy, high contrast | ✅ |
+| 08 | Cosmetics Brand | Lumé Beauty | Soft glam, glassmorphism | ✅ |
+| 09 | Restaurant | Osteria Rosso | Warm editorial trattoria, paper texture | ✅ |
+| 10 | Fast Food Restaurant | Burnt Bun Co. | Retro pop-art, bold color | ✅ |
+| 11 | Luxury Restaurant | Noir & Sel | Dark cinematic fine dining | ✅ |
+| 12 | Coffee Shop | Fern & Fold | Cozy craft, kraft texture | ✅ |
+| 13 | Bakery | Maple & Crumb | Soft pastel whimsical | ✅ |
+| 14 | Food Delivery Platform | SwiftBite | Bright friendly app UI | ✅ |
+| 15 | Hotel | Haven Hotels | Light elegant hospitality | ✅ |
+| 16 | Luxury Resort | Azure Cove Resort | Immersive parallax cinematic (advanced) | ✅ |
+| 17 | Travel Agency | Wanderlust Co. | Vibrant destination editorial | ✅ |
+| 18 | Tourism Platform | Explora | Interactive filterable destination grid | ✅ |
+| 19 | Real Estate Agency | Cornerstone Realty | Premium corporate clean | ✅ |
+| 20 | Luxury Real Estate | Pinnacle Estates | Ultra-luxury dark cinematic (advanced) | ✅ |
 | 21 | Architecture Studio | Studio Meridian | Japanese minimal, monochrome grid | ⬜ |
 | 22 | Interior Design Studio | Atelier Lune | Editorial magazine, muted tones | ⬜ |
 | 23 | Construction Company | Ironclad Build | Industrial bold, yellow/black | ⬜ |
