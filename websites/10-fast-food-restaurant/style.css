@@ -1,0 +1,82 @@
+/* Burnt Bun Co. — Fast Food | Retro pop-art */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#1a1a1a; --paper:#fff4de; --yellow:#ffc93c; --red:#e6392b; --blue:#2b6ce6;
+  --display:'Bangers',cursive; --sans:'Poppins',sans-serif;
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);letter-spacing:.02em}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+.header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem clamp(1.2rem,4vw,3rem);background:var(--ink);color:#fff;position:sticky;top:0;z-index:40}
+.logo{font-family:var(--display);font-size:1.5rem;letter-spacing:.03em}
+.logo span{color:var(--yellow)}
+header nav{display:flex;gap:1.6rem;font-weight:600;font-size:.92rem}
+header nav a:hover{color:var(--yellow)}
+.order-btn{background:var(--red);color:#fff;border:none;padding:.65rem 1.3rem;border-radius:100px;font-weight:700}
+.order-btn:hover{background:#c92e21}
+.menu-btn{display:none;background:none;border:2px solid #fff;color:#fff;width:38px;height:38px;border-radius:50%}
+.mobile-nav{display:none;flex-direction:column;background:var(--ink);color:#fff}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid rgba(255,255,255,.15);font-weight:600}
+
+.hero{position:relative;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;max-width:1320px;margin:0 auto;padding:clamp(2rem,6vw,4rem) 1.5rem;gap:2rem;overflow:hidden}
+.halftone{position:absolute;inset:0;background-image:radial-gradient(var(--ink) 1px,transparent 1.6px);background-size:10px 10px;opacity:.06;z-index:0}
+.hero-copy{position:relative;z-index:1}
+.pow{display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:50%;padding:.8rem 1.1rem;font-family:var(--display);transform:rotate(-8deg);margin-bottom:1rem}
+.hero-copy h1{font-size:clamp(2.4rem,7vw,4.2rem);line-height:1;color:var(--red);-webkit-text-stroke:2px var(--ink);margin-bottom:1.2rem}
+.hero-copy p{max-width:40ch;margin-bottom:1.6rem;font-weight:500}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:.95rem 1.9rem;border-radius:10px;border:3px solid var(--ink);font-weight:700;box-shadow:5px 5px 0 var(--ink);transition:.2s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn-block{width:100%;text-align:center}
+.hero-img{position:relative;z-index:1;border:4px solid var(--ink);border-radius:50%;aspect-ratio:1;object-fit:cover;box-shadow:10px 10px 0 var(--yellow)}
+
+.menu{max-width:1320px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.menu h2,.builder h2,.locations h2{font-size:clamp(2rem,5vw,2.8rem);text-align:center;margin-bottom:2.5rem;color:var(--red)}
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.menu-card{position:relative;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:1rem;text-align:center;transition:.2s}
+.menu-card:hover{transform:translateY(-6px)}
+.menu-card img{border-radius:8px;margin-bottom:.8rem;aspect-ratio:5/4;object-fit:cover}
+.menu-card h3{font-size:1.15rem;color:var(--ink)}
+.menu-card p{font-weight:700;color:var(--blue)}
+.bubble{position:absolute;top:-14px;left:-10px;background:var(--yellow);border:2px solid var(--ink);border-radius:100px;padding:.3rem .7rem;font-size:.72rem;font-weight:700;transform:rotate(-6deg)}
+.bubble.alt{background:var(--red);color:#fff}
+
+.builder{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.builder-panel{display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;align-items:start}
+.col-label{font-weight:700;margin:1rem 0 .6rem}
+.pick-row{display:flex;gap:.6rem;flex-wrap:wrap}
+.pick{background:#fff;border:3px solid var(--ink);border-radius:10px;padding:.6rem 1rem;font-weight:600}
+.pick.active{background:var(--yellow)}
+.builder-summary{background:var(--ink);color:#fff;border-radius:14px;padding:1.6rem}
+.builder-summary h3{color:var(--yellow);margin-bottom:1rem;font-size:1.3rem}
+.builder-summary ul{list-style:none;margin-bottom:1rem}
+.builder-summary li{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px dashed rgba(255,255,255,.2);font-size:.92rem}
+.combo-total{font-weight:700;font-size:1.2rem;margin-bottom:1.2rem}
+.form-note{margin-top:1rem;font-size:.85rem;color:var(--yellow)}
+
+.locations{max-width:1200px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.location-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.location-card{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:1.4rem;text-align:center}
+.location-card h3{color:var(--red);margin-bottom:.5rem;font-size:1.3rem}
+
+.footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding:2rem clamp(1.2rem,4vw,3rem);background:var(--ink);color:#fff}
+.footer p{font-size:.8rem;opacity:.75}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .order-btn{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .hero-img{order:-1;max-width:280px;margin:0 auto}
+  .menu-grid{grid-template-columns:repeat(2,1fr)}
+  .builder-panel{grid-template-columns:1fr}
+  .location-grid{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .menu-grid{grid-template-columns:1fr}
+}

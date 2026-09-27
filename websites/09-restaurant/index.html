@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osteria Rosso — Neighborhood Italian Kitchen</title>
+<meta name="description" content="Osteria Rosso is a family-run Italian trattoria serving handmade pasta and wood-fired dishes. Reserve your table tonight.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Osteria <em>Rosso</em></a>
+  <nav aria-label="Primary">
+    <a href="#menu">Menu</a>
+    <a href="#story">Our Story</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a href="#reserve">Reserve</a>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/rosso-hero/1600/900" alt="Handmade tagliatelle with sage butter served on a rustic table at Osteria Rosso">
+    <div class="hero-copy">
+      <p class="eyebrow">Est. 1994 · Family Run</p>
+      <h1>Pasta made by hand,<br>every single morning.</h1>
+      <a href="#reserve" class="btn">Reserve a Table</a>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Tonight's Menu</h2>
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" role="tab" aria-selected="true" data-cat="antipasti">Antipasti</button>
+      <button class="menu-tab" role="tab" aria-selected="false" data-cat="primi">Primi</button>
+      <button class="menu-tab" role="tab" aria-selected="false" data-cat="secondi">Secondi</button>
+      <button class="menu-tab" role="tab" aria-selected="false" data-cat="dolci">Dolci</button>
+    </div>
+    <div class="menu-list" id="menuList"></div>
+  </section>
+
+  <section class="story" id="story">
+    <img src="https://picsum.photos/seed/rosso-chef/700/840" alt="Chef Antonio Rossi kneading fresh pasta dough in the Osteria Rosso kitchen" loading="lazy">
+    <div class="story-copy">
+      <p class="eyebrow">The Rossi Family</p>
+      <h2>Three generations, one recipe book.</h2>
+      <p>Osteria Rosso opened in 1994 when Antonio Rossi brought his mother's recipes from Bologna. Today his daughter Giulia runs the kitchen, still rolling pasta by hand every morning before service.</p>
+      <div class="badges">
+        <span>Wood-fired oven</span>
+        <span>Fresh pasta daily</span>
+        <span>Local produce</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>A look inside</h2>
+    <div class="gallery-grid">
+      <img src="https://picsum.photos/seed/rosso1/500/380" alt="Dining room at Osteria Rosso with warm lighting" loading="lazy">
+      <img src="https://picsum.photos/seed/rosso2/500/620" alt="Close-up of wood-fired margherita pizza" loading="lazy">
+      <img src="https://picsum.photos/seed/rosso3/500/380" alt="Bar area with Italian wine selection" loading="lazy">
+      <img src="https://picsum.photos/seed/rosso4/500/620" alt="Fresh pasta hanging to dry in the kitchen" loading="lazy">
+      <img src="https://picsum.photos/seed/rosso5/500/380" alt="Guests enjoying dinner on the patio" loading="lazy">
+    </div>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <div class="reserve-info">
+      <h2>Reserve your table</h2>
+      <p>Open Tuesday–Sunday, 5:30pm–10:30pm.<br>For parties of 8+, please call us directly.</p>
+      <p class="address">118 Fillmore Street, San Francisco, CA<br>(415) 555-0142</p>
+    </div>
+    <form id="reserveForm" novalidate>
+      <div class="form-row">
+        <div><label for="date">Date</label><input type="date" id="date" required></div>
+        <div><label for="time">Time</label><select id="time"><option>5:30 PM</option><option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option></select></div>
+      </div>
+      <div class="form-row">
+        <div><label for="guests">Guests</label><select id="guests"><option>2 people</option><option>3 people</option><option>4 people</option><option>5 people</option><option>6 people</option></select></div>
+        <div><label for="rname">Name</label><input type="text" id="rname" required></div>
+      </div>
+      <label for="remail">Email</label>
+      <input type="email" id="remail" required>
+      <button type="submit" class="btn btn-block">Confirm Reservation</button>
+      <p class="form-note" id="reserveNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo">Osteria <em>Rosso</em></p>
+  <p>© 2026 Osteria Rosso · Website 09 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

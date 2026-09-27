@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burnt Bun Co. — Flame-Grilled Fast Food</title>
+<meta name="description" content="Burnt Bun Co. flame-grills burgers to order. Build your own combo, find your nearest location, and order in under 60 seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">BURNT BUN <span>CO.</span></a>
+  <nav aria-label="Primary">
+    <a href="#menu">Menu</a>
+    <a href="#builder">Build a Combo</a>
+    <a href="#locations">Locations</a>
+  </nav>
+  <button class="order-btn">Order Now</button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#menu">Menu</a><a href="#builder">Build a Combo</a><a href="#locations">Locations</a>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="halftone" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="pow">POW!</p>
+      <h1>FLAME-GRILLED.<br>NO SHORTCUTS.</h1>
+      <p>Every patty hits an open flame — never a microwave. Ready in 3 minutes flat.</p>
+      <a href="#builder" class="btn">Build Your Combo</a>
+    </div>
+    <img src="https://picsum.photos/seed/burntbun-hero/700/700" alt="Burnt Bun Co. signature double cheeseburger with melted cheddar" class="hero-img">
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Fan Favorites</h2>
+    <div class="menu-grid">
+      <article class="menu-card"><span class="bubble">Best Seller!</span><img src="https://picsum.photos/seed/bb1/400/320" alt="The Inferno Stack burger" loading="lazy"><h3>The Inferno Stack</h3><p>$8.49</p></article>
+      <article class="menu-card"><img src="https://picsum.photos/seed/bb2/400/320" alt="Smoky BBQ bacon burger" loading="lazy"><h3>Smoky BBQ Bacon</h3><p>$7.99</p></article>
+      <article class="menu-card"><span class="bubble alt">New!</span><img src="https://picsum.photos/seed/bb3/400/320" alt="Crispy chicken burger with slaw" loading="lazy"><h3>Crispy Cluck Burger</h3><p>$7.49</p></article>
+      <article class="menu-card"><img src="https://picsum.photos/seed/bb4/400/320" alt="Loaded curly fries with cheese sauce" loading="lazy"><h3>Loaded Curly Fries</h3><p>$4.99</p></article>
+    </div>
+  </section>
+
+  <section class="builder" id="builder">
+    <h2>Build your combo</h2>
+    <div class="builder-panel">
+      <div class="builder-col">
+        <p class="col-label">1. Pick your burger</p>
+        <div class="pick-row">
+          <button class="pick active" data-price="8.49" data-name="Inferno Stack">Inferno Stack</button>
+          <button class="pick" data-price="7.99" data-name="Smoky BBQ Bacon">Smoky BBQ Bacon</button>
+          <button class="pick" data-price="7.49" data-name="Crispy Cluck">Crispy Cluck</button>
+        </div>
+        <p class="col-label">2. Pick your side</p>
+        <div class="pick-row">
+          <button class="pick active" data-price="2.99" data-name="Classic Fries">Classic Fries</button>
+          <button class="pick" data-price="4.99" data-name="Loaded Curly Fries">Loaded Curly Fries</button>
+          <button class="pick" data-price="3.49" data-name="Onion Rings">Onion Rings</button>
+        </div>
+        <p class="col-label">3. Pick your drink</p>
+        <div class="pick-row">
+          <button class="pick active" data-price="2.49" data-name="Fountain Soda">Fountain Soda</button>
+          <button class="pick" data-price="3.99" data-name="Hand-Spun Shake">Hand-Spun Shake</button>
+          <button class="pick" data-price="0" data-name="Water">Water</button>
+        </div>
+      </div>
+      <div class="builder-summary">
+        <h3>Your Combo</h3>
+        <ul id="comboList"></ul>
+        <p class="combo-total">Total: <span id="comboTotal">$0.00</span></p>
+        <button class="btn btn-block" id="comboAdd">Add to Order</button>
+        <p class="form-note" id="comboNote" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="locations" id="locations">
+    <h2>Find a location</h2>
+    <div class="location-grid">
+      <div class="location-card"><h3>Downtown</h3><p>412 Market St<br>Open until 11pm</p></div>
+      <div class="location-card"><h3>Riverside</h3><p>88 Harbor Ave<br>Open until midnight</p></div>
+      <div class="location-card"><h3>Uptown</h3><p>2210 5th Ave<br>Open until 10pm</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">BURNT BUN <span>CO.</span></span>
+  <p>© 2026 Burnt Bun Co. · Website 10 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
