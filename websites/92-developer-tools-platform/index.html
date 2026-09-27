@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitForge — Ship Code Faster with Automated CI/CD</title>
+<meta name="description" content="GitForge is a developer platform for CI/CD pipelines, code review automation, and one-command deployments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">&gt; gitforge_</a>
+  <nav aria-label="Primary">
+    <a href="#terminal">Terminal</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#terminal">Terminal</a><a href="#features">Features</a><a href="#pricing">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero" id="terminal">
+    <h1>Ship code faster.<br>Deploy with one command.</h1>
+    <p>GitForge automates your CI/CD pipeline from commit to production.</p>
+    <div class="terminal-window">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <pre class="terminal-body"><code id="terminalOutput"></code><span class="cursor">_</span></pre>
+    </div>
+    <div class="install-row">
+      <code id="installCmd">npm install -g gitforge-cli</code>
+      <button id="copyBtn">Copy</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Everything for your pipeline</h2>
+    <div class="feature-grid">
+      <article><h3>Zero-config CI</h3><p>GitForge detects your stack and builds a pipeline automatically.</p></article>
+      <article><h3>Preview deployments</h3><p>Every pull request gets a live preview URL, automatically.</p></article>
+      <article><h3>Rollback in seconds</h3><p>One command reverts production to any previous deploy.</p></article>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+      <article class="price-card"><h3>Open Source</h3><p class="price">Free</p><ul><li>Unlimited public repos</li><li>500 build min/mo</li></ul></article>
+      <article class="price-card featured"><h3>Pro</h3><p class="price">$18<span>/mo</span></p><ul><li>Private repos</li><li>Unlimited builds</li><li>Preview deployments</li></ul></article>
+      <article class="price-card"><h3>Enterprise</h3><p class="price">Custom</p><ul><li>SSO</li><li>Dedicated infra</li></ul></article>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <h2>Start shipping today</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="you@company.dev" required>
+      <button type="submit" class="btn btn-block">Create Free Account</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>GITFORGE</p>
+  <p>© 2026 · Website 92 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

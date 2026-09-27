@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aether One — The Future of Personal Computing</title>
+<meta name="description" content="Aether One is a next-generation spatial computer that blends the physical and digital world. Reserve yours today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">AETHER ONE</a>
+  <nav aria-label="Primary">
+    <a href="#reveal">Overview</a>
+    <a href="#specs">Specs</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#reveal">Overview</a><a href="#specs">Specs</a><a href="#reserve">Reserve</a></nav>
+
+<main id="top">
+  <section class="reveal" id="reveal">
+    <div class="sticky-stage">
+      <div class="glow" aria-hidden="true"></div>
+      <img id="productImg" src="https://picsum.photos/seed/aether-product/900/900" alt="Aether One spatial computing device, glowing lens detail">
+      <p class="scroll-hint">Scroll to explore ↓</p>
+    </div>
+    <div class="reveal-copy">
+      <article class="reveal-step">
+        <h1>Reality, reimagined.</h1>
+        <p>Aether One overlays digital workspaces onto the room around you — no controllers, no wires.</p>
+      </article>
+      <article class="reveal-step">
+        <h2>Eye-tracked precision</h2>
+        <p>Look, pinch, done. Aether One's sensor array reads intent in milliseconds.</p>
+      </article>
+      <article class="reveal-step">
+        <h2>All-day spatial battery</h2>
+        <p>18 hours of mixed-reality use on a single charge, with 10-minute fast charging.</p>
+      </article>
+      <article class="reveal-step">
+        <h2>Built for creators</h2>
+        <p>Full-scale 3D modeling, video editing, and collaboration — floating in your actual room.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="specs" id="specs">
+    <h2>Technical specs</h2>
+    <div class="spec-grid">
+      <div class="spec"><span>Display</span><strong>Dual micro-OLED, 4K per eye</strong></div>
+      <div class="spec"><span>Weight</span><strong>312g</strong></div>
+      <div class="spec"><span>Battery</span><strong>18 hours</strong></div>
+      <div class="spec"><span>Storage</span><strong>512GB / 1TB</strong></div>
+    </div>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <h2>Reserve Aether One</h2>
+    <p>Ships early 2027. Reserve now with a fully refundable $50 deposit.</p>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn btn-block">Reserve Now</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>AETHER ONE</p>
+  <p>© 2026 · Website 94 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

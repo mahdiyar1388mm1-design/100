@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuralDesk — Your AI Workspace</title>
+<meta name="description" content="NeuralDesk is an AI workspace for teams to chat with models, track usage, and manage prompts in one dashboard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="header">
+  <a href="#top" class="logo">◆ NeuralDesk</a>
+  <nav aria-label="Primary">
+    <a href="#workspace">Workspace</a>
+    <a href="#usage">Usage</a>
+    <a href="#trial">Get Access</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#workspace">Workspace</a><a href="#usage">Usage</a><a href="#trial">Get Access</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>One workspace for every model.</h1>
+    <p>Chat, compare, and monitor usage across GPT, Claude, and open models — in a single pane.</p>
+  </section>
+
+  <section class="workspace" id="workspace">
+    <div class="chat-shell">
+      <aside class="chat-history">
+        <p class="hist-title">Recent</p>
+        <a href="#" class="hist-item active">Quarterly report summary</a>
+        <a href="#" class="hist-item">Customer email draft</a>
+        <a href="#" class="hist-item">Competitor analysis</a>
+      </aside>
+      <div class="chat-main">
+        <div class="chat-log" id="chatLog"></div>
+        <div class="chat-input">
+          <input type="text" id="promptInput" placeholder="Ask NeuralDesk anything..." value="Summarize this quarter's churn drivers">
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage" id="usage">
+    <h2>Usage this month</h2>
+    <div class="usage-grid">
+      <div class="gauge-card">
+        <canvas id="gaugeCanvas" width="180" height="180" role="img" aria-label="Token usage gauge, 68 percent of monthly quota used"></canvas>
+        <p>68% of monthly quota used</p>
+      </div>
+      <div class="usage-stats">
+        <div class="ustat"><span>Requests</span><strong>128,402</strong></div>
+        <div class="ustat"><span>Avg. latency</span><strong>410ms</strong></div>
+        <div class="ustat"><span>Active seats</span><strong>24</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trial" id="trial">
+    <h2>Bring your team to NeuralDesk</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Work email" required>
+      <button type="submit" class="btn btn-block">Request Access</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>NEURALDESK</p>
+  <p>© 2026 · Website 91 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

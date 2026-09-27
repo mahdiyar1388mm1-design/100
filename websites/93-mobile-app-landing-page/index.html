@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PocketWallet — Send, Save, and Spend Smarter</title>
+<meta name="description" content="PocketWallet is a mobile app for sending money instantly, tracking spending, and saving automatically.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">PocketWallet</a>
+  <nav aria-label="Primary">
+    <a href="#features">Features</a>
+    <a href="#security">Security</a>
+    <a href="#download">Download</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#features">Features</a><a href="#security">Security</a><a href="#download">Download</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Send, save, and spend — smarter.</h1>
+      <p>PocketWallet gives you instant transfers, automatic savings rules, and real-time spend tracking, all in one app.</p>
+      <div class="store-badges">
+        <a href="#" class="badge">📱 App Store</a>
+        <a href="#" class="badge">▶ Google Play</a>
+      </div>
+    </div>
+    <div class="phone-mock">
+      <div class="screen">
+        <p class="screen-label">Balance</p>
+        <h2 id="balanceOut">$0.00</h2>
+        <div class="mini-cards">
+          <div class="mini-card"><span>Savings</span><strong>$2,140</strong></div>
+          <div class="mini-card"><span>This week</span><strong id="weekSpend">$0</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Everything in your pocket</h2>
+    <div class="feature-grid">
+      <article><span class="icon">⚡</span><h3>Instant transfers</h3><p>Send money to anyone in seconds, no fees between friends.</p></article>
+      <article><span class="icon">🎯</span><h3>Savings goals</h3><p>Round up purchases and auto-save the spare change.</p></article>
+      <article><span class="icon">📊</span><h3>Spending insights</h3><p>See exactly where your money goes, category by category.</p></article>
+    </div>
+  </section>
+
+  <section class="security" id="security">
+    <h2>Bank-level security</h2>
+    <p>256-bit encryption, biometric login, and FDIC-insured accounts up to $250,000.</p>
+  </section>
+
+  <section class="download" id="download">
+    <h2>Get PocketWallet</h2>
+    <p>Enter your number and we'll text you a download link.</p>
+    <form id="contactForm" novalidate>
+      <input type="tel" id="cphone" placeholder="Phone number" required>
+      <button type="submit" class="btn btn-block">Text Me a Link</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>POCKETWALLET</p>
+  <p>© 2026 · Website 93 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
