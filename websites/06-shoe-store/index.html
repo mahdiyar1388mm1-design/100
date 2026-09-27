@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRIDE.CO — Sneakers Built for the Street</title>
+<meta name="description" content="Stride.Co drops limited sneaker runs designed with skaters and street riders. Spin the 360 viewer, check your size, cop the drop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">STRIDE<span>.CO</span></a>
+  <nav aria-label="Primary">
+    <a href="#shop">Shop</a>
+    <a href="#viewer">360° View</a>
+    <a href="#drops">Drop Calendar</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="cart-btn">BAG (0)</button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">MENU</button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#shop">Shop</a><a href="#viewer">360° View</a><a href="#drops">Drop Calendar</a><a href="#about">About</a>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>GROUND<br>CONTROL.</h1>
+    <img src="https://picsum.photos/seed/stride-hero/900/700" alt="Stride.Co Vandal sneaker in orange and black colourway on concrete">
+    <div class="hero-badge">NEW DROP<br>03.14</div>
+  </section>
+
+  <section class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>LIMITED RUN — 500 PAIRS</span><span>RECYCLED SOLE FOAM</span><span>SKATE-TESTED</span><span>FREE RETURNS</span>
+      <span>LIMITED RUN — 500 PAIRS</span><span>RECYCLED SOLE FOAM</span><span>SKATE-TESTED</span><span>FREE RETURNS</span>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <h2>The lineup</h2>
+    <div class="shoe-grid">
+      <article class="shoe-card"><span class="tag">HOT</span><img src="https://picsum.photos/seed/stride1/460/360" alt="Vandal sneaker, orange colourway" loading="lazy"><h3>Vandal OG</h3><p>$139</p></article>
+      <article class="shoe-card"><img src="https://picsum.photos/seed/stride2/460/360" alt="Curbline sneaker, black and white" loading="lazy"><h3>Curbline</h3><p>$119</p></article>
+      <article class="shoe-card"><span class="tag alt">NEW</span><img src="https://picsum.photos/seed/stride3/460/360" alt="Railslide sneaker, cream colourway" loading="lazy"><h3>Railslide</h3><p>$129</p></article>
+      <article class="shoe-card"><img src="https://picsum.photos/seed/stride4/460/360" alt="Gutter high-top sneaker, grey" loading="lazy"><h3>Gutter Hi</h3><p>$149</p></article>
+    </div>
+  </section>
+
+  <section class="viewer" id="viewer">
+    <h2>Spin it. 360°.</h2>
+    <div class="viewer-stage">
+      <img id="viewerImg" src="https://picsum.photos/seed/stride-spin-0/700/560" alt="Vandal OG sneaker, rotating 360 degree view, frame 1 of 8" draggable="false">
+      <div class="viewer-hint">Drag to rotate →</div>
+    </div>
+    <div class="size-select">
+      <p class="option-label">Select size (US)</p>
+      <div class="size-grid" role="group" aria-label="Shoe size">
+        <button data-size="7">7</button><button data-size="8">8</button><button data-size="9" class="active">9</button>
+        <button data-size="10">10</button><button data-size="11">11</button><button data-size="12">12</button>
+      </div>
+      <button class="btn" id="addBtn">Add Vandal OG — $139</button>
+      <p class="form-note" id="addNote" role="status"></p>
+    </div>
+  </section>
+
+  <section class="drops" id="drops">
+    <h2>Drop calendar</h2>
+    <ul class="drop-list">
+      <li><span class="date">MAR 14</span><span class="name">Vandal OG "Rust"</span><span class="status live">LIVE NOW</span></li>
+      <li><span class="date">MAR 28</span><span class="name">Curbline "Blackout"</span><span class="status">NOTIFY ME</span></li>
+      <li><span class="date">APR 11</span><span class="name">Railslide x Studio 9</span><span class="status">NOTIFY ME</span></li>
+    </ul>
+  </section>
+
+  <section class="about" id="about">
+    <img src="https://picsum.photos/seed/stride-about/700/500" alt="Skaters testing Stride.Co sneakers at an outdoor skatepark" loading="lazy">
+    <div>
+      <h2>Built where the street tests it.</h2>
+      <p>Every Stride.Co silhouette spends six months on real skateparks and curbs before it ships. If it doesn't survive the crew, it doesn't get a box.</p>
+      <div class="stat-row">
+        <div><strong>500</strong><span>pairs per drop</span></div>
+        <div><strong>6 mo</strong><span>street testing</span></div>
+        <div><strong>30%</strong><span>recycled materials</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">STRIDE<span>.CO</span></span>
+  <p>© 2026 Stride.Co Footwear · Website 06 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volt Athletics — Train Without Limits</title>
+<meta name="description" content="Volt Athletics engineers performance training gear for runners and lifters. Explore the SS26 gear range and training programs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">VOLT<span>ATHLETICS</span></a>
+  <nav aria-label="Primary">
+    <a href="#gear">Gear</a>
+    <a href="#programs">Programs</a>
+    <a href="#results">Results</a>
+    <a href="#app">App</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#gear">Gear</a><a href="#programs">Programs</a><a href="#results">Results</a><a href="#app">App</a>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-diag"></div>
+    <img src="https://picsum.photos/seed/volt-hero/1400/900" alt="Sprinter mid-stride wearing Volt Athletics performance kit" class="hero-img">
+    <div class="hero-copy">
+      <p class="kicker">SS26 PERFORMANCE LINE</p>
+      <h1>TRAIN LIKE THE<br>CLOCK IS WATCHING.</h1>
+      <a href="#gear" class="btn">Shop Performance Gear</a>
+    </div>
+  </section>
+
+  <section class="stats" id="results">
+    <div class="stat"><span class="stat-num" data-target="48000">0</span><span class="stat-label">Athletes Trained</span></div>
+    <div class="stat"><span class="stat-num" data-target="120">0</span><span class="stat-label">Countries Shipped</span></div>
+    <div class="stat"><span class="stat-num" data-target="4200000">0</span><span class="stat-label">Miles Logged in App</span></div>
+    <div class="stat"><span class="stat-num" data-target="97">0</span><span class="stat-label">% Would Recommend</span></div>
+  </section>
+
+  <section class="gear" id="gear">
+    <h2>Shop performance gear</h2>
+    <div class="gear-grid">
+      <article class="gear-card"><img src="https://picsum.photos/seed/volt1/460/560" alt="Volt Athletics Momentum running shorts" loading="lazy"><h3>Momentum Shorts</h3><p>$58</p></article>
+      <article class="gear-card"><img src="https://picsum.photos/seed/volt2/460/560" alt="Volt Athletics Surge compression top" loading="lazy"><h3>Surge Compression Top</h3><p>$72</p></article>
+      <article class="gear-card"><img src="https://picsum.photos/seed/volt3/460/560" alt="Volt Athletics Kinetic training shoe" loading="lazy"><h3>Kinetic Trainer</h3><p>$149</p></article>
+      <article class="gear-card"><img src="https://picsum.photos/seed/volt4/460/560" alt="Volt Athletics Charge windbreaker jacket" loading="lazy"><h3>Charge Windbreaker</h3><p>$98</p></article>
+    </div>
+  </section>
+
+  <section class="programs" id="programs">
+    <h2>Training programs</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="speed">Speed</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="strength">Strength</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="endurance">Endurance</button>
+    </div>
+    <div class="tab-panel" id="tabPanel"></div>
+  </section>
+
+  <section class="app" id="app">
+    <img src="https://picsum.photos/seed/volt-app/600/620" alt="Volt Athletics training app shown on a smartphone" loading="lazy">
+    <div>
+      <h2>Track it. Beat it. Repeat.</h2>
+      <p>The Volt app builds a training block around your goal race or lift, then adjusts every week based on your recovery data.</p>
+      <div class="store-badges">
+        <a href="#" class="store-badge">App Store</a>
+        <a href="#" class="store-badge">Google Play</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">VOLT<span>ATHLETICS</span></span>
+  <p>© 2026 Volt Athletics Inc. · Website 07 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

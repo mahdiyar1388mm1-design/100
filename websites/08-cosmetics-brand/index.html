@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumé Beauty — Skin-first Makeup</title>
+<meta name="description" content="Lumé Beauty makes clean, buildable makeup that treats skin like skin. Find your shade in 30 seconds with the Lumé Shade Finder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-blobs" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="logo">Lumé</a>
+  <nav aria-label="Primary">
+    <a href="#quiz">Shade Finder</a>
+    <a href="#shop">Shop</a>
+    <a href="#compare">Before &amp; After</a>
+    <a href="#ingredients">Ingredients</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#quiz">Shade Finder</a><a href="#shop">Shop</a><a href="#compare">Before &amp; After</a><a href="#ingredients">Ingredients</a>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Clean · Buildable · Skin-first</p>
+      <h1>Makeup that lets your skin breathe.</h1>
+      <p>Lumé formulas are 92% naturally derived and skip the silicones — so your base looks like skin, not a mask.</p>
+      <a href="#quiz" class="btn">Find My Shade</a>
+    </div>
+    <div class="hero-glass">
+      <img src="https://picsum.photos/seed/lume-hero/700/760" alt="Model with natural dewy makeup look using Lumé Beauty products">
+    </div>
+  </section>
+
+  <section class="quiz" id="quiz">
+    <div class="glass-card quiz-card">
+      <h2>Find your shade in 3 steps</h2>
+      <div class="quiz-steps" id="quizSteps">
+        <div class="quiz-step active" data-step="1">
+          <p class="step-label">Step 1 of 3 — Undertone</p>
+          <div class="option-row">
+            <button data-value="warm">Warm</button>
+            <button data-value="neutral">Neutral</button>
+            <button data-value="cool">Cool</button>
+          </div>
+        </div>
+        <div class="quiz-step" data-step="2">
+          <p class="step-label">Step 2 of 3 — Depth</p>
+          <div class="option-row">
+            <button data-value="fair">Fair</button>
+            <button data-value="light">Light</button>
+            <button data-value="medium">Medium</button>
+            <button data-value="deep">Deep</button>
+          </div>
+        </div>
+        <div class="quiz-step" data-step="3">
+          <p class="step-label">Step 3 of 3 — Finish</p>
+          <div class="option-row">
+            <button data-value="dewy">Dewy</button>
+            <button data-value="satin">Satin</button>
+            <button data-value="matte">Matte</button>
+          </div>
+        </div>
+        <div class="quiz-result" data-step="result">
+          <p class="step-label">Your match</p>
+          <h3 id="resultShade">—</h3>
+          <p id="resultDesc"></p>
+          <button class="btn" id="quizRestart">Start Over</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <h2>Bestsellers</h2>
+    <div class="product-grid">
+      <article class="glass-card product-card"><img src="https://picsum.photos/seed/lume1/400/400" alt="Lumé Skin Tint foundation bottle" loading="lazy"><h3>Skin Tint Foundation</h3><p>$34</p></article>
+      <article class="glass-card product-card"><img src="https://picsum.photos/seed/lume2/400/400" alt="Lumé Cloud Blush in terracotta shade" loading="lazy"><h3>Cloud Blush</h3><p>$22</p></article>
+      <article class="glass-card product-card"><img src="https://picsum.photos/seed/lume3/400/400" alt="Lumé Glass Gloss lip oil" loading="lazy"><h3>Glass Gloss Lip Oil</h3><p>$19</p></article>
+      <article class="glass-card product-card"><img src="https://picsum.photos/seed/lume4/400/400" alt="Lumé Soft Focus setting powder" loading="lazy"><h3>Soft Focus Powder</h3><p>$28</p></article>
+    </div>
+  </section>
+
+  <section class="compare" id="compare">
+    <h2>See the finish</h2>
+    <div class="compare-slider" id="compareSlider">
+      <img src="https://picsum.photos/seed/lume-after/900/600" alt="Skin after using Lumé Skin Tint" class="after">
+      <div class="before-wrap" id="beforeWrap">
+        <img src="https://picsum.photos/seed/lume-before/900/600" alt="Bare skin before makeup">
+      </div>
+      <input type="range" id="compareRange" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+      <div class="handle" id="compareHandle">↔</div>
+    </div>
+  </section>
+
+  <section class="ingredients" id="ingredients">
+    <h2>What's actually in it</h2>
+    <div class="acc-list">
+      <details open><summary>Squalane <span>+</span></summary><p>Plant-derived, lightweight hydration that mimics skin's natural oils.</p></details>
+      <details><summary>Niacinamide <span>+</span></summary><p>Helps visibly minimize pores and even tone over time.</p></details>
+      <details><summary>Mica (ethically sourced) <span>+</span></summary><p>Traced to certified mines with fair labour audits, for natural shimmer.</p></details>
+      <details><summary>What we leave out <span>+</span></summary><p>No silicones, parabens, or synthetic fragrance in any Lumé formula.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Lumé</span>
+  <p>© 2026 Lumé Beauty Labs · Website 08 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
