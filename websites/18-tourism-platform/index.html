@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explora — Discover Places Worth the Trip</title>
+<meta name="description" content="Explora is an interactive guide to 200+ destinations. Filter by continent and interest, save favorites, and plan your next trip.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">explora</a>
+  <nav aria-label="Primary">
+    <a href="#explore">Explore</a>
+    <a href="#saved">Saved</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#explore">Explore</a><a href="#saved">Saved</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Discover places worth the trip.</h1>
+    <p>Filter 200+ destinations by continent and interest — save the ones that speak to you.</p>
+  </section>
+
+  <section class="explore" id="explore">
+    <div class="filter-bar">
+      <div class="filter-group" id="continentFilters">
+        <button class="filter-chip active" data-continent="all">All</button>
+        <button class="filter-chip" data-continent="asia">Asia</button>
+        <button class="filter-chip" data-continent="europe">Europe</button>
+        <button class="filter-chip" data-continent="africa">Africa</button>
+        <button class="filter-chip" data-continent="americas">Americas</button>
+      </div>
+      <div class="filter-group" id="interestFilters">
+        <button class="filter-chip small active" data-interest="all">All Interests</button>
+        <button class="filter-chip small" data-interest="beach">Beach</button>
+        <button class="filter-chip small" data-interest="culture">Culture</button>
+        <button class="filter-chip small" data-interest="adventure">Adventure</button>
+      </div>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="place-grid" id="placeGrid"></div>
+  </section>
+
+  <section class="saved" id="saved">
+    <h2>Your saved places</h2>
+    <div class="place-grid" id="savedGrid"></div>
+    <p class="empty-note" id="emptyNote">Tap the heart on any destination to save it here.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">explora</span>
+  <p>© 2026 Explora Travel Guides · Website 18 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

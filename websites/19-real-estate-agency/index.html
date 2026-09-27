@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cornerstone Realty — Homes for Every Stage</title>
+<meta name="description" content="Cornerstone Realty helps buyers and sellers move with confidence. Browse listings, filter by budget, and estimate your mortgage payment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Cornerstone <span>Realty</span></a>
+  <nav aria-label="Primary">
+    <a href="#listings">Listings</a>
+    <a href="#calculator">Mortgage Calculator</a>
+    <a href="#agents">Our Agents</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#listings">Listings</a><a href="#calculator">Mortgage Calculator</a><a href="#agents">Our Agents</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Find a home that fits your next chapter.</h1>
+    <p>142 active listings across the metro area — filtered by budget, not guesswork.</p>
+  </section>
+
+  <section class="listings" id="listings">
+    <div class="filter-bar">
+      <label for="priceRange">Max price: <strong id="priceOut">$1,200,000</strong></label>
+      <input type="range" id="priceRange" min="300000" max="2000000" step="50000" value="1200000">
+      <div class="type-chips">
+        <button class="chip active" data-type="all">All Types</button>
+        <button class="chip" data-type="house">House</button>
+        <button class="chip" data-type="condo">Condo</button>
+        <button class="chip" data-type="townhome">Townhome</button>
+      </div>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="listing-grid" id="listingGrid"></div>
+  </section>
+
+  <section class="calculator" id="calculator">
+    <h2>Mortgage calculator</h2>
+    <div class="calc-panel">
+      <div class="calc-field"><label for="homePrice">Home price</label><input type="number" id="homePrice" value="650000"></div>
+      <div class="calc-field"><label for="downPayment">Down payment (%)</label><input type="number" id="downPayment" value="20"></div>
+      <div class="calc-field"><label for="rate">Interest rate (%)</label><input type="number" id="rate" value="6.4" step="0.1"></div>
+      <div class="calc-field"><label for="term">Term (years)</label><select id="term"><option>15</option><option selected>30</option></select></div>
+      <div class="calc-result"><p>Estimated monthly payment</p><strong id="monthlyPayment">$0</strong></div>
+    </div>
+  </section>
+
+  <section class="agents" id="agents">
+    <h2>Meet the team</h2>
+    <div class="agent-grid">
+      <div class="agent-card"><img src="https://picsum.photos/seed/agent1/300/300" alt="Portrait of agent Laura Chen" loading="lazy"><h3>Laura Chen</h3><p>Senior Agent, Downtown</p></div>
+      <div class="agent-card"><img src="https://picsum.photos/seed/agent2/300/300" alt="Portrait of agent Marcus Ellis" loading="lazy"><h3>Marcus Ellis</h3><p>First-Time Buyer Specialist</p></div>
+      <div class="agent-card"><img src="https://picsum.photos/seed/agent3/300/300" alt="Portrait of agent Sofia Reyes" loading="lazy"><h3>Sofia Reyes</h3><p>Luxury &amp; New Construction</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Cornerstone <span>Realty</span></span>
+  <p>© 2026 Cornerstone Realty Group · Website 19 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

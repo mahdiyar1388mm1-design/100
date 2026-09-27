@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderlust Co. — Trips Worth Talking About</title>
+<meta name="description" content="Wanderlust Co. designs custom multi-country trips with a real trip cost calculator and hand-built itineraries. Where to next?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Wanderlust<span>Co.</span></a>
+  <nav aria-label="Primary">
+    <a href="#destinations">Destinations</a>
+    <a href="#calculator">Trip Cost</a>
+    <a href="#itinerary">Sample Itinerary</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#destinations">Destinations</a><a href="#calculator">Trip Cost</a><a href="#itinerary">Sample Itinerary</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Where to next?</h1>
+    <p>We design multi-country trips end to end — flights, stays, local guides — built around how you actually like to travel.</p>
+    <div class="hero-search">
+      <input type="text" id="destSearch" placeholder="Search a destination, e.g. Kyoto">
+      <button class="btn" id="destSearchBtn">Explore</button>
+    </div>
+  </section>
+
+  <section class="destinations" id="destinations">
+    <h2>Popular right now</h2>
+    <div class="dest-grid">
+      <article class="dest-card" data-name="Kyoto, Japan"><img src="https://picsum.photos/seed/wl-kyoto/500/620" alt="Traditional temple in Kyoto, Japan surrounded by autumn maples" loading="lazy"><div class="dest-info"><h3>Kyoto, Japan</h3><p>from $2,190</p></div></article>
+      <article class="dest-card" data-name="Amalfi Coast, Italy"><img src="https://picsum.photos/seed/wl-amalfi/500/620" alt="Cliffside town on the Amalfi Coast, Italy" loading="lazy"><div class="dest-info"><h3>Amalfi Coast, Italy</h3><p>from $2,650</p></div></article>
+      <article class="dest-card" data-name="Marrakech, Morocco"><img src="https://picsum.photos/seed/wl-marrakech/500/620" alt="Colorful souk market street in Marrakech, Morocco" loading="lazy"><div class="dest-info"><h3>Marrakech, Morocco</h3><p>from $1,780</p></div></article>
+      <article class="dest-card" data-name="Patagonia, Chile"><img src="https://picsum.photos/seed/wl-patagonia/500/620" alt="Mountain range and glacial lake in Patagonia, Chile" loading="lazy"><div class="dest-info"><h3>Patagonia, Chile</h3><p>from $3,120</p></div></article>
+    </div>
+  </section>
+
+  <section class="calculator" id="calculator">
+    <h2>Estimate your trip cost</h2>
+    <div class="calc-panel">
+      <div class="calc-field">
+        <label for="calcDest">Destination</label>
+        <select id="calcDest">
+          <option value="2190">Kyoto, Japan</option>
+          <option value="2650">Amalfi Coast, Italy</option>
+          <option value="1780">Marrakech, Morocco</option>
+          <option value="3120">Patagonia, Chile</option>
+        </select>
+      </div>
+      <div class="calc-field">
+        <label for="calcTravelers">Travelers</label>
+        <input type="number" id="calcTravelers" min="1" max="10" value="2">
+      </div>
+      <div class="calc-field">
+        <label for="calcTier">Comfort level</label>
+        <select id="calcTier">
+          <option value="1">Standard</option>
+          <option value="1.4">Comfort</option>
+          <option value="2">Luxury</option>
+        </select>
+      </div>
+      <div class="calc-result">
+        <p>Estimated total</p>
+        <strong id="calcTotal">$4,380</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="itinerary" id="itinerary">
+    <h2>Sample itinerary — Kyoto, 7 days</h2>
+    <div class="timeline">
+      <div class="tl-item"><span>Day 1–2</span><p>Arrival, Gion district walking tour, welcome kaiseki dinner</p></div>
+      <div class="tl-item"><span>Day 3–4</span><p>Arashiyama bamboo grove, private tea ceremony, temple hopping</p></div>
+      <div class="tl-item"><span>Day 5</span><p>Day trip to Nara, deer park and Todai-ji temple</p></div>
+      <div class="tl-item"><span>Day 6–7</span><p>Nishiki Market food tour, free day, departure</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Wanderlust<span>Co.</span></span>
+  <p>© 2026 Wanderlust Co. Travel · Website 17 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinnacle Estates — Rare Properties, Privately Sold</title>
+<meta name="description" content="Pinnacle Estates represents a curated portfolio of the world's most exceptional private residences. View properties by private appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">PINNACLE <em>ESTATES</em></a>
+  <nav aria-label="Primary">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#service">Private Service</a>
+    <a href="#inquire">Inquire</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#portfolio">Portfolio</a><a href="#service">Private Service</a><a href="#inquire">Inquire</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/pinnacle-hero/1800/1000" alt="Modernist cliffside villa at dusk with infinity pool">
+    <div class="hero-copy">
+      <p class="eyebrow">By Private Appointment Only</p>
+      <h1>Sixty-two homes.<br>No two alike.</h1>
+      <a href="#portfolio" class="btn">View the Portfolio</a>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2>Featured properties</h2>
+    <div class="tilt-grid">
+      <article class="tilt-card"><div class="tilt-inner"><img src="https://picsum.photos/seed/pin1/600/720" alt="Cliffside modernist villa in Malibu"><div class="tilt-info"><h3>The Cliffside, Malibu</h3><p>$18,500,000 · 6 bed · Oceanfront</p></div></div></article>
+      <article class="tilt-card"><div class="tilt-inner"><img src="https://picsum.photos/seed/pin2/600/720" alt="Penthouse residence in Manhattan"><div class="tilt-info"><h3>The Whitfield, Manhattan</h3><p>$22,900,000 · Penthouse · 5 bed</p></div></div></article>
+      <article class="tilt-card"><div class="tilt-inner"><img src="https://picsum.photos/seed/pin3/600/720" alt="Vineyard estate in Napa Valley"><div class="tilt-info"><h3>Vineyard Estate, Napa</h3><p>$14,200,000 · 40 acres · 7 bed</p></div></div></article>
+    </div>
+  </section>
+
+  <section class="service" id="service">
+    <div class="service-grid">
+      <div><span class="num">01</span><h3>Off-Market Access</h3><p>70% of our sales never reach public listing sites.</p></div>
+      <div><span class="num">02</span><h3>Private Viewings</h3><p>Every showing is scheduled one-on-one, by appointment.</p></div>
+      <div><span class="num">03</span><h3>Global Network</h3><p>Direct relationships with buyers across 30 countries.</p></div>
+    </div>
+  </section>
+
+  <section class="inquire" id="inquire">
+    <h2>Request a private consultation</h2>
+    <form id="inquireForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="iname" placeholder="Full name" required>
+        <input type="email" id="iemail" placeholder="Email" required>
+      </div>
+      <input type="text" id="ibudget" placeholder="Budget range (e.g. $10M–$20M)">
+      <textarea id="imessage" rows="4" placeholder="Tell us what you're looking for"></textarea>
+      <button type="submit" class="btn btn-block">Request Consultation</button>
+      <p class="form-note" id="inquireNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">PINNACLE <em>ESTATES</em></span>
+  <p>© 2026 Pinnacle Estates International · Website 20 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

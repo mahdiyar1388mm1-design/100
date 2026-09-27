@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Cove Resort — Maldives</title>
+<meta name="description" content="Azure Cove Resort is an overwater sanctuary in the Maldives. Explore villas, private dining, and diving experiences — then reserve your stay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <a href="#top" class="logo">AZURE COVE</a>
+  <nav aria-label="Primary">
+    <a href="#villas">Villas</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#dining">Dining</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#villas">Villas</a><a href="#experiences">Experiences</a><a href="#dining">Dining</a><a href="#reserve">Reserve</a></nav>
+
+<main id="top">
+  <section class="parallax-hero" id="parallaxHero">
+    <div class="layer" data-speed="0.2"><img src="https://picsum.photos/seed/azure-sky/1800/1100" alt=""></div>
+    <div class="layer" data-speed="0.45"><img src="https://picsum.photos/seed/azure-sea/1800/1100" alt=""></div>
+    <div class="layer" data-speed="0.7"><img src="https://picsum.photos/seed/azure-villas/1800/900" alt="Overwater villas at Azure Cove Resort, Maldives"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Maldives · Private Atoll</p>
+      <h1>Where the ocean<br>becomes your floor.</h1>
+      <a href="#reserve" class="btn">Reserve Your Villa</a>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">Scroll<span>↓</span></div>
+  </section>
+
+  <section class="intro">
+    <p>Azure Cove sits on a single private atoll reachable only by seaplane — 42 overwater villas, three restaurants, and a house reef considered among the finest diving in the Indian Ocean.</p>
+  </section>
+
+  <section class="villas" id="villas">
+    <h2>Villas</h2>
+    <div class="villa-strip" id="villaStrip">
+      <article class="villa-card"><img src="https://picsum.photos/seed/azurev1/560/420" alt="Overwater Pool Villa at Azure Cove" loading="lazy"><h3>Overwater Pool Villa</h3><p>from $1,450/night</p></article>
+      <article class="villa-card"><img src="https://picsum.photos/seed/azurev2/560/420" alt="Beach Garden Villa at Azure Cove" loading="lazy"><h3>Beach Garden Villa</h3><p>from $980/night</p></article>
+      <article class="villa-card"><img src="https://picsum.photos/seed/azurev3/560/420" alt="Two-Bedroom Reef Residence at Azure Cove" loading="lazy"><h3>Reef Residence</h3><p>from $2,600/night</p></article>
+      <article class="villa-card"><img src="https://picsum.photos/seed/azurev4/560/420" alt="Sunset Point Villa at Azure Cove" loading="lazy"><h3>Sunset Point Villa</h3><p>from $1,780/night</p></article>
+    </div>
+  </section>
+
+  <section class="experiences" id="experiences">
+    <h2>Experiences</h2>
+    <div class="exp-grid">
+      <div class="exp-card"><img src="https://picsum.photos/seed/azureexp1/500/380" alt="Diver exploring the house reef" loading="lazy"><h3>House Reef Diving</h3></div>
+      <div class="exp-card"><img src="https://picsum.photos/seed/azureexp2/500/380" alt="Sunset dolphin cruise" loading="lazy"><h3>Sunset Dolphin Cruise</h3></div>
+      <div class="exp-card"><img src="https://picsum.photos/seed/azureexp3/500/380" alt="Overwater spa treatment room" loading="lazy"><h3>Overwater Spa Ritual</h3></div>
+    </div>
+  </section>
+
+  <section class="dining" id="dining">
+    <img src="https://picsum.photos/seed/azuredining/700/840" alt="Private dining table set on the sand at sunset">
+    <div class="dining-copy">
+      <h2>Dinner, feet in the sand.</h2>
+      <p>Three restaurants and one private sandbank dinner experience, built around whatever the day's catch brings in.</p>
+      <ul>
+        <li>Cove Kitchen — all-day dining, open-air</li>
+        <li>Reef &amp; Vine — tasting menu, wine pairing</li>
+        <li>The Sandbank — private dinner for two</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <h2>Reserve your stay</h2>
+    <form id="reserveForm" novalidate>
+      <div class="form-row">
+        <input type="date" id="checkin" required aria-label="Check-in date">
+        <input type="date" id="checkout" required aria-label="Check-out date">
+      </div>
+      <input type="email" id="remail" placeholder="Email address" required>
+      <button type="submit" class="btn btn-block">Check Availability</button>
+      <p class="form-note" id="reserveNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">AZURE COVE</span>
+  <p>© 2026 Azure Cove Resorts · Website 16 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
