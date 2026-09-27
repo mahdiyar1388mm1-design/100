@@ -1,0 +1,95 @@
+/* Aurelia — Jewelry Brand | Dark luxury elegant */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#0d0b0a; --surface:#171310; --gold:#cda86a; --gold-soft:#e8d3a3; --text:#efe8dc; --text-dim:#a89d8d;
+  --line:rgba(239,232,220,.14);
+  --serif:'Playfair Display',serif; --sans:'Jost',sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500}
+button,select,input{font-family:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.side-dots{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:.9rem;z-index:45}
+.side-dots button{width:9px;height:9px;border-radius:50%;background:var(--line);border:none;cursor:pointer;transition:.25s}
+.side-dots button.active{background:var(--gold);transform:scale(1.4)}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(13,11,10,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);letter-spacing:.12em;font-size:1.3rem;color:var(--gold-soft)}
+header nav{display:flex;gap:2rem;font-size:.88rem}
+header nav a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);width:38px;height:38px;border-radius:50%;cursor:pointer}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{position:relative;height:92vh;min-height:520px;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:kenburns 22s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,10,.35),rgba(13,11,10,.85))}
+.hero-copy{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:2;padding:1.5rem}
+.eyebrow{color:var(--gold);letter-spacing:.16em;text-transform:uppercase;font-size:.8rem;margin-bottom:1rem}
+.hero-copy h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.15;margin-bottom:2rem}
+.btn{display:inline-block;background:var(--gold);color:#1a1410;padding:.95rem 2rem;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--gold);cursor:pointer;transition:.3s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn-block{width:100%;text-align:center}
+
+.configurator{max-width:1200px;margin:0 auto;padding:clamp(3rem,7vw,6rem) 1.5rem}
+.configurator h2,.collections h2{text-align:center;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:2.5rem}
+.config-panel{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:clamp(1.5rem,4vw,3rem)}
+.config-preview img{border-radius:8px;width:100%;aspect-ratio:1;object-fit:cover}
+.option-label{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-dim);margin-bottom:.6rem}
+.option-group{margin-bottom:1.6rem}
+.pill-row{display:flex;gap:.6rem;flex-wrap:wrap}
+.pill{background:none;border:1px solid var(--line);color:var(--text);padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;font-size:.85rem;transition:.2s}
+.pill.active,.pill:hover{border-color:var(--gold);color:var(--gold)}
+input[type=range]{width:100%;accent-color:var(--gold);margin-bottom:.5rem}
+.carat-value{color:var(--gold-soft);font-family:var(--serif)}
+.config-price{margin:1.5rem 0 1rem;font-size:1.05rem}
+.config-price strong{color:var(--gold);font-family:var(--serif);font-size:1.3rem}
+.form-note{margin-top:.9rem;font-size:.85rem;color:var(--gold-soft)}
+
+.collections{padding:clamp(3rem,7vw,6rem) 1.5rem;max-width:1320px;margin:0 auto}
+.carousel{display:flex;gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem}
+.carousel-card{scroll-snap-align:start;flex:0 0 240px;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;padding-bottom:1rem}
+.carousel-card img{width:100%;aspect-ratio:4/5;object-fit:cover;margin-bottom:.9rem}
+.carousel-card h3{font-size:1.1rem;padding:0 1rem;margin-bottom:.3rem}
+.carousel-card p{padding:0 1rem;color:var(--gold-soft)}
+.carousel-nav{display:flex;gap:.6rem;justify-content:center;margin-top:1.2rem}
+.carousel-nav button{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--text);cursor:pointer;font-size:1.1rem}
+.carousel-nav button:hover{border-color:var(--gold);color:var(--gold)}
+
+.trust{background:var(--surface);padding:clamp(3rem,7vw,6rem) 1.5rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.num{color:var(--gold);font-family:var(--serif);font-size:1.6rem;display:block;margin-bottom:.6rem}
+.trust-grid h3{font-size:1.1rem;margin-bottom:.6rem}
+.trust-grid p{color:var(--text-dim);font-size:.92rem}
+
+.appointment{max-width:1200px;margin:0 auto;padding:clamp(3rem,7vw,6rem) 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.appointment-copy h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
+.appointment-copy p{color:var(--text-dim);max-width:44ch}
+.appointment form{display:flex;flex-direction:column;gap:.4rem;position:relative}
+.appointment label{font-size:.8rem;color:var(--text-dim);margin-top:.8rem}
+.appointment input,.appointment select{background:var(--surface);border:1px solid var(--line);color:var(--text);padding:.8rem 1rem;border-radius:6px}
+.appointment button{margin-top:1.5rem}
+
+.footer{text-align:center;padding:2.5rem;border-top:1px solid var(--line)}
+.footer .logo{margin-bottom:.5rem}
+.footer p:last-child{font-size:.8rem;color:var(--text-dim)}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .side-dots{display:none}
+  .config-panel{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .appointment{grid-template-columns:1fr}
+}
+@media (max-width:540px){
+  .trust-grid{grid-template-columns:1fr}
+  .carousel-card{flex-basis:200px}
+}

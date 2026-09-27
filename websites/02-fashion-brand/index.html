@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÉCLAT STUDIO — SS26 Drop</title>
+<meta name="description" content="Éclat Studio is an independent fashion label out of Paris. Shop the SS26 collection — bold silhouettes, limited drops, no restocks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">ÉCLAT<span>STUDIO</span></a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="#drop">The Drop</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#about">Manifesto</a>
+    <a href="#join">Access List</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="overlayNav" aria-label="Open menu">MENU</button>
+</header>
+
+<div class="overlay-nav" id="overlayNav">
+  <a href="#drop">01 — The Drop</a>
+  <a href="#lookbook">02 — Lookbook</a>
+  <a href="#about">03 — Manifesto</a>
+  <a href="#join">04 — Access List</a>
+  <button class="overlay-close" id="overlayClose" aria-label="Close menu">CLOSE ✕</button>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-grid">
+      <h1 class="hero-type">DROP<br>04</h1>
+      <img src="https://picsum.photos/seed/eclat-hero/900/1200" alt="Model wearing Éclat Studio oversized bomber jacket and cargo pants" class="hero-img">
+      <div class="hero-tag">
+        <p>SS26 · “RUNAWAY CITY”</p>
+        <a href="#drop" class="btn-block">Shop the Drop</a>
+      </div>
+    </div>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>LIMITED TO 300 PIECES</span><span>NO RESTOCKS</span><span>DESIGNED IN PARIS</span><span>MADE IN PORTUGAL</span>
+        <span>LIMITED TO 300 PIECES</span><span>NO RESTOCKS</span><span>DESIGNED IN PARIS</span><span>MADE IN PORTUGAL</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="drop" id="drop">
+    <div class="drop-head">
+      <h2>Drop closes in</h2>
+      <div class="countdown" id="countdown" role="timer" aria-live="polite">
+        <div><span id="cd-d">00</span><small>Days</small></div>
+        <div><span id="cd-h">00</span><small>Hrs</small></div>
+        <div><span id="cd-m">00</span><small>Min</small></div>
+        <div><span id="cd-s">00</span><small>Sec</small></div>
+      </div>
+    </div>
+
+    <div class="product-panel">
+      <div class="product-image">
+        <img id="productImg" src="https://picsum.photos/seed/eclat-p1/800/1000" alt="Éclat Studio Vertige jacket in acid green">
+      </div>
+      <div class="product-details">
+        <p class="eyebrow">01 / VERTIGE JACKET</p>
+        <h3>Boxy fit, bonded seams, reflective piping.</h3>
+        <p class="price">€420.00</p>
+        <div class="swatches" role="group" aria-label="Colour">
+          <button class="swatch" style="--c:#d7ff3f" data-img="eclat-p1" data-label="Acid Green" aria-label="Acid Green" aria-pressed="true"></button>
+          <button class="swatch" style="--c:#ff3d81" data-img="eclat-p2" data-label="Signal Pink" aria-label="Signal Pink" aria-pressed="false"></button>
+          <button class="swatch" style="--c:#111111" data-img="eclat-p3" data-label="Blackout" aria-label="Blackout" aria-pressed="false"></button>
+          <button class="swatch" style="--c:#3d7bff" data-img="eclat-p4" data-label="Electric Blue" aria-label="Electric Blue" aria-pressed="false"></button>
+        </div>
+        <p class="swatch-label" id="swatchLabel">Acid Green</p>
+        <div class="size-grid" role="group" aria-label="Size">
+          <button data-size="XS">XS</button>
+          <button data-size="S" class="active">S</button>
+          <button data-size="M">M</button>
+          <button data-size="L">L</button>
+          <button data-size="XL">XL</button>
+        </div>
+        <button class="btn-block wide" id="addBtn">Add to Bag — €420.00</button>
+        <p class="stock-note" id="stockNote" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lookbook" id="lookbook">
+    <h2>Lookbook — RUNAWAY CITY</h2>
+    <div class="masonry">
+      <img src="https://picsum.photos/seed/eclat-look1/600/800" alt="Look 01: layered utility fit in the metro" loading="lazy">
+      <img src="https://picsum.photos/seed/eclat-look2/600/500" alt="Look 02: cargo set on rooftop at dusk" loading="lazy">
+      <img src="https://picsum.photos/seed/eclat-look3/600/750" alt="Look 03: monochrome tailoring on concrete stairwell" loading="lazy">
+      <img src="https://picsum.photos/seed/eclat-look4/600/900" alt="Look 04: reflective jacket under neon signage" loading="lazy">
+      <img src="https://picsum.photos/seed/eclat-look5/600/500" alt="Look 05: street cast group portrait" loading="lazy">
+      <img src="https://picsum.photos/seed/eclat-look6/600/780" alt="Look 06: cropped puffer with graphic tee" loading="lazy">
+    </div>
+  </section>
+
+  <section class="manifesto" id="about">
+    <p><span>01.</span> We design for the city, not the runway.</p>
+    <p><span>02.</span> Every drop is limited. What sells out stays sold out.</p>
+    <p><span>03.</span> No seasons. Only statements.</p>
+  </section>
+
+  <section class="join" id="join">
+    <h2>Get on the Access List</h2>
+    <p>First access to drops, 48 hours before public release.</p>
+    <form id="joinForm" novalidate>
+      <input type="email" id="joinEmail" placeholder="EMAIL ADDRESS" required aria-label="Email address">
+      <button type="submit" class="btn-block">Join</button>
+    </form>
+    <p class="form-note" id="joinNote" role="status"></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <span class="logo">ÉCLAT<span>STUDIO</span></span>
+    <div class="socials">
+      <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Depop</a>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2026 Éclat Studio SAS, Paris. Website 02 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

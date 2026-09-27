@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora — Precision Electronics</title>
+<meta name="description" content="Nexora sells precision-engineered laptops, audio and smart devices with real specs, honest comparisons and a 2-year warranty on everything.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">NEXORA</a>
+  <nav class="nav" aria-label="Primary">
+    <div class="dropdown">
+      <button class="drop-btn" aria-expanded="false">Shop</button>
+      <div class="drop-panel">
+        <a href="#products">Laptops</a>
+        <a href="#products">Audio</a>
+        <a href="#products">Smart Home</a>
+        <a href="#products">Wearables</a>
+      </div>
+    </div>
+    <a href="#compare">Compare</a>
+    <a href="#specs">Specs</a>
+    <a href="#faq">Support</a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeToggle" class="theme-toggle" aria-pressed="false">☀ Light</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#products">Shop</a>
+  <a href="#compare">Compare</a>
+  <a href="#specs">Specs</a>
+  <a href="#faq">Support</a>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="kicker">NX-7 Series · Available now</p>
+      <h1>Engineered for the <span>next decade.</span></h1>
+      <p class="lede">The NX-7 Pro pairs a 4nm neural chip with a 3K adaptive display — built to run cooler, last longer, and stay fast for years, not months.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">Shop NX-7 Pro — $1,299</a>
+        <a href="#specs" class="btn btn-ghost">View full specs</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>22h</strong><span>battery life</span></div>
+        <div><strong>4nm</strong><span>neural chip</span></div>
+        <div><strong>2yr</strong><span>warranty</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glow"></div>
+      <img src="https://picsum.photos/seed/nexora-hero/900/700" alt="Nexora NX-7 Pro laptop, angled view with backlit keyboard" loading="eager">
+    </div>
+  </section>
+
+  <section class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>4nm Neural Chip</span><span>3K Adaptive Display</span><span>22h Battery</span><span>Aerospace-grade Chassis</span><span>2-Year Warranty</span>
+      <span>4nm Neural Chip</span><span>3K Adaptive Display</span><span>22h Battery</span><span>Aerospace-grade Chassis</span><span>2-Year Warranty</span>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Current lineup</h2>
+    <div class="product-grid">
+      <article class="product-card">
+        <span class="badge">Best Seller</span>
+        <img src="https://picsum.photos/seed/nexora1/500/380" alt="Nexora NX-7 Pro laptop" loading="lazy">
+        <h3>NX-7 Pro</h3>
+        <p>14" 3K OLED · 32GB RAM · 4nm chip</p>
+        <div class="card-foot"><span class="price">$1,299</span><button class="btn btn-small">Add to Cart</button></div>
+      </article>
+      <article class="product-card">
+        <span class="badge alt">New</span>
+        <img src="https://picsum.photos/seed/nexora2/500/380" alt="Nexora Aeropods wireless earbuds" loading="lazy">
+        <h3>Aeropods 2</h3>
+        <p>Active noise cancelling · 38h total battery</p>
+        <div class="card-foot"><span class="price">$179</span><button class="btn btn-small">Add to Cart</button></div>
+      </article>
+      <article class="product-card">
+        <img src="https://picsum.photos/seed/nexora3/500/380" alt="Nexora Halo smart display" loading="lazy">
+        <h3>Halo Smart Display</h3>
+        <p>10" matrix panel · Voice + gesture control</p>
+        <div class="card-foot"><span class="price">$249</span><button class="btn btn-small">Add to Cart</button></div>
+      </article>
+      <article class="product-card">
+        <img src="https://picsum.photos/seed/nexora4/500/380" alt="Nexora Pulse smartwatch" loading="lazy">
+        <h3>Pulse Watch SE</h3>
+        <p>ECG + SpO2 · 9-day battery · Titanium case</p>
+        <div class="card-foot"><span class="price">$329</span><button class="btn btn-small">Add to Cart</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="compare" id="compare">
+    <h2>Compare the NX-7 line</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="air">NX-7 Air</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="pro">NX-7 Pro</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="max">NX-7 Max</button>
+    </div>
+    <div class="compare-table" id="compareTable">
+      <div class="row head"><span>Spec</span><span>Value</span></div>
+    </div>
+  </section>
+
+  <section class="specs" id="specs">
+    <div class="specs-visual">
+      <img src="https://picsum.photos/seed/nexora-specs/700/900" alt="Exploded diagram of NX-7 Pro internal components" loading="lazy">
+    </div>
+    <div class="specs-accordion">
+      <h2>Full spec sheet</h2>
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="true">Display &amp; Design <span>−</span></button>
+        <div class="acc-body open"><p>14" 3K OLED, 120Hz adaptive refresh, 100% DCI-P3, machined aluminium unibody, 1.28kg.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">Performance <span>+</span></button>
+        <div class="acc-body"><p>Nexora N4 neural chip (4nm), 10-core CPU, 16-core GPU, up to 64GB unified memory.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">Battery &amp; Ports <span>+</span></button>
+        <div class="acc-body"><p>22-hour video playback, 2x Thunderbolt 4, HDMI 2.1, MagSafe-style charging.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">Warranty <span>+</span></button>
+        <div class="acc-body"><p>2-year limited hardware warranty plus 90-day no-questions returns.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Support &amp; FAQ</h2>
+    <div class="faq-grid">
+      <details><summary>Do you ship internationally?</summary><p>Yes — we ship to 42 countries with duties calculated at checkout, no surprise fees on delivery.</p></details>
+      <details><summary>Can I trade in an old device?</summary><p>Trade-in credit is calculated instantly at checkout for laptops and phones less than 6 years old.</p></details>
+      <details><summary>What does the 2-year warranty cover?</summary><p>Manufacturing defects, battery health below 80%, and one accidental drop repair per year.</p></details>
+      <details><summary>Is financing available?</summary><p>Yes, 0% APR financing for 12 months is available on orders over $500 at checkout.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div><span class="logo">NEXORA</span><p>Precision electronics, honestly specified.</p></div>
+    <div><h3>Shop</h3><a href="#products">Laptops</a><a href="#products">Audio</a><a href="#products">Wearables</a></div>
+    <div><h3>Company</h3><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a></div>
+    <div><h3>Support</h3><a href="#faq">FAQ</a><a href="#">Warranty</a><a href="#">Contact</a></div>
+  </div>
+  <p class="footer-bottom">© 2026 Nexora Technologies Inc. · Website 03 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

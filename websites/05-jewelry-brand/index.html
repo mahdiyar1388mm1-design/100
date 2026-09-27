@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia — Fine Jewelry, Made to Order</title>
+<meta name="description" content="Aurelia designs made-to-order fine jewelry in recycled gold and ethically sourced gemstones. Configure your own ring in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="side-dots" id="sideDots" aria-hidden="true">
+  <button data-target="top" class="active" aria-label="Go to hero"></button>
+  <button data-target="configurator" aria-label="Go to configurator"></button>
+  <button data-target="collections" aria-label="Go to collections"></button>
+  <button data-target="trust" aria-label="Go to craftsmanship"></button>
+  <button data-target="appointment" aria-label="Go to appointment"></button>
+</div>
+
+<header class="header">
+  <a href="#top" class="logo">AURELIA</a>
+  <nav aria-label="Primary">
+    <a href="#configurator">Design Your Own</a>
+    <a href="#collections">Collections</a>
+    <a href="#trust">Craftsmanship</a>
+    <a href="#appointment">Book a Visit</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#configurator">Design Your Own</a>
+  <a href="#collections">Collections</a>
+  <a href="#trust">Craftsmanship</a>
+  <a href="#appointment">Book a Visit</a>
+</nav>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-bg"><img src="https://picsum.photos/seed/aurelia-hero/1800/1100" alt="Close-up of a gold ring with a solitaire diamond resting on dark silk"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">The Solitaire Edit</p>
+      <h1>Jewelry, designed<br>around you.</h1>
+      <a href="#configurator" class="btn">Design Your Ring</a>
+    </div>
+  </section>
+
+  <section class="configurator" id="configurator">
+    <h2>Design your own ring</h2>
+    <div class="config-panel">
+      <div class="config-preview">
+        <img id="ringPreview" src="https://picsum.photos/seed/aurelia-gold-round/700/700" alt="Ring preview: yellow gold band with round diamond">
+      </div>
+      <div class="config-options">
+        <div class="option-group">
+          <p class="option-label">Metal</p>
+          <div class="pill-row" role="group" aria-label="Metal">
+            <button class="pill active" data-metal="gold" data-label="Yellow Gold">Yellow Gold</button>
+            <button class="pill" data-metal="rose" data-label="Rose Gold">Rose Gold</button>
+            <button class="pill" data-metal="platinum" data-label="Platinum">Platinum</button>
+          </div>
+        </div>
+        <div class="option-group">
+          <p class="option-label">Gemstone Cut</p>
+          <div class="pill-row" role="group" aria-label="Gemstone cut">
+            <button class="pill active" data-cut="round" data-label="Round">Round</button>
+            <button class="pill" data-cut="oval" data-label="Oval">Oval</button>
+            <button class="pill" data-cut="emerald" data-label="Emerald">Emerald</button>
+          </div>
+        </div>
+        <div class="option-group">
+          <p class="option-label">Carat</p>
+          <input type="range" id="caratRange" min="0.5" max="3" step="0.1" value="1">
+          <p class="carat-value"><span id="caratOut">1.0</span> ct</p>
+        </div>
+        <p class="config-price">Estimated price: <strong id="configPrice">$3,200</strong></p>
+        <button class="btn btn-block" id="requestQuote">Request Exact Quote</button>
+        <p class="form-note" id="quoteNote" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="collections" id="collections">
+    <h2>Signature collections</h2>
+    <div class="carousel" id="carousel">
+      <article class="carousel-card"><img src="https://picsum.photos/seed/aurelia1/500/620" alt="Aurelia Solstice necklace with pear-cut pendant" loading="lazy"><h3>Solstice Necklace</h3><p>$1,450</p></article>
+      <article class="carousel-card"><img src="https://picsum.photos/seed/aurelia2/500/620" alt="Aurelia Vesper drop earrings in rose gold" loading="lazy"><h3>Vesper Earrings</h3><p>$980</p></article>
+      <article class="carousel-card"><img src="https://picsum.photos/seed/aurelia3/500/620" alt="Aurelia Halo eternity band" loading="lazy"><h3>Halo Eternity Band</h3><p>$1,760</p></article>
+      <article class="carousel-card"><img src="https://picsum.photos/seed/aurelia4/500/620" alt="Aurelia Lune cuff bracelet" loading="lazy"><h3>Lune Cuff</h3><p>$1,120</p></article>
+      <article class="carousel-card"><img src="https://picsum.photos/seed/aurelia5/500/620" alt="Aurelia Nova signet ring" loading="lazy"><h3>Nova Signet Ring</h3><p>$890</p></article>
+    </div>
+    <div class="carousel-nav">
+      <button id="carPrev" aria-label="Previous items">←</button>
+      <button id="carNext" aria-label="Next items">→</button>
+    </div>
+  </section>
+
+  <section class="trust" id="trust">
+    <div class="trust-grid">
+      <div><span class="num">01</span><h3>Recycled Precious Metals</h3><p>Every piece is cast in 100% recycled gold and platinum.</p></div>
+      <div><span class="num">02</span><h3>Traceable Gemstones</h3><p>Each stone ships with a certificate of origin and grading report.</p></div>
+      <div><span class="num">03</span><h3>Hand-set in Antwerp</h3><p>Set by master jewelers with an average of 22 years' experience.</p></div>
+      <div><span class="num">04</span><h3>Lifetime Resizing</h3><p>Free resizing and cleaning for as long as you own the piece.</p></div>
+    </div>
+  </section>
+
+  <section class="appointment" id="appointment">
+    <div class="appointment-copy">
+      <h2>Book a private viewing</h2>
+      <p>Sit down with a designer, try pieces in person, and finalize your custom order — in our Antwerp atelier or by video call.</p>
+    </div>
+    <form id="apptForm" novalidate>
+      <label for="name">Full name</label>
+      <input type="text" id="name" required>
+      <label for="apptEmail">Email</label>
+      <input type="email" id="apptEmail" required>
+      <label for="mode">Preferred format</label>
+      <select id="mode">
+        <option>In-person — Antwerp Atelier</option>
+        <option>Video Call</option>
+      </select>
+      <button type="submit" class="btn btn-block">Request Appointment</button>
+      <p class="form-note" id="apptNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo">AURELIA</p>
+  <p>© 2026 Aurelia Fine Jewelry · Website 05 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

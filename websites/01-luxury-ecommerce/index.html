@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Vela — Fine Leather Goods &amp; Objects</title>
+<meta name="description" content="Maison Vela crafts fine leather goods and heirloom objects, made by hand in small ateliers. Discover the Vela Atelier collection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">Complimentary shipping on orders over $400 &nbsp;·&nbsp; Handcrafted in small batches</div>
+
+<header class="site-header" id="header">
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-left" aria-label="Primary">
+    <a href="#collection">Collection</a>
+    <a href="#atelier">Atelier</a>
+    <a href="#journal">Journal</a>
+  </nav>
+  <a href="#top" class="brand-mark">MAISON&nbsp;VELA</a>
+  <nav class="nav-right" aria-label="Utility">
+    <button class="icon-link" id="searchBtn" aria-label="Search">Search</button>
+    <a href="#contact" class="icon-link">Contact</a>
+    <button class="icon-link cart-link" id="cartBtn" aria-label="View bag, 0 items">Bag&nbsp;(<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#collection">Collection</a>
+  <a href="#atelier">Atelier</a>
+  <a href="#journal">Journal</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/velahero/1800/1000" alt="Model holding a hand-stitched Vela leather satchel in soft daylight" loading="eager">
+    <div class="hero-copy">
+      <p class="eyebrow">Autumn Collection — No. 12</p>
+      <h1>Objects made<br>to outlive trends.</h1>
+      <a href="#collection" class="btn btn-light">Explore the Collection</a>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Full-grain Italian leather</span><span>·</span><span>Hand-stitched saddle seams</span><span>·</span><span>Lifetime repair guarantee</span><span>·</span><span>Made in small ateliers</span><span>·</span>
+      <span>Full-grain Italian leather</span><span>·</span><span>Hand-stitched saddle seams</span><span>·</span><span>Lifetime repair guarantee</span><span>·</span><span>Made in small ateliers</span><span>·</span>
+    </div>
+  </div>
+
+  <section class="intro" id="atelier">
+    <span class="intro-number">01</span>
+    <p>Founded in 2011 by artisan Elena Vela, Maison Vela produces fewer than 4,000 pieces a year. Every bag, wallet and travel case is cut, skived and hand-stitched by a single craftsperson from start to finish — a practice we call <em>one hand, one object</em>.</p>
+  </section>
+
+  <section class="collection" id="collection" aria-label="Featured collection">
+    <div class="collection-head">
+      <h2>The Atelier Edit</h2>
+      <div class="filters" role="tablist" aria-label="Filter products">
+        <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="bags">Bags</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="leather">Small Leather</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="travel">Travel</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Cards injected also usable statically -->
+    </div>
+  </section>
+
+  <section class="editorial">
+    <img src="https://picsum.photos/seed/velaeditorial/1200/1400" alt="Close-up of hands hand-stitching a leather bag panel with waxed thread" loading="lazy">
+    <div class="editorial-copy">
+      <span class="intro-number">02</span>
+      <h2>Ninety-two hours,<br>one satchel.</h2>
+      <p>The Aveline Satchel alone requires ninety-two hours of hand labour — from vegetable-tanned hide selection to the final beeswax polish. We believe slowness is a form of respect for the wearer.</p>
+      <a href="#journal" class="text-link">Read the making-of story →</a>
+    </div>
+  </section>
+
+  <section class="testimonials" aria-label="Customer testimonials">
+    <h2>Held for a lifetime</h2>
+    <div class="quote-slider">
+      <div class="quote active">
+        <p>“Eleven years of daily use and the leather only looks better. This is the last briefcase I will ever need to buy.”</p>
+        <cite>— Marcus T., Toronto</cite>
+      </div>
+      <div class="quote">
+        <p>“The repair service replaced a strap for free, six years after purchase. That kind of care is rare now.”</p>
+        <cite>— Priya D., London</cite>
+      </div>
+      <div class="quote">
+        <p>“You can feel the difference the moment you pick it up. Weighty, warm, unmistakably handmade.”</p>
+        <cite>— Sofia R., Milan</cite>
+      </div>
+    </div>
+    <div class="quote-dots" id="quoteDots"></div>
+  </section>
+
+  <section class="newsletter" id="journal">
+    <div>
+      <h2>The Vela Journal</h2>
+      <p>Notes on craft, care guides, and early access to limited runs — twice a month, no more.</p>
+    </div>
+    <form id="newsletterForm" novalidate>
+      <label for="email" class="visually-hidden">Email address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <button type="submit" class="btn btn-dark">Subscribe</button>
+      <p class="form-note" id="formNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-grid">
+    <div>
+      <p class="brand-mark small">MAISON&nbsp;VELA</p>
+      <p>Via dei Calzolai 14<br>50122 Firenze, Italy</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <a href="#collection">Bags</a>
+      <a href="#collection">Small Leather Goods</a>
+      <a href="#collection">Travel</a>
+      <a href="#collection">Gift Cards</a>
+    </div>
+    <div>
+      <h3>House</h3>
+      <a href="#atelier">The Atelier</a>
+      <a href="#journal">Journal</a>
+      <a href="#contact">Sustainability</a>
+      <a href="#contact">Careers</a>
+    </div>
+    <div>
+      <h3>Client Care</h3>
+      <a href="#contact">Contact Us</a>
+      <a href="#contact">Repairs &amp; Care</a>
+      <a href="#contact">Shipping &amp; Returns</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Maison Vela Atelier. All rights reserved.</p>
+    <p>Crafted portfolio example — Website 01 / 100</p>
+  </div>
+</footer>
+
+<div class="modal" id="quickModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close quick view">×</button>
+    <img id="modalImg" src="" alt="">
+    <div class="modal-info">
+      <p class="eyebrow" id="modalCat"></p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p class="price" id="modalPrice"></p>
+      <button class="btn btn-dark" id="modalAdd">Add to Bag</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

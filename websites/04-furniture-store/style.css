@@ -1,0 +1,97 @@
+/* Nordly Home — Furniture Store | Scandinavian minimal */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --cream:#faf6ef; --cream-2:#f0e9dc; --ink:#3a332b; --terracotta:#bd6a4d; --sage:#7c8a72;
+  --line:rgba(58,51,43,.15);
+  --serif:'Cormorant Garamond',serif; --sans:'Work Sans',sans-serif;
+}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500}
+:focus-visible{outline:2px solid var(--terracotta);outline-offset:3px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.3rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;background:rgba(250,246,239,.9);backdrop-filter:blur(8px);z-index:40;border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-size:1.6rem}
+.logo em{font-style:italic;color:var(--terracotta)}
+header nav{display:flex;gap:2.2rem;font-size:.92rem}
+header nav a{position:relative}
+header nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--terracotta);transition:width .3s}
+header nav a:hover::after{width:100%}
+.menu-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
+.menu-btn span{width:22px;height:1.5px;background:var(--ink)}
+.mobile-nav{display:none;flex-direction:column;background:var(--cream);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line)}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;max-width:1320px;margin:0 auto;gap:2rem;padding:clamp(2rem,6vw,4rem) 1.5rem}
+.eyebrow{color:var(--terracotta);font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.8rem;font-weight:500}
+.hero-copy h1{font-size:clamp(2.3rem,5vw,3.6rem);line-height:1.15;margin-bottom:1.2rem}
+.hero-copy p{max-width:42ch;margin-bottom:1.8rem;font-size:1.05rem}
+.hero img{border-radius:6px}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);padding:.9rem 1.8rem;border-radius:2px;font-size:.9rem;letter-spacing:.03em;border:1px solid var(--ink);cursor:pointer;transition:.25s}
+.btn:hover{background:transparent;color:var(--ink)}
+
+.rooms{max-width:1320px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.rooms h2,.grid-section h2,.gallery h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.6rem;text-align:center}
+.room-tabs{display:flex;justify-content:center;gap:.6rem;margin-bottom:2rem;flex-wrap:wrap}
+.room-tab{background:none;border:1px solid var(--line);padding:.6rem 1.3rem;border-radius:100px;cursor:pointer;font-size:.88rem}
+.room-tab.active,.room-tab:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.room-scene{position:relative;border-radius:8px;overflow:hidden;max-width:1000px;margin:0 auto}
+.room-scene img{width:100%}
+.hotspot{position:absolute;width:32px;height:32px;border-radius:50%;background:#fff;border:none;color:var(--ink);font-size:1.2rem;cursor:pointer;box-shadow:0 0 0 6px rgba(255,255,255,.35);transform:translate(-50%,-50%);transition:.25s}
+.hotspot:hover{background:var(--terracotta);color:#fff;transform:translate(-50%,-50%) scale(1.15)}
+.hotspot-card{position:absolute;bottom:1.2rem;left:1.2rem;right:1.2rem;max-width:280px;background:var(--cream);padding:1.2rem 1.4rem;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.hotspot-card h3{font-size:1.2rem;margin-bottom:.4rem}
+.hotspot-card p{font-size:.9rem;margin-bottom:.6rem}
+.hotspot-card .price{font-weight:500;color:var(--terracotta)}
+.hotspot-close{position:absolute;top:.4rem;right:.6rem;background:none;border:none;font-size:1.2rem;cursor:pointer}
+
+.grid-section{max-width:1320px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.material-card img{border-radius:6px;margin-bottom:1rem;aspect-ratio:4/3;object-fit:cover}
+.material-card h3{font-size:1.3rem;margin-bottom:.4rem}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:1320px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.story img{border-radius:6px}
+.story-copy h2{font-size:clamp(1.9rem,4vw,2.6rem);margin:.6rem 0 1.2rem}
+.story-copy p{max-width:46ch;margin-bottom:2rem}
+.stat-row{display:flex;gap:2.2rem;flex-wrap:wrap}
+.stat-row strong{display:block;font-family:var(--serif);font-size:1.8rem;color:var(--terracotta)}
+.stat-row span{font-size:.85rem}
+
+.gallery{background:var(--cream-2);padding:clamp(3rem,6vw,5rem) 1.5rem}
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.6rem;max-width:1320px;margin:0 auto}
+.insta-grid img{aspect-ratio:1;object-fit:cover;border-radius:4px;transition:transform .3s}
+.insta-grid img:hover{transform:scale(1.04)}
+
+.visit{max-width:1320px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.visit h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1rem}
+.visit-list{margin-top:1.5rem;list-style:none}
+.visit-list li{padding:.8rem 0;border-top:1px solid var(--line)}
+.visit form{background:var(--cream-2);padding:2rem;border-radius:8px;position:relative}
+.visit form h3{font-size:1.4rem;margin-bottom:.6rem}
+.visit form p{margin-bottom:1.2rem;font-size:.92rem}
+.visit input{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:var(--cream);margin-bottom:1rem;border-radius:2px}
+.form-note{position:absolute;bottom:-1.6rem;left:2rem;font-size:.85rem;color:var(--terracotta)}
+
+.footer{text-align:center;padding:2.5rem 1.5rem;border-top:1px solid var(--line)}
+.footer .logo{margin-bottom:.6rem}
+.footer p:last-child{font-size:.8rem;opacity:.7}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:flex}
+  .hero{grid-template-columns:1fr}
+  .hero img{order:-1}
+  .material-grid{grid-template-columns:1fr 1fr}
+  .story{grid-template-columns:1fr}
+  .story img{max-height:360px;object-fit:cover}
+  .insta-grid{grid-template-columns:repeat(3,1fr)}
+  .visit{grid-template-columns:1fr}
+}
+@media (max-width:540px){
+  .material-grid{grid-template-columns:1fr}
+  .insta-grid{grid-template-columns:repeat(2,1fr)}
+}
