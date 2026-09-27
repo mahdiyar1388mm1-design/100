@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledgerline — Financial Operations Platform</title>
+<meta name="description" content="Ledgerline is a financial operations platform for growing companies: bookkeeping, forecasting, and cash flow insight in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Ledgerline</a>
+  <nav aria-label="Primary">
+    <a href="#platform">Platform</a>
+    <a href="#insights">Insights</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#pricing" class="btn btn-small nav-cta">Get a Demo</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#platform">Platform</a><a href="#insights">Insights</a><a href="#pricing">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Your company's financial operating system.</h1>
+      <p>Bookkeeping, forecasting, and real-time cash flow visibility — built for finance teams who don't have time to wait on reports.</p>
+      <div class="hero-actions"><a href="#pricing" class="btn">Request a Demo</a><a href="#platform" class="btn btn-ghost">See the Platform</a></div>
+    </div>
+    <div class="hero-panel">
+      <div class="panel-head"><span>Cash Position</span><span class="pos">+$482,900</span></div>
+      <svg viewBox="0 0 300 120" class="chart" aria-hidden="true">
+        <polyline points="0,90 40,80 80,85 120,60 160,65 200,40 240,45 300,10" fill="none" stroke="#2f8f5b" stroke-width="3"></polyline>
+        <polygon points="0,90 40,80 80,85 120,60 160,65 200,40 240,45 300,10 300,120 0,120" fill="url(#g1)"></polygon>
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2f8f5b" stop-opacity=".3"/><stop offset="100%" stop-color="#2f8f5b" stop-opacity="0"/></linearGradient></defs>
+      </svg>
+      <div class="panel-legend"><span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span></div>
+    </div>
+  </section>
+
+  <section class="logos">
+    <span>TRUSTED BY FINANCE TEAMS AT</span>
+    <div class="logo-row"><span>Northwind Co.</span><span>Verdant Labs</span><span>Cascade Group</span><span>Blueline Retail</span></div>
+  </section>
+
+  <section class="platform" id="platform">
+    <h2>Everything finance needs in one place</h2>
+    <div class="feature-grid">
+      <article class="feature-card"><span class="ico">📊</span><h3>Live Reporting</h3><p>P&amp;L, balance sheet, and cash flow updated in real time.</p></article>
+      <article class="feature-card"><span class="ico">🔮</span><h3>Forecasting</h3><p>Model scenarios and see runway impact instantly.</p></article>
+      <article class="feature-card"><span class="ico">🔗</span><h3>Bank Sync</h3><p>Connects to 12,000+ banks and accounting tools.</p></article>
+      <article class="feature-card"><span class="ico">🔒</span><h3>SOC 2 Compliant</h3><p>Bank-level encryption and audit trails built in.</p></article>
+    </div>
+  </section>
+
+  <section class="insights" id="insights">
+    <h2>Metrics that matter</h2>
+    <div class="metric-grid">
+      <div class="metric"><strong>$2.4B+</strong><span>Transactions processed</span></div>
+      <div class="metric"><strong>3,100</strong><span>Companies onboard</span></div>
+      <div class="metric"><strong>18 hrs</strong><span>Saved per month, avg.</span></div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Plans for every stage</h2>
+    <div class="pricing-grid">
+      <div class="price-card"><h3>Starter</h3><p class="price">$99<span>/mo</span></p><ul><li>Up to 2 bank accounts</li><li>Monthly reporting</li></ul></div>
+      <div class="price-card featured"><span class="badge">Recommended</span><h3>Growth</h3><p class="price">$349<span>/mo</span></p><ul><li>Unlimited accounts</li><li>Real-time forecasting</li><li>Dedicated analyst</li></ul></div>
+      <div class="price-card"><h3>Enterprise</h3><p class="price">Custom</p><ul><li>Multi-entity consolidation</li><li>Custom integrations</li></ul></div>
+    </div>
+    <form id="contactForm" novalidate class="demo-form">
+      <input type="text" id="cname" placeholder="Work email" required>
+      <button type="submit" class="btn">Request a Demo</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Ledgerline</p>
+  <p>© 2026 · Website 49 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

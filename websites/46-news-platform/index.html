@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Meridian Times</title>
+<meta name="description" content="The Meridian Times delivers independent journalism covering world affairs, business, and culture, updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Georgia&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="datebar">Saturday, September 27, 2026 · Late Edition</div>
+<header class="header">
+  <a href="#top" class="logo">The Meridian Times</a>
+  <nav aria-label="Primary">
+    <a href="#world">World</a>
+    <a href="#business">Business</a>
+    <a href="#culture">Culture</a>
+    <a href="#opinion">Opinion</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#world">World</a><a href="#business">Business</a><a href="#culture">Culture</a><a href="#opinion">Opinion</a></nav>
+
+<main id="top">
+  <section class="front-page">
+    <article class="lead-story">
+      <img src="https://picsum.photos/seed/mt-lead/900/560" alt="World leaders at an international climate summit">
+      <span class="section-tag">World</span>
+      <h1>Nations Reach Landmark Accord on Ocean Conservation</h1>
+      <p>After eleven days of negotiation, delegates from 62 countries agreed to protect 30% of international waters by 2035.</p>
+      <span class="byline">By Elena Reyes · 4 min read</span>
+    </article>
+    <div class="side-stories">
+      <article class="side-story"><span class="section-tag">Business</span><h3>Markets rally as inflation data cools for third straight month</h3><span class="byline">By Owen Carrick</span></article>
+      <article class="side-story"><span class="section-tag">Culture</span><h3>The quiet return of vinyl: inside a record store renaissance</h3><span class="byline">By Priya Nandakumar</span></article>
+      <article class="side-story"><span class="section-tag">Opinion</span><h3>Why cities need more benches, not more monuments</h3><span class="byline">By J. Martín Diaz</span></article>
+    </div>
+  </section>
+
+  <section class="section-block" id="world">
+    <h2>World</h2>
+    <div class="story-grid">
+      <article><img src="https://picsum.photos/seed/mt-w1/400/260" alt="Parliament building exterior"><h3>Coalition government survives no-confidence vote</h3><span class="byline">Elena Reyes</span></article>
+      <article><img src="https://picsum.photos/seed/mt-w2/400/260" alt="Refugee camp with tents"><h3>Aid groups warn of funding shortfall for displaced families</h3><span class="byline">Tomas Berg</span></article>
+      <article><img src="https://picsum.photos/seed/mt-w3/400/260" alt="Container ship at a busy port"><h3>Shipping lanes reroute as canal repairs continue</h3><span class="byline">Owen Carrick</span></article>
+    </div>
+  </section>
+
+  <section class="section-block" id="business">
+    <h2>Business</h2>
+    <div class="story-grid">
+      <article><img src="https://picsum.photos/seed/mt-b1/400/260" alt="Stock exchange trading floor"><h3>Tech earnings beat expectations across the board</h3><span class="byline">Owen Carrick</span></article>
+      <article><img src="https://picsum.photos/seed/mt-b2/400/260" alt="Electric vehicle factory line"><h3>EV maker announces third factory amid demand surge</h3><span class="byline">Lena Fischer</span></article>
+      <article><img src="https://picsum.photos/seed/mt-b3/400/260" alt="Central bank building"><h3>Central bank holds rates steady, signals cuts ahead</h3><span class="byline">Elena Reyes</span></article>
+    </div>
+  </section>
+
+  <section class="newsletter" id="opinion">
+    <h2>The Morning Briefing</h2>
+    <p>Get our top five stories delivered to your inbox every weekday morning.</p>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Subscribe</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>THE MERIDIAN TIMES</p>
+  <p>© 2026 · Website 46 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

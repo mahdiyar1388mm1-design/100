@@ -50,11 +50,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 43 | University Website | Avendale University | Prestigious academic navy/gold | ✅ |
 | 44 | School Website | Brightpath School | Friendly colorful rounded | ✅ |
 | 45 | Online Library | Archiva | Editorial classic serif | ✅ |
-| 46 | News Platform | The Meridian Times | Classic newspaper grid | ⬜ |
-| 47 | Magazine | Verve Magazine | Bold editorial magazine | ⬜ |
-| 48 | Technology Blog | Signal//Noise | Dark tech blog, code blocks | ⬜ |
-| 49 | Finance Platform | Ledgerline | Premium corporate + charts | ⬜ |
-| 50 | Investment Platform | Capitalis | Trust navy/gold + charts | ⬜ |
+| 46 | News Platform | The Meridian Times | Classic newspaper grid | ✅ |
+| 47 | Magazine | Verve Magazine | Bold editorial magazine | ✅ |
+| 48 | Technology Blog | Signal//Noise | Dark tech blog, code blocks | ✅ |
+| 49 | Finance Platform | Ledgerline | Premium corporate + charts | ✅ |
+| 50 | Investment Platform | Capitalis | Trust navy/gold + charts | ✅ |
 | 51 | Cryptocurrency Platform | Coinforge | Cyberpunk neon dark | ⬜ |
 | 52 | Blockchain Company | ChainPoint | Futuristic geometric 3D nodes (advanced) | ⬜ |
 | 53 | Web3 Startup | Nexum Protocol | Experimental glass/neon | ⬜ |

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capitalis — Invest With Confidence</title>
+<meta name="description" content="Capitalis is an investment platform offering diversified portfolios, retirement planning, and low-fee automated investing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">CAPITALIS</a>
+  <nav aria-label="Primary">
+    <a href="#portfolios">Portfolios</a>
+    <a href="#planning">Planning</a>
+    <a href="#trust">Why Us</a>
+  </nav>
+  <a href="#planning" class="btn btn-small nav-cta">Open Account</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#portfolios">Portfolios</a><a href="#planning">Planning</a><a href="#trust">Why Us</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">SEC Registered Investment Advisor</p>
+      <h1>Wealth building, without the guesswork.</h1>
+      <p>Capitalis builds diversified, tax-efficient portfolios and manages them automatically — for a fraction of a traditional advisor's fee.</p>
+      <div class="hero-actions"><a href="#planning" class="btn">Open an Account</a><a href="#portfolios" class="btn btn-ghost">View Portfolios</a></div>
+    </div>
+    <div class="allocation-card">
+      <h3>Sample Balanced Portfolio</h3>
+      <svg viewBox="0 0 42 42" class="donut" role="img" aria-label="Portfolio allocation: 45% US stocks, 25% international, 20% bonds, 10% real estate">
+        <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#e6e0cc" stroke-width="6"></circle>
+        <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#0f2a4a" stroke-width="6" stroke-dasharray="45 55" stroke-dashoffset="25"></circle>
+        <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#c9a95c" stroke-width="6" stroke-dasharray="25 75" stroke-dashoffset="-20"></circle>
+        <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#7a8c6b" stroke-width="6" stroke-dasharray="20 80" stroke-dashoffset="-45"></circle>
+        <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#a3402f" stroke-width="6" stroke-dasharray="10 90" stroke-dashoffset="-65"></circle>
+      </svg>
+      <ul class="legend">
+        <li><span class="sw" style="background:#0f2a4a"></span>US Stocks — 45%</li>
+        <li><span class="sw" style="background:#c9a95c"></span>International — 25%</li>
+        <li><span class="sw" style="background:#7a8c6b"></span>Bonds — 20%</li>
+        <li><span class="sw" style="background:#a3402f"></span>Real Estate — 10%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="portfolios" id="portfolios">
+    <h2>Choose your strategy</h2>
+    <div class="portfolio-grid">
+      <article class="portfolio-card"><h3>Conservative</h3><p class="risk">Low risk</p><p>70% bonds, 30% equities. Built for capital preservation.</p></article>
+      <article class="portfolio-card featured"><span class="badge">Most Popular</span><h3>Balanced</h3><p class="risk">Moderate risk</p><p>60% equities, 40% bonds. Growth with stability.</p></article>
+      <article class="portfolio-card"><h3>Growth</h3><p class="risk">Higher risk</p><p>90% equities across global markets. Built for the long run.</p></article>
+    </div>
+  </section>
+
+  <section class="trust" id="trust">
+    <h2>Why investors choose Capitalis</h2>
+    <div class="trust-grid">
+      <div class="trust-item"><strong>0.20%</strong><span>Annual advisory fee</span></div>
+      <div class="trust-item"><strong>$4.8B</strong><span>Assets under management</span></div>
+      <div class="trust-item"><strong>210,000+</strong><span>Accounts managed</span></div>
+    </div>
+  </section>
+
+  <section class="planning" id="planning">
+    <h2>Open your account</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="cgoal"><option>Goal: Retirement</option><option>Goal: Wealth Growth</option><option>Goal: Major Purchase</option></select>
+      <button type="submit" class="btn btn-block">Start Application</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>CAPITALIS — Investment advisory services involve risk, including loss of principal.</p>
+  <p>© 2026 · Website 50 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

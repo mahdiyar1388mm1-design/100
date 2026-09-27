@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verve Magazine — Culture, Style, Ideas</title>
+<meta name="description" content="Verve Magazine covers culture, style, and ideas with bold visual storytelling. Read the latest issue online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">VERVE</a>
+  <nav aria-label="Primary">
+    <a href="#style">Style</a>
+    <a href="#culture">Culture</a>
+    <a href="#ideas">Ideas</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#style">Style</a><a href="#culture">Culture</a><a href="#ideas">Ideas</a></nav>
+
+<main id="top">
+  <section class="cover">
+    <img src="https://picsum.photos/seed/verve-cover/1400/1700" alt="Cover model in avant-garde fashion for Verve Magazine">
+    <div class="cover-text">
+      <span class="issue-tag">Issue No. 47 — Autumn</span>
+      <h1>THE<br>REINVENTION<br>ISSUE</h1>
+    </div>
+  </section>
+
+  <section class="feature-grid" id="style">
+    <article class="feature big">
+      <img src="https://picsum.photos/seed/verve-f1/900/600" alt="Runway model in structured coat">
+      <span class="cat">Style</span>
+      <h2>How Structured Tailoring Took Over the Runways</h2>
+      <p>A season defined by sharp shoulders and softened rules.</p>
+    </article>
+    <article class="feature">
+      <img src="https://picsum.photos/seed/verve-f2/600/400" alt="Artist in studio painting a mural">
+      <span class="cat" id="culture">Culture</span>
+      <h2>The Muralist Reclaiming Her City's Walls</h2>
+    </article>
+    <article class="feature">
+      <img src="https://picsum.photos/seed/verve-f3/600/400" alt="Person reading in a minimalist library">
+      <span class="cat" id="ideas">Ideas</span>
+      <h2>Is Slow Reading the Antidote to Burnout?</h2>
+    </article>
+  </section>
+
+  <section class="grid-list">
+    <h2>More stories</h2>
+    <div class="list-grid">
+      <article><img src="https://picsum.photos/seed/verve-m1/400/500" alt="Chef plating a dish"><h3>Inside the Kitchen Redefining Comfort Food</h3></article>
+      <article><img src="https://picsum.photos/seed/verve-m2/400/500" alt="Musician performing live"><h3>The Rise of DIY Concert Venues</h3></article>
+      <article><img src="https://picsum.photos/seed/verve-m3/400/500" alt="Interior of a minimalist apartment"><h3>Small Spaces, Big Ideas: Micro-Living Redesigned</h3></article>
+      <article><img src="https://picsum.photos/seed/verve-m4/400/500" alt="Person walking through a city street at night"><h3>Night Shift: The Culture of Cities After Dark</h3></article>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Read Verve, first.</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Subscribe</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>VERVE MAGAZINE</p>
+  <p>© 2026 · Website 47 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

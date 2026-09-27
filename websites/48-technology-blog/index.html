@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal//Noise — A Technology Blog</title>
+<meta name="description" content="Signal//Noise is a technology blog covering software engineering, systems design, and the tools developers actually use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">signal<span>//</span>noise</a>
+  <nav aria-label="Primary">
+    <a href="#latest">Latest</a>
+    <a href="#topics">Topics</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#latest">Latest</a><a href="#topics">Topics</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <span class="tag">Systems Design</span>
+    <h1>Why We Rewrote Our Job Queue in Rust</h1>
+    <p class="hero-desc">A postmortem on the six-month migration that cut p99 latency by 94% — and what we'd do differently.</p>
+    <span class="byline">Priya Nandan · Sept 22, 2026 · 9 min read</span>
+  </section>
+
+  <section class="latest" id="latest">
+    <h2>Latest posts</h2>
+    <div class="post-grid" id="postGrid">
+      <article class="post-card" data-topic="rust">
+        <span class="tag">Systems Design</span>
+        <h3>Why We Rewrote Our Job Queue in Rust</h3>
+        <p>A postmortem on cutting p99 latency by 94%.</p>
+        <span class="byline">Priya Nandan · 9 min</span>
+      </article>
+      <article class="post-card" data-topic="frontend">
+        <span class="tag">Frontend</span>
+        <h3>The Case Against Client-Side Routing</h3>
+        <p>Sometimes a full page reload is the right call.</p>
+        <span class="byline">Marcus Webb · 6 min</span>
+      </article>
+      <article class="post-card" data-topic="infra">
+        <span class="tag">Infrastructure</span>
+        <h3>Running Kubernetes on a Budget</h3>
+        <p>How we cut our cluster costs by 40% without downtime.</p>
+        <span class="byline">Diego Fuentes · 11 min</span>
+      </article>
+      <article class="post-card" data-topic="rust">
+        <span class="tag">Systems Design</span>
+        <h3>Understanding Ownership in Rust, Finally</h3>
+        <p>The mental model that made it click.</p>
+        <span class="byline">Priya Nandan · 7 min</span>
+      </article>
+      <article class="post-card" data-topic="frontend">
+        <span class="tag">Frontend</span>
+        <h3>CSS Container Queries in Production</h3>
+        <p>What broke, what worked, and what we learned.</p>
+        <span class="byline">Ana Petrov · 5 min</span>
+      </article>
+      <article class="post-card" data-topic="infra">
+        <span class="tag">Infrastructure</span>
+        <h3>A Field Guide to On-Call Rotations</h3>
+        <p>Reducing burnout without reducing coverage.</p>
+        <span class="byline">Owen Carrick · 8 min</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="topics" id="topics">
+    <h2>Browse by topic</h2>
+    <div class="topic-filters">
+      <button class="topic-btn active" data-filter="all">All</button>
+      <button class="topic-btn" data-filter="rust">Systems Design</button>
+      <button class="topic-btn" data-filter="frontend">Frontend</button>
+      <button class="topic-btn" data-filter="infra">Infrastructure</button>
+    </div>
+    <pre class="code-block"><code>$ curl -s api.signalnoise.dev/posts?topic=rust | jq '.count'
+14</code></pre>
+  </section>
+
+  <section class="newsletter">
+    <h2>Subscribe to the RSS of email</h2>
+    <p>One email a week. No sponsored content, ever.</p>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="you@company.com" required>
+      <button type="submit" class="btn">Subscribe</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>signal//noise</p>
+  <p>© 2026 · Website 48 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
