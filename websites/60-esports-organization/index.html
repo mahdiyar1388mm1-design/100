@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vortex Esports — Competitive Gaming Organization</title>
+<meta name="description" content="Vortex Esports fields championship rosters in Valorant, League of Legends, and Rocket League. Follow tournaments and meet the team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">VORTEX</a>
+  <nav aria-label="Primary">
+    <a href="#rosters">Rosters</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#sponsors">Sponsors</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#rosters">Rosters</a><a href="#schedule">Schedule</a><a href="#sponsors">Sponsors</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="fxCanvas" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="eyebrow">2026 World Championship Qualifiers</p>
+      <h1>WE DON'T PLAY.<br>WE DOMINATE.</h1>
+      <a href="#schedule" class="btn">See Match Schedule</a>
+    </div>
+  </section>
+
+  <section class="rosters" id="rosters">
+    <h2>Rosters</h2>
+    <div class="roster-tabs" role="tablist">
+      <button class="roster-tab active" role="tab" aria-selected="true" data-game="valorant">Valorant</button>
+      <button class="roster-tab" role="tab" aria-selected="false" data-game="lol">League of Legends</button>
+      <button class="roster-tab" role="tab" aria-selected="false" data-game="rl">Rocket League</button>
+    </div>
+    <div class="player-grid" id="playerGrid"></div>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <h2>Match schedule</h2>
+    <div class="match-list">
+      <div class="match-row"><span class="mtag">VALORANT</span><span>Vortex vs Radiant Wolves</span><span class="mtime">Oct 5 · 6:00 PM ET</span></div>
+      <div class="match-row"><span class="mtag">LOL</span><span>Vortex vs Iron Phoenix</span><span class="mtime">Oct 7 · 8:00 PM ET</span></div>
+      <div class="match-row"><span class="mtag">RL</span><span>Vortex vs Apex Drift</span><span class="mtime">Oct 9 · 5:30 PM ET</span></div>
+    </div>
+  </section>
+
+  <section class="sponsors" id="sponsors">
+    <h2>Backed by</h2>
+    <div class="sponsor-row"><span>NitroFuel</span><span>ByteCore</span><span>RushGear</span><span>Voltage Energy</span></div>
+  </section>
+
+  <section class="join">
+    <h2>Join the Vortex fan army</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Subscribe</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>VORTEX ESPORTS</p>
+  <p>© 2026 · Website 60 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

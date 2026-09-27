@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverside SC — Community Sports Club</title>
+<meta name="description" content="Riverside SC is a community sports club fielding youth and adult teams in soccer, basketball, and swimming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">🛡️ Riverside SC</a>
+  <nav aria-label="Primary">
+    <a href="#teams">Teams</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#join">Join</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#teams">Teams</a><a href="#schedule">Schedule</a><a href="#join">Join</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Est. 1994 · Riverside County</p>
+      <h1>ONE CLUB.<br>EVERY AGE.<br>ALL IN.</h1>
+      <a href="#join" class="btn">Register This Season</a>
+    </div>
+    <div class="scoreboard">
+      <div class="score-head"><span>LIVE</span>Riverside U18 vs Oakdale FC</div>
+      <div class="score-row"><span>Riverside</span><strong>2</strong></div>
+      <div class="score-row"><span>Oakdale</span><strong>1</strong></div>
+      <div class="score-foot">67'</div>
+    </div>
+  </section>
+
+  <section class="teams" id="teams">
+    <h2>Our teams</h2>
+    <div class="team-tabs" role="tablist">
+      <button class="team-tab active" role="tab" aria-selected="true" data-team="soccer">Soccer</button>
+      <button class="team-tab" role="tab" aria-selected="false" data-team="basketball">Basketball</button>
+      <button class="team-tab" role="tab" aria-selected="false" data-team="swim">Swimming</button>
+    </div>
+    <div class="team-panel" id="teamPanel">
+      <div class="roster-grid">
+        <div class="roster-card"><img src="https://picsum.photos/seed/rsc-s1/300/300" alt="Riverside U18 soccer team huddle"><span>U18 Boys — Div 1</span></div>
+        <div class="roster-card"><img src="https://picsum.photos/seed/rsc-s2/300/300" alt="Riverside U14 soccer team"><span>U14 Girls — Div 2</span></div>
+        <div class="roster-card"><img src="https://picsum.photos/seed/rsc-s3/300/300" alt="Riverside adult recreational soccer team"><span>Adult Rec League</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-band">
+    <div><strong>32</strong><span>Teams</span></div>
+    <div><strong>640</strong><span>Registered athletes</span></div>
+    <div><strong>14</strong><span>Regional titles</span></div>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <h2>Upcoming matches</h2>
+    <div class="match-list">
+      <div class="match-row"><span class="mdate">Sat, Oct 4</span><span>U18 Boys vs Northgate FC</span><span class="mtime">2:00 PM</span></div>
+      <div class="match-row"><span class="mdate">Sun, Oct 5</span><span>U14 Girls vs Eastside United</span><span class="mtime">10:00 AM</span></div>
+      <div class="match-row"><span class="mdate">Sat, Oct 11</span><span>Adult Rec vs Lakeside SC</span><span class="mtime">4:30 PM</span></div>
+    </div>
+  </section>
+
+  <section class="join" id="join">
+    <h2>Register for the season</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Player name" required>
+        <input type="email" id="cemail" placeholder="Parent/Player email" required>
+      </div>
+      <select id="cteam"><option>Team: Soccer</option><option>Team: Basketball</option><option>Team: Swimming</option></select>
+      <button type="submit" class="btn btn-block">Register Now</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>RIVERSIDE SC</p>
+  <p>© 2026 · Website 57 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

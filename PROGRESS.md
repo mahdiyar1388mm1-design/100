@@ -60,11 +60,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 53 | Web3 Startup | Nexum Protocol | Experimental glass/neon | ✅ |
 | 54 | NFT Marketplace | Artifact NFT | Vibrant gradient marketplace | ✅ |
 | 55 | Fitness Platform | PulseFit | Bold energetic dark/red | ✅ |
-| 56 | Gym Website | Ironworks Gym | Industrial bold grit | ⬜ |
-| 57 | Sports Club | Riverside SC | Team pride bold + stats | ⬜ |
-| 58 | Football Club | United FC Athletic | Stadium cinematic crest (advanced) | ⬜ |
-| 59 | Gaming Website | Pixel Forge | Neon cyberpunk gaming | ⬜ |
-| 60 | Esports Organization | Vortex Esports | Aggressive dark neon (advanced) | ⬜ |
+| 56 | Gym Website | Ironworks Gym | Industrial bold grit | ✅ |
+| 57 | Sports Club | Riverside SC | Team pride bold + stats | ✅ |
+| 58 | Football Club | United FC Athletic | Stadium cinematic crest (advanced) | ✅ |
+| 59 | Gaming Website | Pixel Forge | Neon cyberpunk gaming | ✅ |
+| 60 | Esports Organization | Vortex Esports | Aggressive dark neon (advanced) | ✅ |
 | 61 | Game Studio | Dreamforge Studios | Cinematic immersive 3D (advanced) | ⬜ |
 | 62 | Game Landing Page | Echoes of Ardent | Cinematic trailer parallax (advanced) | ⬜ |
 | 63 | Movie Streaming Platform | Reelio | Dark cinematic streaming grid | ⬜ |

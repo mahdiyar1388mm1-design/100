@@ -1,0 +1,64 @@
+/* Ironworks Gym | Industrial bold grit */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#141313; --steel:#2b2a28; --accent:#d9a441; --text-dim:#9a948a; --line:#3a3835; --bg:#1a1918;
+  --display:'Oswald',sans-serif; --sans:'Roboto Condensed',sans-serif;
+}
+body{background:var(--bg);color:#f2ece1;font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(20,19,19,.92);border-bottom:2px solid var(--accent)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.2rem;letter-spacing:.04em}
+header nav{display:flex;gap:1.8rem;font-weight:600;text-transform:uppercase;font-size:.88rem}
+header nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:#fff;width:38px;height:38px}
+.mobile-nav{display:none;flex-direction:column;background:var(--steel);border-bottom:2px solid var(--accent)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:700;text-transform:uppercase}
+
+.hero{position:relative;height:88vh;min-height:520px}
+.hero img{width:100%;height:100%;object-fit:cover;filter:grayscale(.5) contrast(1.15) brightness(.7)}
+.hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding-left:clamp(1.2rem,5vw,4rem)}
+.hero-overlay h1{font-size:clamp(2.4rem,8vw,5rem);line-height:1;margin-bottom:1.8rem;color:#fff}
+.btn{display:inline-block;background:var(--accent);color:#1a1400;padding:.9rem 1.9rem;border:none;font-weight:700;cursor:pointer;font-family:var(--sans);text-transform:uppercase;letter-spacing:.03em;width:fit-content}
+.btn:hover{background:#c8933a}
+.btn-block{width:100%;text-align:center}
+
+.facility,.coaches,.membership{max-width:1200px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.facility h2,.coaches h2,.membership h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem}
+.facility-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.facility-item img{aspect-ratio:10/7;object-fit:cover;margin-bottom:.8rem;filter:grayscale(.3)}
+.facility-item h3{font-size:1.1rem}
+
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);background:var(--steel);padding:2.2rem 1rem;text-align:center}
+.numbers strong{display:block;font-family:var(--display);font-size:1.7rem;color:var(--accent)}
+.numbers span{color:var(--text-dim);font-size:.85rem;text-transform:uppercase}
+
+.coach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.coach-card img{aspect-ratio:3/4;object-fit:cover;margin-bottom:.8rem;filter:grayscale(.4)}
+.coach-card h3{font-size:1.1rem}
+.coach-card span{color:var(--text-dim);font-size:.85rem;text-transform:none}
+
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-bottom:2.4rem}
+.plan-card{background:var(--steel);padding:1.8rem;text-align:center;position:relative;border:1px solid var(--line)}
+.plan-card.featured{border-color:var(--accent)}
+.badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#1a1400;font-size:.72rem;font-weight:700;padding:.25rem .8rem}
+.price{font-family:var(--display);font-size:1.8rem;color:var(--accent);margin:.6rem 0}
+
+.pass-form{display:flex;gap:.8rem;flex-wrap:wrap;max-width:600px}
+.pass-form input{flex:1;min-width:180px;padding:.85rem 1rem;background:var(--steel);border:1px solid var(--line);color:#fff}
+.form-note{margin-top:1rem;color:var(--accent);flex-basis:100%}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1200px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.85rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .facility-grid{grid-template-columns:1fr}
+  .coach-grid{grid-template-columns:1fr}
+  .plan-grid{grid-template-columns:1fr}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ironworks Gym — Strength Training Facility</title>
+<meta name="description" content="Ironworks Gym is a strength-training facility with free weights, powerlifting platforms, and coached programs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">IRONWORKS</a>
+  <nav aria-label="Primary">
+    <a href="#facility">Facility</a>
+    <a href="#coaches">Coaches</a>
+    <a href="#membership">Membership</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#facility">Facility</a><a href="#coaches">Coaches</a><a href="#membership">Membership</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/ironworks-hero/1800/1000" alt="Weightlifting platform with barbell and plates in a raw industrial gym">
+    <div class="hero-overlay">
+      <h1>NO MIRRORS.<br>NO MACHINES.<br>JUST WORK.</h1>
+      <a href="#membership" class="btn">Get a Day Pass</a>
+    </div>
+  </section>
+
+  <section class="facility" id="facility">
+    <h2>The facility</h2>
+    <div class="facility-grid">
+      <div class="facility-item"><img src="https://picsum.photos/seed/iw-f1/500/350" alt="Powerlifting platform area"><h3>Powerlifting Platforms</h3></div>
+      <div class="facility-item"><img src="https://picsum.photos/seed/iw-f2/500/350" alt="Free weights section with dumbbells"><h3>Free Weight Floor</h3></div>
+      <div class="facility-item"><img src="https://picsum.photos/seed/iw-f3/500/350" alt="Strongman equipment including atlas stones"><h3>Strongman Corner</h3></div>
+    </div>
+  </section>
+
+  <section class="numbers">
+    <div><strong>18,000 sq ft</strong><span>Training floor</span></div>
+    <div><strong>24/7</strong><span>Keycard access</span></div>
+    <div><strong>1,200+</strong><span>Members</span></div>
+  </section>
+
+  <section class="coaches" id="coaches">
+    <h2>Coaching staff</h2>
+    <div class="coach-grid">
+      <article class="coach-card"><img src="https://picsum.photos/seed/iw-c1/300/380" alt="Portrait of coach Derek Voss"><h3>Derek Voss</h3><span>Head Powerlifting Coach</span></article>
+      <article class="coach-card"><img src="https://picsum.photos/seed/iw-c2/300/380" alt="Portrait of coach Simone Achebe"><h3>Simone Achebe</h3><span>Olympic Lifting Coach</span></article>
+      <article class="coach-card"><img src="https://picsum.photos/seed/iw-c3/300/380" alt="Portrait of coach Marcus Boyd"><h3>Marcus Boyd</h3><span>Strongman Coach</span></article>
+    </div>
+  </section>
+
+  <section class="membership" id="membership">
+    <h2>Membership plans</h2>
+    <div class="plan-grid">
+      <div class="plan-card"><h3>Day Pass</h3><p class="price">$25</p><p>Single visit access</p></div>
+      <div class="plan-card featured"><span class="badge">Best Value</span><h3>Monthly</h3><p class="price">$89</p><p>Unlimited 24/7 access</p></div>
+      <div class="plan-card"><h3>Coached</h3><p class="price">$220</p><p>Monthly + 8 coaching sessions</p></div>
+    </div>
+    <form id="contactForm" novalidate class="pass-form">
+      <input type="text" id="cname" placeholder="Name" required>
+      <input type="email" id="cemail" placeholder="Email" required>
+      <button type="submit" class="btn btn-block">Claim Your Day Pass</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>IRONWORKS GYM</p>
+  <p>© 2026 · Website 56 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

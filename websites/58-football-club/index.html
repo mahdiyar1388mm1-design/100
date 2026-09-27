@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>United FC Athletic — Official Club Site</title>
+<meta name="description" content="United FC Athletic is a professional football club. Follow fixtures, results, the squad, and match tickets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo"><span class="crest" id="crest">UFA</span> United FC</a>
+  <nav aria-label="Primary">
+    <a href="#fixtures">Fixtures</a>
+    <a href="#squad">Squad</a>
+    <a href="#tickets">Tickets</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#fixtures">Fixtures</a><a href="#squad">Squad</a><a href="#tickets">Tickets</a></nav>
+
+<main id="top">
+  <section class="hero" id="parallaxHero">
+    <div class="hero-layer layer-back" style="background-image:url('https://picsum.photos/seed/ufa-stadium/1800/1100')"></div>
+    <div class="hero-layer layer-mid" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Matchday · Riverside Arena</p>
+      <h1>UNITED IN EVERY MOMENT</h1>
+      <a href="#tickets" class="btn">Buy Match Tickets</a>
+    </div>
+  </section>
+
+  <section class="scoreline">
+    <div class="score-card">
+      <span class="team">United FC</span><strong>3</strong>
+      <span class="vs">FT</span>
+      <strong>1</strong><span class="team">Coastal Rovers</span>
+    </div>
+  </section>
+
+  <section class="fixtures" id="fixtures">
+    <h2>Upcoming fixtures</h2>
+    <div class="fixture-list">
+      <div class="fixture-row"><span class="fdate">Sat, Oct 4 — 3:00 PM</span><span>United FC vs Harborview City</span><span class="comp">League</span></div>
+      <div class="fixture-row"><span class="fdate">Wed, Oct 8 — 7:45 PM</span><span>Northfield Athletic vs United FC</span><span class="comp">Cup</span></div>
+      <div class="fixture-row"><span class="fdate">Sat, Oct 18 — 3:00 PM</span><span>United FC vs Coastal Rovers</span><span class="comp">League</span></div>
+    </div>
+  </section>
+
+  <section class="squad" id="squad">
+    <h2>First team squad</h2>
+    <div class="squad-grid">
+      <article class="player-card"><img src="https://picsum.photos/seed/ufa-p1/300/380" alt="Portrait of forward Marco Ibanez"><span class="num">9</span><h3>Marco Ibanez</h3><span>Forward</span></article>
+      <article class="player-card"><img src="https://picsum.photos/seed/ufa-p2/300/380" alt="Portrait of midfielder Kwame Asante"><span class="num">8</span><h3>Kwame Asante</h3><span>Midfielder</span></article>
+      <article class="player-card"><img src="https://picsum.photos/seed/ufa-p3/300/380" alt="Portrait of defender Lucas Hartmann"><span class="num">4</span><h3>Lucas Hartmann</h3><span>Defender</span></article>
+      <article class="player-card"><img src="https://picsum.photos/seed/ufa-p4/300/380" alt="Portrait of goalkeeper Theo Winters"><span class="num">1</span><h3>Theo Winters</h3><span>Goalkeeper</span></article>
+    </div>
+  </section>
+
+  <section class="tickets" id="tickets">
+    <h2>Get your seat</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="cmatch"><option>United FC vs Harborview City — Oct 4</option><option>United FC vs Coastal Rovers — Oct 18</option></select>
+      <button type="submit" class="btn btn-block">Reserve Tickets</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>UNITED FC ATHLETIC</p>
+  <p>© 2026 · Website 58 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

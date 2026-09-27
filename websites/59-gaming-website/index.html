@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Forge — Indie Game Studio</title>
+<meta name="description" content="Pixel Forge is an indie game studio making fast-paced arcade and roguelike games. Wishlist our latest release, Nova Drift.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">PIXEL FORGE</a>
+  <nav aria-label="Primary">
+    <a href="#games">Games</a>
+    <a href="#studio">Studio</a>
+    <a href="#wishlist">Wishlist</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#games">Games</a><a href="#studio">Studio</a><a href="#wishlist">Wishlist</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/pf-hero/1800/1000" alt="Screenshot of Nova Drift, a neon arcade space shooter">
+    <div class="hero-copy">
+      <span class="tag">NEW RELEASE</span>
+      <h1 class="glitch" data-text="NOVA DRIFT">NOVA DRIFT</h1>
+      <p>A roguelike arcade shooter with procedurally generated galaxies. Out now on PC.</p>
+      <div class="hero-actions"><a href="#wishlist" class="btn">Wishlist Now</a><a href="#games" class="btn btn-ghost">View All Games</a></div>
+    </div>
+  </section>
+
+  <section class="games" id="games">
+    <h2>Our games</h2>
+    <div class="game-grid">
+      <article class="game-card"><img src="https://picsum.photos/seed/pf-g1/450/280" alt="Screenshot of Nova Drift gameplay"><h3>Nova Drift</h3><span>Roguelike Shooter · 2026</span></article>
+      <article class="game-card"><img src="https://picsum.photos/seed/pf-g2/450/280" alt="Screenshot of Glitch Runner gameplay"><h3>Glitch Runner</h3><span>Platformer · 2024</span></article>
+      <article class="game-card"><img src="https://picsum.photos/seed/pf-g3/450/280" alt="Screenshot of Neon Siege gameplay"><h3>Neon Siege</h3><span>Tower Defense · 2022</span></article>
+    </div>
+  </section>
+
+  <section class="studio" id="studio">
+    <h2>The studio</h2>
+    <p>Pixel Forge is a 9-person indie studio founded in 2019, obsessed with tight controls and neon aesthetics. Based remotely across three continents.</p>
+    <div class="press-row">
+      <blockquote>"Nova Drift is the best roguelike shooter of the year." — <cite>PixelWatch</cite></blockquote>
+      <blockquote>"Impossibly stylish and endlessly replayable." — <cite>Arcade Weekly</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="wishlist" id="wishlist">
+    <h2>Wishlist Nova Drift</h2>
+    <form id="contactForm" novalidate>
+      <input type="email" id="cemail" placeholder="Email address" required>
+      <button type="submit" class="btn">Notify Me at Launch</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>PIXEL FORGE STUDIOS</p>
+  <p>© 2026 · Website 59 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
