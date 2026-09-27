@@ -1,0 +1,63 @@
+/* Sterling & Hawke LLP | Premium corporate navy serif */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --navy:#0e1f38; --gold:#a9862f; --bg:#fbfaf7; --surface:#fff; --text-dim:#5c6272; --line:#e4e1d6;
+  --display:'Playfair Display',serif; --sans:'Source Sans 3',sans-serif;
+}
+body{background:var(--bg);color:var(--navy);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(251,250,247,.95);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.15rem;letter-spacing:.03em}
+header nav{display:flex;gap:1.8rem;font-weight:600;font-size:.9rem}
+header nav a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:38px;height:38px}
+.mobile-nav{display:none;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{max-width:800px;margin:0 auto;padding:clamp(3.5rem,7vw,5.5rem) 1.5rem;text-align:center}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;margin-bottom:1.2rem;font-weight:700}
+.hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1.4rem;line-height:1.25}
+.hero p{color:var(--text-dim);max-width:60ch;margin:0 auto 1.8rem}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:.9rem 1.9rem;border:none;font-weight:600;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:#081324}
+.btn-block{width:100%}
+
+.stats-strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--navy);color:#fff;padding:2.2rem 1rem;text-align:center}
+.stats-strip strong{display:block;font-family:var(--display);font-size:1.8rem;color:var(--gold)}
+.stats-strip span{font-size:.85rem;color:#c9cfdb}
+
+.practice,.attorneys,.contact{max-width:1100px;margin:0 auto;padding:clamp(2.5rem,5vw,4rem) 1.5rem;border-top:1px solid var(--line)}
+.practice h2,.attorneys h2,.contact h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:2rem;text-align:center}
+.practice-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.practice-card{border-top:3px solid var(--gold);padding-top:1.2rem}
+.practice-card h3{font-size:1.15rem;margin-bottom:.6rem}
+.practice-card p{color:var(--text-dim);font-size:.9rem}
+
+.attorney-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.attorney-card img{aspect-ratio:5/6;object-fit:cover;margin-bottom:.8rem;filter:grayscale(.2)}
+.attorney-card h3{font-size:1.15rem;margin-bottom:.3rem}
+.attorney-card span{color:var(--text-dim);font-size:.85rem}
+
+.contact{max-width:600px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.contact input,.contact select,.contact textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:var(--surface);margin-bottom:1rem;font-family:var(--sans)}
+.form-note{margin-top:1rem;color:var(--navy)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:1100px;margin:0 auto;padding:2rem 1.5rem;border-top:1px solid var(--line);color:var(--text-dim);font-size:.82rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .practice-grid{grid-template-columns:repeat(2,1fr)}
+  .attorney-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .practice-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}

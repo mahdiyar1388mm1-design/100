@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitalCare — Virtual Healthcare, On Demand</title>
+<meta name="description" content="VitalCare connects patients with licensed doctors for virtual visits, prescriptions, and ongoing care management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">VitalCare</a>
+  <nav aria-label="Primary">
+    <a href="#how">How It Works</a>
+    <a href="#conditions">Conditions</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#visit" class="btn btn-small nav-cta">See a Doctor Now</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#how">How It Works</a><a href="#conditions">Conditions</a><a href="#pricing">Pricing</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>See a doctor in minutes, from anywhere.</h1>
+      <p>VitalCare connects you with board-certified physicians for video visits, prescriptions, and follow-up care — no waiting room required.</p>
+      <div class="hero-actions"><a href="#visit" class="btn">See a Doctor Now</a><a href="#how" class="btn btn-ghost">How It Works</a></div>
+    </div>
+    <div class="visit-card">
+      <div class="visit-head"><span class="live-dot"></span>Dr. Reyna Osei is available</div>
+      <img src="https://picsum.photos/seed/vitalcare-doc/500/320" alt="Doctor on a telehealth video call">
+      <button class="btn btn-block">Start Video Visit</button>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <h2>How VitalCare works</h2>
+    <div class="step-grid">
+      <div class="step"><span class="step-num">1</span><h3>Request a Visit</h3><p>Tell us your symptoms in the app.</p></div>
+      <div class="step"><span class="step-num">2</span><h3>Connect With a Doctor</h3><p>Video chat with a licensed physician in minutes.</p></div>
+      <div class="step"><span class="step-num">3</span><h3>Get Treatment</h3><p>Prescriptions sent directly to your pharmacy.</p></div>
+    </div>
+  </section>
+
+  <section class="conditions" id="conditions">
+    <h2>Conditions we treat</h2>
+    <div class="condition-grid">
+      <span class="condition-chip">Cold &amp; Flu</span><span class="condition-chip">Allergies</span><span class="condition-chip">Skin Conditions</span>
+      <span class="condition-chip">UTIs</span><span class="condition-chip">Anxiety &amp; Depression</span><span class="condition-chip">Migraines</span>
+      <span class="condition-chip">Birth Control</span><span class="condition-chip">Chronic Condition Follow-ups</span>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Simple, transparent pricing</h2>
+    <div class="pricing-grid">
+      <div class="price-card"><h3>Pay Per Visit</h3><p class="price">$45</p><p>No subscription required</p></div>
+      <div class="price-card featured"><span class="badge">Most Popular</span><h3>VitalCare+</h3><p class="price">$15<span>/mo</span></p><p>Unlimited visits, 24/7</p></div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <h2>Start your visit</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <textarea id="csymptoms" rows="3" placeholder="Briefly describe your symptoms"></textarea>
+      <button type="submit" class="btn btn-block">Request Video Visit</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>VitalCare</p>
+  <p>© 2026 · Website 67 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

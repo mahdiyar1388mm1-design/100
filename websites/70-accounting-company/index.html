@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger &amp; Co. — Accounting &amp; Tax Advisory</title>
+<meta name="description" content="Ledger & Co. provides accounting, tax, and advisory services for small businesses and growing companies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">LEDGER &amp; CO.</a>
+  <nav aria-label="Primary">
+    <a href="#services">01 Services</a>
+    <a href="#process">02 Process</a>
+    <a href="#team">03 Team</a>
+  </nav>
+  <a href="#contact" class="btn btn-small nav-cta">Get a Quote</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#process">Process</a><a href="#team">Team</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <h1>Numbers,<br>handled precisely.</h1>
+    <p>Ledger &amp; Co. provides bookkeeping, tax preparation, and CFO advisory for growing companies — no jargon, no surprises.</p>
+    <a href="#contact" class="btn">Get a Free Consultation</a>
+  </section>
+
+  <section class="services" id="services">
+    <div class="service-row"><span class="num">01</span><h3>Bookkeeping</h3><p>Monthly reconciliation and financial statements.</p></div>
+    <div class="service-row"><span class="num">02</span><h3>Tax Preparation</h3><p>Business and personal tax filing, year-round planning.</p></div>
+    <div class="service-row"><span class="num">03</span><h3>Payroll</h3><p>Accurate, on-time payroll for teams of any size.</p></div>
+    <div class="service-row"><span class="num">04</span><h3>CFO Advisory</h3><p>Fractional CFO services for scaling businesses.</p></div>
+  </section>
+
+  <section class="process" id="process">
+    <h2>Our process</h2>
+    <div class="process-grid">
+      <div class="process-step"><strong>1</strong><h3>Discovery Call</h3><p>We learn about your business and current setup.</p></div>
+      <div class="process-step"><strong>2</strong><h3>Custom Plan</h3><p>We build a tailored engagement scope and timeline.</p></div>
+      <div class="process-step"><strong>3</strong><h3>Ongoing Partnership</h3><p>Monthly reporting and quarterly strategy reviews.</p></div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <h2>Leadership</h2>
+    <div class="team-grid">
+      <article class="team-card"><img src="https://picsum.photos/seed/lc-t1/300/300" alt="Portrait of Managing Partner Grace Lindqvist"><h3>Grace Lindqvist</h3><span>Managing Partner, CPA</span></article>
+      <article class="team-card"><img src="https://picsum.photos/seed/lc-t2/300/300" alt="Portrait of Tax Director Felix Ahn"><h3>Felix Ahn</h3><span>Director of Tax Strategy</span></article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get a free consultation</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Name" required>
+        <input type="email" id="cemail" placeholder="Work email" required>
+      </div>
+      <select id="cservice"><option>Interested in: Bookkeeping</option><option>Interested in: Tax Preparation</option><option>Interested in: Payroll</option><option>Interested in: CFO Advisory</option></select>
+      <button type="submit" class="btn btn-block">Request Consultation</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>LEDGER &amp; CO.</p>
+  <p>© 2026 · Website 70 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

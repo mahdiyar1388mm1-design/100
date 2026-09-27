@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Smile Dental — Family &amp; Cosmetic Dentistry</title>
+<meta name="description" content="Bright Smile Dental offers family and cosmetic dentistry with gentle care and flexible scheduling for the whole family.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">😁 Bright Smile</a>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#smiles">Smile Gallery</a>
+    <a href="#booking">Book Now</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#smiles">Smile Gallery</a><a href="#booking">Book Now</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>A smile you'll actually want to show off.</h1>
+      <p>Family and cosmetic dentistry with gentle care, evening hours, and a team that makes kids (and adults) feel at ease.</p>
+      <a href="#booking" class="btn">Book Your Visit</a>
+    </div>
+    <div class="hero-blob"><img src="https://picsum.photos/seed/brightsmile-hero/600/600" alt="Person smiling confidently after a dental visit"></div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our services</h2>
+    <div class="service-grid">
+      <article class="service-card"><span class="ico">🦷</span><h3>General Dentistry</h3><p>Checkups, cleanings, and fillings for the whole family.</p></article>
+      <article class="service-card"><span class="ico">✨</span><h3>Cosmetic Dentistry</h3><p>Whitening, veneers, and smile makeovers.</p></article>
+      <article class="service-card"><span class="ico">🦴</span><h3>Orthodontics</h3><p>Invisalign and traditional braces for all ages.</p></article>
+      <article class="service-card"><span class="ico">🚨</span><h3>Emergency Care</h3><p>Same-day appointments for dental emergencies.</p></article>
+    </div>
+  </section>
+
+  <section class="smiles" id="smiles">
+    <h2>Before &amp; after</h2>
+    <div class="ba-slider" id="baSlider">
+      <img class="ba-after" src="https://picsum.photos/seed/bs-after/700/450" alt="After: patient's smile following cosmetic treatment">
+      <div class="ba-before-wrap" id="baBeforeWrap">
+        <img class="ba-before" src="https://picsum.photos/seed/bs-before/700/450" alt="Before: patient's smile prior to cosmetic treatment">
+      </div>
+      <input type="range" id="baRange" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+      <div class="ba-handle" id="baHandle">↔</div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <h2>Book your appointment</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="tel" id="cphone" placeholder="Phone number" required>
+      </div>
+      <select id="creason"><option>Reason: Cleaning &amp; Checkup</option><option>Reason: Cosmetic Consultation</option><option>Reason: Emergency</option></select>
+      <button type="submit" class="btn btn-block">Request Appointment</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Bright Smile Dental</p>
+  <p>© 2026 · Website 66 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

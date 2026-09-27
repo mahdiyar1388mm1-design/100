@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sterling &amp; Hawke LLP — Corporate &amp; Litigation Attorneys</title>
+<meta name="description" content="Sterling & Hawke LLP is a full-service law firm specializing in corporate law, litigation, and intellectual property.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">STERLING &amp; HAWKE</a>
+  <nav aria-label="Primary">
+    <a href="#practice">Practice Areas</a>
+    <a href="#attorneys">Attorneys</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#practice">Practice Areas</a><a href="#attorneys">Attorneys</a><a href="#contact">Contact</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Since 1978</p>
+      <h1>Counsel you can trust, results that endure.</h1>
+      <p>Sterling &amp; Hawke LLP represents corporations and individuals in complex litigation, transactions, and intellectual property matters.</p>
+      <a href="#contact" class="btn">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div><strong>46</strong><span>Years in practice</span></div>
+    <div><strong>$2.8B</strong><span>In transactions closed</span></div>
+    <div><strong>98%</strong><span>Client retention</span></div>
+  </section>
+
+  <section class="practice" id="practice">
+    <h2>Practice areas</h2>
+    <div class="practice-grid">
+      <article class="practice-card"><h3>Corporate Law</h3><p>Mergers, acquisitions, and corporate governance.</p></article>
+      <article class="practice-card"><h3>Litigation</h3><p>Complex commercial disputes and appeals.</p></article>
+      <article class="practice-card"><h3>Intellectual Property</h3><p>Patents, trademarks, and licensing.</p></article>
+      <article class="practice-card"><h3>Real Estate</h3><p>Commercial transactions and development.</p></article>
+    </div>
+  </section>
+
+  <section class="attorneys" id="attorneys">
+    <h2>Partners</h2>
+    <div class="attorney-grid">
+      <article class="attorney-card"><img src="https://picsum.photos/seed/sh-a1/300/360" alt="Portrait of attorney Margaret Sterling"><h3>Margaret Sterling</h3><span>Founding Partner, Corporate Law</span></article>
+      <article class="attorney-card"><img src="https://picsum.photos/seed/sh-a2/300/360" alt="Portrait of attorney Daniel Hawke"><h3>Daniel Hawke</h3><span>Founding Partner, Litigation</span></article>
+      <article class="attorney-card"><img src="https://picsum.photos/seed/sh-a3/300/360" alt="Portrait of attorney Priya Chandran"><h3>Priya Chandran</h3><span>Partner, Intellectual Property</span></article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Schedule a consultation</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Full name" required>
+        <input type="email" id="cemail" placeholder="Email" required>
+      </div>
+      <select id="carea"><option>Area of interest: Corporate Law</option><option>Area of interest: Litigation</option><option>Area of interest: Intellectual Property</option><option>Area of interest: Real Estate</option></select>
+      <textarea id="cmessage" rows="3" placeholder="Briefly describe your matter"></textarea>
+      <button type="submit" class="btn btn-block">Request Consultation</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>STERLING &amp; HAWKE LLP — Attorney Advertising</p>
+  <p>© 2026 · Website 69 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

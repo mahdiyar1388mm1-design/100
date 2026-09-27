@@ -70,11 +70,11 @@ Status: ⬜ not started · 🟨 in progress · ✅ done
 | 63 | Movie Streaming Platform | Reelio | Dark cinematic streaming grid | ✅ |
 | 64 | Movie Production Company | Silverlens Pictures | Dark cinematic studio (advanced) | ✅ |
 | 65 | Medical Clinic | Clarity Health Clinic | Clean calming healthcare | ✅ |
-| 66 | Dental Clinic | Bright Smile Dental | Fresh friendly mint | ⬜ |
-| 67 | Healthcare Platform | VitalCare | Modern accessible healthtech | ⬜ |
-| 68 | Pharmacy Website | Greenleaf Pharmacy | Clean trustworthy green | ⬜ |
-| 69 | Legal Firm | Sterling & Hawke LLP | Premium corporate navy serif | ⬜ |
-| 70 | Accounting Company | Ledger & Co. | Swiss clean corporate | ⬜ |
+| 66 | Dental Clinic | Bright Smile Dental | Fresh friendly mint | ✅ |
+| 67 | Healthcare Platform | VitalCare | Modern accessible healthtech | ✅ |
+| 68 | Pharmacy Website | Greenleaf Pharmacy | Clean trustworthy green | ✅ |
+| 69 | Legal Firm | Sterling & Hawke LLP | Premium corporate navy serif | ✅ |
+| 70 | Accounting Company | Ledger & Co. | Swiss clean corporate | ✅ |
 | 71 | Consulting Company | Apex Consulting Group | Premium corporate bold | ⬜ |
 | 72 | Recruitment Platform | TalentBridge | Modern friendly cards | ⬜ |
 | 73 | Job Marketplace | HireWave | Marketplace grid/filters | ⬜ |

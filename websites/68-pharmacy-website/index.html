@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenleaf Pharmacy — Your Neighborhood Pharmacy</title>
+<meta name="description" content="Greenleaf Pharmacy offers prescription refills, free delivery, and pharmacist consultations in your neighborhood.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">🌿 Greenleaf Pharmacy</a>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a>
+    <a href="#refill">Refill</a>
+    <a href="#locations">Locations</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#services">Services</a><a href="#refill">Refill</a><a href="#locations">Locations</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Prescriptions made simple.</h1>
+      <p>Refill in seconds, get free same-day delivery, and talk to a real pharmacist whenever you need to.</p>
+      <a href="#refill" class="btn">Refill a Prescription</a>
+    </div>
+    <img src="https://picsum.photos/seed/greenleaf-hero/650/500" alt="Pharmacist handing a prescription bag to a customer">
+  </section>
+
+  <section class="services" id="services">
+    <h2>What we offer</h2>
+    <div class="service-grid">
+      <article class="service-card"><span class="ico">💊</span><h3>Prescription Refills</h3><p>Refill online or via our app in under a minute.</p></article>
+      <article class="service-card"><span class="ico">🚗</span><h3>Free Delivery</h3><p>Same-day delivery on orders over $20.</p></article>
+      <article class="service-card"><span class="ico">👩‍⚕️</span><h3>Pharmacist Consults</h3><p>Free 15-minute consultations, in-store or by phone.</p></article>
+      <article class="service-card"><span class="ico">💉</span><h3>Immunizations</h3><p>Flu shots and vaccines, no appointment needed.</p></article>
+    </div>
+  </section>
+
+  <section class="refill" id="refill">
+    <h2>Refill your prescription</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <input type="text" id="cname" placeholder="Patient name" required>
+        <input type="text" id="crx" placeholder="Prescription number" required>
+      </div>
+      <select id="clocation"><option>Pickup location: Downtown</option><option>Pickup location: Westside</option><option>Delivery</option></select>
+      <button type="submit" class="btn btn-block">Submit Refill Request</button>
+      <p class="form-note" id="contactNote" role="status"></p>
+    </form>
+  </section>
+
+  <section class="locations" id="locations">
+    <h2>Find a location</h2>
+    <div class="location-grid">
+      <div class="location-card"><h3>Downtown</h3><p>412 Market Street</p><span>Open until 9:00 PM</span></div>
+      <div class="location-card"><h3>Westside</h3><p>88 Birchwood Ave</p><span>Open until 8:00 PM</span></div>
+      <div class="location-card"><h3>Eastgate</h3><p>1201 Eastgate Blvd</p><span>Open 24 hours</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>GREENLEAF PHARMACY</p>
+  <p>© 2026 · Website 68 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
