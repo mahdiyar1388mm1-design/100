@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haven Hotels — Quietly Excellent Stays</title>
+<meta name="description" content="Haven Hotels offers light-filled rooms, honest service and central locations in 12 cities. Check rates and book your stay in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">HAVEN</a>
+  <nav aria-label="Primary">
+    <a href="#rooms">Rooms</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#reviews">Guest Reviews</a>
+  </nav>
+  <a href="#booking" class="btn small">Check Availability</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#reviews">Guest Reviews</a><a href="#booking">Book</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <img src="https://picsum.photos/seed/haven-hero/1800/1000" alt="Bright hotel lobby with natural light at Haven Hotels">
+    <div class="hero-copy">
+      <p class="eyebrow">12 cities · Central locations</p>
+      <h1>A quiet kind of luxury.</h1>
+      <p>No gimmicks — just light-filled rooms, honest service, and a location you'll actually use.</p>
+    </div>
+    <div class="booking-widget" id="booking">
+      <div class="field"><label for="checkin">Check-in</label><input type="date" id="checkin"></div>
+      <div class="field"><label for="checkout">Check-out</label><input type="date" id="checkout"></div>
+      <div class="field"><label for="guests">Guests</label><select id="guests"><option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option></select></div>
+      <button class="btn" id="checkBtn">Check Availability</button>
+    </div>
+  </section>
+
+  <section class="rooms" id="rooms">
+    <h2>Rooms &amp; Suites</h2>
+    <div class="room-grid">
+      <article class="room-card"><img src="https://picsum.photos/seed/haven1/500/380" alt="Haven Classic Room with city view" loading="lazy"><h3>Classic Room</h3><p>28m² · City view</p><span class="price">from $189/night</span></article>
+      <article class="room-card"><img src="https://picsum.photos/seed/haven2/500/380" alt="Haven Deluxe Room with balcony" loading="lazy"><h3>Deluxe Room</h3><p>36m² · Balcony</p><span class="price">from $249/night</span></article>
+      <article class="room-card"><img src="https://picsum.photos/seed/haven3/500/380" alt="Haven Suite with separate living area" loading="lazy"><h3>Executive Suite</h3><p>54m² · Living area</p><span class="price">from $389/night</span></article>
+    </div>
+  </section>
+
+  <section class="amenities" id="amenities">
+    <h2>Amenities</h2>
+    <div class="amenity-grid">
+      <div><span>◐</span><p>24-hour front desk</p></div>
+      <div><span>♨</span><p>Rooftop pool &amp; spa</p></div>
+      <div><span>☕</span><p>Complimentary breakfast</p></div>
+      <div><span>✈</span><p>Airport shuttle</p></div>
+      <div><span>🐾</span><p>Pet friendly rooms</p></div>
+      <div><span>🖥</span><p>High-speed WiFi</p></div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>What guests say</h2>
+    <div class="review-grid">
+      <div class="review-card"><p>“Simple, clean, exactly as described. The kind of hotel that doesn't waste your time.”</p><cite>— Daniel M.</cite></div>
+      <div class="review-card"><p>“Best rooftop pool I've used in a business hotel. Staff remembered my name by day two.”</p><cite>— Priya S.</cite></div>
+      <div class="review-card"><p>“Walked everywhere from the Lisbon location. Couldn't have picked a better base.”</p><cite>— Tomás R.</cite></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">HAVEN</span>
+  <p>© 2026 Haven Hotels Group · Website 15 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

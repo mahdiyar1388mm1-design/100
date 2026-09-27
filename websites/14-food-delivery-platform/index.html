@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwiftBite — Food Delivered in 25 Minutes</title>
+<meta name="description" content="SwiftBite delivers from 2,000+ local restaurants in under 25 minutes. Search by cuisine, track your order live, and order in seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">Swift<span>Bite</span></a>
+  <nav aria-label="Primary">
+    <a href="#search">Find Food</a>
+    <a href="#track">Track Order</a>
+    <a href="#app">Get the App</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#search">Find Food</a><a href="#track">Track Order</a><a href="#app">Get the App</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Hungry? It's basically already here.</h1>
+      <p>Order from 2,000+ restaurants near you, delivered by riders who actually show up on time.</p>
+      <div class="search-bar">
+        <input type="text" id="addressInput" placeholder="Enter your delivery address">
+        <button id="findFoodBtn" class="btn">Find Food</button>
+      </div>
+    </div>
+    <img src="https://picsum.photos/seed/swiftbite-hero/700/700" alt="Delivery rider handing off a food bag at someone's front door">
+  </section>
+
+  <section class="cuisines" id="search">
+    <h2>Browse by cuisine</h2>
+    <div class="chip-row" id="chipRow">
+      <button class="chip active" data-cuisine="all">All</button>
+      <button class="chip" data-cuisine="pizza">Pizza</button>
+      <button class="chip" data-cuisine="sushi">Sushi</button>
+      <button class="chip" data-cuisine="burgers">Burgers</button>
+      <button class="chip" data-cuisine="salads">Salads</button>
+      <button class="chip" data-cuisine="thai">Thai</button>
+    </div>
+    <div class="restaurant-grid" id="restaurantGrid"></div>
+  </section>
+
+  <section class="track" id="track">
+    <div class="track-copy">
+      <h2>Live order tracking</h2>
+      <p>Watch your food move from kitchen to doorstep — real ETA, no guessing.</p>
+      <button class="btn" id="simulateBtn">Simulate an order</button>
+    </div>
+    <div class="tracker">
+      <div class="step" data-step="0"><span class="dot"></span><div><h4>Order Confirmed</h4><p>Restaurant received your order</p></div></div>
+      <div class="step" data-step="1"><span class="dot"></span><div><h4>Preparing</h4><p>Chef is cooking your meal</p></div></div>
+      <div class="step" data-step="2"><span class="dot"></span><div><h4>Rider Picked Up</h4><p>On the way to you</p></div></div>
+      <div class="step" data-step="3"><span class="dot"></span><div><h4>Delivered</h4><p>Enjoy your meal!</p></div></div>
+      <div class="track-line"><div class="track-fill" id="trackFill"></div></div>
+    </div>
+  </section>
+
+  <section class="app" id="app">
+    <img src="https://picsum.photos/seed/swiftbite-app/600/620" alt="SwiftBite app interface shown on a smartphone" loading="lazy">
+    <div>
+      <h2>Get 20% off your first order</h2>
+      <p>Download the app for exclusive drops, live tracking, and order history in one tap.</p>
+      <div class="store-badges">
+        <a href="#" class="store-badge">App Store</a>
+        <a href="#" class="store-badge">Google Play</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="logo">Swift<span>Bite</span></span>
+  <p>© 2026 SwiftBite Technologies Inc. · Website 14 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

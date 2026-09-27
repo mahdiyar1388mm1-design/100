@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maple &amp; Crumb Bakery — Custom Cakes &amp; Daily Bakes</title>
+<meta name="description" content="Maple & Crumb bakes fresh pastries daily and builds custom celebration cakes to order. Design your cake in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">🧁 Maple &amp; Crumb</a>
+  <nav aria-label="Primary">
+    <a href="#daily">Daily Bakes</a>
+    <a href="#cake">Order a Cake</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="#daily">Daily Bakes</a><a href="#cake">Order a Cake</a><a href="#visit">Visit</a></nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="hero-copy">
+      <h1>Cakes that make<br>a Tuesday feel special.</h1>
+      <p>Baked fresh every morning in small batches — and custom cakes built exactly the way you imagine them.</p>
+      <a href="#cake" class="btn">Design Your Cake</a>
+    </div>
+    <img src="https://picsum.photos/seed/maplecrumb-hero/700/700" alt="Pastel layer cake with fresh berries at Maple and Crumb Bakery">
+  </section>
+
+  <section class="daily" id="daily">
+    <h2>Today's Bakes</h2>
+    <div class="bake-grid">
+      <article class="bake-card"><img src="https://picsum.photos/seed/mc1/400/320" alt="Cinnamon swirl bun" loading="lazy"><h3>Cinnamon Swirl Bun</h3><p>$4.50</p></article>
+      <article class="bake-card sold-out"><img src="https://picsum.photos/seed/mc2/400/320" alt="Lemon blueberry scone" loading="lazy"><span class="badge">Sold Out</span><h3>Lemon Blueberry Scone</h3><p>$4.00</p></article>
+      <article class="bake-card"><img src="https://picsum.photos/seed/mc3/400/320" alt="Chocolate croissant" loading="lazy"><h3>Chocolate Croissant</h3><p>$4.75</p></article>
+      <article class="bake-card"><img src="https://picsum.photos/seed/mc4/400/320" alt="Strawberry cream tart" loading="lazy"><h3>Strawberry Cream Tart</h3><p>$6.25</p></article>
+    </div>
+  </section>
+
+  <section class="cake" id="cake">
+    <h2>Design your cake</h2>
+    <div class="cake-builder">
+      <div class="cake-preview">
+        <div class="cake-visual" id="cakeVisual">
+          <div class="cake-layer" id="layer1"></div>
+          <div class="cake-layer" id="layer2"></div>
+        </div>
+        <p class="cake-msg" id="cakeMsgPreview">Happy Birthday!</p>
+      </div>
+      <div class="cake-options">
+        <div class="option-group">
+          <p class="option-label">Flavor</p>
+          <div class="pill-row">
+            <button class="pill active" data-flavor="vanilla" style="--c:#f6e7c8">Vanilla</button>
+            <button class="pill" data-flavor="chocolate" style="--c:#8a5a3c">Chocolate</button>
+            <button class="pill" data-flavor="strawberry" style="--c:#f3b6c2">Strawberry</button>
+            <button class="pill" data-flavor="matcha" style="--c:#b7cf8e">Matcha</button>
+          </div>
+        </div>
+        <div class="option-group">
+          <p class="option-label">Size</p>
+          <div class="pill-row">
+            <button class="pill active" data-size="6in" data-price="42">6" — serves 8</button>
+            <button class="pill" data-size="8in" data-price="58">8" — serves 14</button>
+            <button class="pill" data-size="10in" data-price="78">10" — serves 22</button>
+          </div>
+        </div>
+        <div class="option-group">
+          <label for="cakeMsg" class="option-label">Message on cake</label>
+          <input type="text" id="cakeMsg" maxlength="30" value="Happy Birthday!">
+        </div>
+        <p class="cake-total">Total: <strong id="cakeTotal">$42</strong></p>
+        <button class="btn btn-block" id="cakeOrder">Order This Cake</button>
+        <p class="form-note" id="cakeNote" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <h2>Visit the shop</h2>
+    <p>221 Willow Street, Austin, TX · Open Tue–Sun 7am–3pm<br>Custom cakes need 72 hours notice.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="logo">🧁 Maple &amp; Crumb</p>
+  <p>© 2026 Maple &amp; Crumb Bakery · Website 13 / 100 — portfolio example.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

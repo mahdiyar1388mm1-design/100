@@ -1,0 +1,83 @@
+/* SwiftBite — Food Delivery Platform | Bright friendly app UI */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#fff8f2; --ink:#22201d; --orange:#ff6b35; --green:#2bb673; --text-dim:#6b645d; --line:#f0e2d4;
+  --display:'Baloo 2',sans-serif; --sans:'Inter',sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,4vw,3rem);position:sticky;top:0;z-index:40;background:rgba(255,248,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--display);font-size:1.4rem}
+.logo span{color:var(--orange)}
+header nav{display:flex;gap:1.8rem;font-weight:600;font-size:.9rem}
+header nav a:hover{color:var(--orange)}
+.menu-btn{display:none;background:var(--orange);border:none;color:#fff;width:40px;height:40px;border-radius:50%}
+.mobile-nav{display:none;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem 1.5rem;border-top:1px solid var(--line);font-weight:600}
+
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:center;max-width:1280px;margin:0 auto;padding:clamp(2rem,6vw,4rem) 1.5rem}
+.hero-copy h1{font-size:clamp(2.2rem,5vw,3.2rem);line-height:1.15;margin-bottom:1.1rem}
+.hero-copy p{max-width:44ch;margin-bottom:1.8rem;color:var(--text-dim)}
+.hero img{border-radius:28px}
+.search-bar{display:flex;gap:.6rem;flex-wrap:wrap;background:#fff;padding:.5rem;border-radius:100px;box-shadow:0 8px 24px rgba(0,0,0,.08);max-width:460px}
+.search-bar input{flex:1;min-width:160px;border:none;padding:.7rem 1rem;font-family:inherit;font-size:.95rem}
+.search-bar input:focus{outline:none}
+.btn{background:var(--orange);color:#fff;padding:.85rem 1.6rem;border-radius:100px;border:none;cursor:pointer;font-weight:700;font-family:var(--display);transition:.2s}
+.btn:hover{background:#e6551f}
+
+.cuisines{max-width:1280px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem}
+.cuisines h2{margin-bottom:1.5rem;font-size:clamp(1.7rem,4vw,2.3rem)}
+.chip-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:2rem}
+.chip{background:#fff;border:1px solid var(--line);padding:.6rem 1.2rem;border-radius:100px;cursor:pointer;font-weight:600}
+.chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.restaurant-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.r-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,.06);transition:transform .25s}
+.r-card:hover{transform:translateY(-6px)}
+.r-card img{aspect-ratio:4/3;object-fit:cover}
+.r-card .info{padding:1rem}
+.r-card h3{font-size:1rem;margin-bottom:.3rem}
+.r-card .meta{display:flex;justify-content:space-between;font-size:.82rem;color:var(--text-dim)}
+.r-card .rating{color:var(--green);font-weight:700}
+
+.track{max-width:1100px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center}
+.track-copy h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:.8rem}
+.track-copy p{color:var(--text-dim);margin-bottom:1.6rem}
+.tracker{position:relative;background:#fff;border-radius:16px;padding:2rem 1.6rem;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.track-line{position:absolute;left:2.55rem;top:2.2rem;bottom:2.2rem;width:3px;background:var(--line);border-radius:3px}
+.track-fill{position:absolute;top:0;left:0;width:100%;height:0%;background:var(--green);border-radius:3px;transition:height .5s ease}
+.step{display:flex;gap:1rem;align-items:flex-start;position:relative;z-index:1;margin-bottom:1.6rem}
+.step:last-child{margin-bottom:0}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--line);margin-top:.3rem;flex-shrink:0;transition:.3s}
+.step.done .dot{background:var(--green)}
+.step h4{font-size:1rem;margin-bottom:.2rem}
+.step p{font-size:.85rem;color:var(--text-dim)}
+
+.app{max-width:1200px;margin:0 auto;padding:clamp(3rem,6vw,5rem) 1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.app img{border-radius:24px}
+.app h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:1rem}
+.app p{color:var(--text-dim);margin-bottom:1.8rem;max-width:42ch}
+.store-badges{display:flex;gap:1rem}
+.store-badge{border:1px solid var(--line);background:#fff;padding:.7rem 1.3rem;border-radius:10px;font-weight:600}
+.store-badge:hover{border-color:var(--orange);color:var(--orange)}
+
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:2rem clamp(1.2rem,4vw,3rem);border-top:1px solid var(--line)}
+.footer p{color:var(--text-dim);font-size:.8rem}
+
+@media (max-width:900px){
+  header nav{display:none}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .hero img{order:-1}
+  .restaurant-grid{grid-template-columns:repeat(2,1fr)}
+  .track{grid-template-columns:1fr}
+  .app{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .restaurant-grid{grid-template-columns:1fr}
+}
